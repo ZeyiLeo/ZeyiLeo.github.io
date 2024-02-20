@@ -6,7 +6,7 @@ subtitle:  <a href='#'>TRT-movie</a>.
 
 profile:
   align: right
-  image: personal_web/WechatIMG53.jpg
+  image: WechatIMG53.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
     <p>eMail:leo070310@163.com</p>
