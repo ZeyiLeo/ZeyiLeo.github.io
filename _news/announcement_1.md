@@ -1,8 +1,8 @@
 ---
 layout: post
-date: 2023-06-22 00:00:00-0000
+date: 2015-10-22 15:59:00-0400
 inline: true
 related_posts: false
 ---
 
-Joint in the BFSU Seed Plan
+A simple inline announcement
