@@ -441,7 +441,7 @@ ninja.data = [{
           section: "Books",handler: () => {
               window.location.href = "/al-folio/books/the_godfather/";
             },},{id: "news-a-simple-inline-announcement",
-          title: 'A simple inline announcement',
+          title: 'A simple inline announcement.',
           description: "",
           section: "News",},{id: "news-a-long-announcement-with-details",
           title: 'A long announcement with details',
