@@ -20,7 +20,7 @@ social: true # includes social icons at the bottom of the page
 ---
 
 Hi！！！
-I am a student now majoring in communication at HKBU.Maenwhile, I am also interested in global issues like global and area study. Here is my IG [macleoos](https://www.instagram.com/macleoos/) Weibo [macleoos](https://weibo.com/u/7520110593).I will post various things on my social media. You can also reach my other social media at my weibo.Or reach me through my email and wechat.I will be very gald to chat with you on my area.
+I am a student now majoring in communication at HKBU.Maenwhile, I am also interested in global issues like global and area study.I will post various things on my social media. You can also reach my other social media at my weibo.Or reach me through my email and wechat.I will be very gald to chat with you on my area.
 
 Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
 
