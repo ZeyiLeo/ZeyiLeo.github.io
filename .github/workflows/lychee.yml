@@ -1,0 +1,13 @@
+# 你可以定义排除哪些链接，防止检查频繁请求的页面
+exclude:
+  - "https://www.instagram.com/macleoos/"
+  - "https://twitter.com/"
+  - "mailto:*"  # 排除所有邮件链接
+
+# 你可以设置检查的间隔时间，避免频繁请求触发 429 错误
+retry: 3  # 失败后最多重试 3 次
+timeout: 30  # 每个请求的超时时间（秒）
+user_agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36"
+
+# 可选：如果有需要，可以在这里加入自定义的排除规则
+ignore_errors: true  # 忽略一些小错误（如网络波动）
