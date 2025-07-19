@@ -10,9 +10,9 @@ mdb:
   integrity:
     css: "sha384-xxxx"
 bootstrap-table:
-  version: 1.21.1
+  version: "1.22.1"
 # 其他配置项……
- # the website title (if blank, full name will be used instead)
+# the website title (if blank, full name will be used instead)
 first_name: LI
 middle_name: Varadize
 last_name: ZEYI
@@ -397,8 +397,6 @@ enable_progressbar: true # enables a horizontal progress bar linked to the verti
 # Library versions
 # -----------------------------------------------------------------------------
 
-bootstrap-table:
-  version: "1.22.1"
 chartjs:
   version: "4.4.1"
 d3:
@@ -413,74 +411,4 @@ echarts:
   version: "5.4.3"
   integrity:
     library: "sha256-EVZCmhajjLhgTcxlGMGUBtQiYULZCPjt0uNTFEPFTRk="
-    dark_theme: "sha256-UmFIP/4VvOqBDIl2QWl1HBuAJ1XWs/iFZxT5yJRZOKo="
-highlightjs:
-  version: "11.9.0"
-  integrity:
-    css:
-      light: "sha256-Oppd74ucMR5a5Dq96FxjEzGF7tTw2fZ/6ksAqDCM8GY="
-      dark: "sha256-nyCNAiECsdDHrr/s2OQsp5l9XeY2ZJ0rMepjCT2AkBk="
-imagesloaded:
-  version: "5.0.0"
-  integrity: "sha256-htrLFfZJ6v5udOG+3kNLINIKh2gvoKqwEhHYfTTMICc="
-img-comparison-slider:
-  version: "8.0.6"
-jquery:
-  version: "3.6.0"
-  integrity: "sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-leaflet:
-  version: "1.9.4"
-  integrity:
-    css: "sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
-    js: "sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
-mathjax:
-  version: "3.2.0"
-masonry:
-  version: "4.2.2"
-  integrity: "sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI="
-mdb:
-  version: "4.20.0"
-  integrity:
-    css: "sha256-jpjYvU3G3N6nrrBwXJoVEYI/0zw8htfFnhT9ljN3JJw="
-    js: "sha256-NdbiivsvWt7VYCt6hYNT3h/th9vSTL4EDWeGs5SN3DA="
-medium_zoom:
-  version: "1.1.0"
-  integrity: "sha256-ZgMyDAIYDYGxbcpJcfUnYwNevG/xi9OHKaR/8GK+jWc="
-mermaid:
-  version: "10.7.0"
-  integrity: "sha256-TtLOdUA8mstPoO6sGvHIGx2ceXrrX4KgIItO06XOn8A="
-swiper:
-  version: "11.0.5"
-  integrity:
-    css: "sha256-yUoNxsvX+Vo8Trj3lZ/Y5ZBf8HlBFsB6Xwm7rH75/9E="
-    js: "sha256-BPrwikijIybg9OQC5SYFFqhBjERYOn97tCureFgYH1E="
-vega:
-  version: "5.27.0"
-  integrity: "sha256-Yot/cfgMMMpFwkp/5azR20Tfkt24PFqQ6IQS+80HIZs="
-vega-embed:
-  version: "6.24.0"
-  integrity: "sha256-FPCJ9JYCC9AZSpvC/t/wHBX7ybueZhIqOMjpWqfl3DU="
-vega-lite:
-  version: "5.16.3"
-  integrity: "sha256-TvBvIS5jUN4BSy009usRjNzjI1qRrHPYv7xVLJyjUyw="
-
-# -----------------------------------------------------------------------------
-# Get external JSON data
-# -----------------------------------------------------------------------------
-
-jekyll_get_json:
-  - data: resume
-    json: assets/json/resume.json # it can also be an url
-jsonresume:
-  - basics
-  - work
-  - education
-  - publications
-  - projects
-  - volunteer
-  - awards
-  - certificates
-  - skills
-  - languages
-  - interests
-  - references
+    dark_theme: "sha256-Um_
