@@ -20,9 +20,37 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
-Hi！！！
-I am a student now majoring in communication at HKBU.Maenwhile, I am also interested in global issues like global and area study.I will post various things on my social media. You can reach almost my social media account by searching macleoos.Or reach me through my email or wechat.I will be very gald to discuss with you on my area.
+---
+layout: page
+title: "about"
+permalink: /about/
+---
 
-Meanwile I am focusing on a varity of languages like kiswaahiri.
+<div class="about-container">
+  <div class="about-text">
+    <h1>LI Varadize ZEYI</h1>
+    <h2>Hong Kong Baptist University</h2>
+    <p>
+      Hi! I am a student now majoring in communication at HKBU. Meanwhile, I’m also interested in global issues like international relations and regional studies. I share ideas on my social media — just search <strong>macleoos</strong>.
+    </p>
+    <p>
+      Feel free to reach me via email or WeChat — I’d be glad to connect and exchange thoughts.
+    </p>
+    <p>
+      I am also learning a variety of languages, including Kiswahili.
+    </p>
+    <p>
+      You can find me on IG <a href="https://www.instagram.com/macleoos">macleoos</a> and Rednote <a href="#">macleoos</a>.
+    </p>
+    <div class="contact-info">
+      <p><strong>13324004000</strong></p>
+      <p>macleoos07@gmail.com</p>
+      <p>Liaoning, China</p>
+      <p>macleoos (for all social media)</p>
+    </div>
+  </div>
 
-You can find me on IG [macleoos](https://www.instagram.com/macleoos/) and Rednote [macleoos](https://www.xiaohongshu.com/user/profile/63c77e66000000002702b268)
+  <div class="about-photo">
+    <img src="/assets/img/zeyi.jpg" alt="Zeyi portrait">
+  </div>
+</div>
