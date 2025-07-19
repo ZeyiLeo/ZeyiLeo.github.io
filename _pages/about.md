@@ -2,16 +2,16 @@
 layout: about
 title: about
 permalink: /
-subtitle: LI Varadize ZEYI — <a href="https://www.hkbu.edu.hk" class="subtitle-link">Hong Kong Baptist University</a>
+subtitle: LI Varadize ZEYI — Hong Kong Baptist University
 
 profile:
   align: right
   image_circular: false
-  more_info: >
-    <p>13324004000</p>
-    <p>macleoos07@gmail.com</p>
-    <p>LiaoNing China</p>
-    <p>macleoos for all social media</p>
+  more_info: |
+    13324004000
+    macleoos07@gmail.com
+    Liaoning, China
+    macleoos for all social media
 
 news: true
 latest_posts: true
@@ -40,6 +40,6 @@ social: true
 <!-- 补充内容/扩展信息（可自由替换） -->
 <div class="about-container" data-aos="fade-up">
   <div class="about-photo" data-aos="fade-left">
-    <img src="/assets/img/indoor_img/IMG_1258.JPG" alt="profile" style="width: 100%; max-width: 400px; border-radius: 16px;" />
+    <img src="/assets/img/indoor_img/IMG_1258.JPG" alt="Profile photo of Varadize Zeyi Li" style="width: 100%; max-width: 400px; border-radius: 16px;" />
   </div>
 </div>
