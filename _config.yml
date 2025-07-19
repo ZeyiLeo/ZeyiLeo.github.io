@@ -20,7 +20,7 @@ keywords: jekyll, jekyll-theme, academic-website, portfolio-website
 lang: en
 icon: prof_pic.jpg # 推荐放置于 assets/img/prof_pic.jpg
 
-url: "<a href="https://ZeyiLeo.github.io"" class="underline" target="_blank">https://ZeyiLeo.github.io"</a>
+url: "https://ZeyiLeo.github.io"
 baseurl: "" # 留空表示根目录
 last_updated: false
 impressum_path:
