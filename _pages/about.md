@@ -28,8 +28,6 @@ permalink: /about/
 
 <div class="about-container">
   <div class="about-text">
-    <h1>LI Varadize ZEYI</h1>
-    <h2>Hong Kong Baptist University</h2>
     <p>
       Hi! I am a student now majoring in communication at HKBU. Meanwhile, I’m also interested in global issues like international relations and regional studies. I share ideas on my social media — just search <strong>macleoos</strong>.
     </p>
@@ -42,15 +40,14 @@ permalink: /about/
     <p>
       You can find me on IG <a href="https://www.instagram.com/macleoos">macleoos</a> and Rednote <a href="#">macleoos</a>.
     </p>
-    <div class="contact-info">
-      <p><strong>13324004000</strong></p>
-      <p>macleoos07@gmail.com</p>
-      <p>Liaoning, China</p>
-      <p>macleoos (for all social media)</p>
-    </div>
-  </div>
 
-  <div class="about-photo">
-    <img src="/assets/img/zeyi.jpg" alt="Zeyi portrait">
+  </div>
+</div>
+<div class="about-container" data-aos="fade-up">
+  <div class="about-text" data-aos="fade-right">
+    ...
+  </div>
+  <div class="about-photo" data-aos="fade-left">
+    ...
   </div>
 </div>
