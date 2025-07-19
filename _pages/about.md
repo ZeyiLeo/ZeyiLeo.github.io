@@ -19,13 +19,6 @@ latest_posts: true # includes a list of the newest posts
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
-
----
-layout: page
-title: "about"
-permalink: /about/
----
-
 <div class="about-container">
   <div class="about-text">
     <p>
@@ -51,3 +44,4 @@ permalink: /about/
     ...
   </div>
 </div>
+---
