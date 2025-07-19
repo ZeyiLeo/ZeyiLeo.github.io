@@ -11,11 +11,11 @@ middle_name: Varadize
 last_name: Li
 email: macleoos07@gmail.com
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  A simple, whitespace theme for academics. Based on [*folio]<a href="https://github.com/bogoli/-folio" class="underline" target="_blank">https://github.com/bogoli/-folio</a> design.
+  A simple, whitespace theme for academics. Based on *folio <a href="https://github.com/bogoli/-folio" class="underline" target="_blank">https://github.com/bogoli/-folio</a> design.
 footer_text: >
-  Powered by <a href="<a href="https://jekyllrb.com/"" class="underline" target="_blank">https://jekyllrb.com/"</a> target="_blank">Jekyll</a> with <a href="<a href="https://github.com/alshedivat/al-folio">al-folio</a>" class="underline" target="_blank">https://github.com/alshedivat/al-folio">al-folio</a></a> theme.
-  Hosted by <a href="<a href="https://pages.github.com/"" class="underline" target="_blank">https://pages.github.com/"</a> target="_blank">GitHub Pages</a>.
-  Photos from <a href="<a href="https://unsplash.com"" class="underline" target="_blank">https://unsplash.com"</a> target="_blank">Unsplash</a>.
+  Powered by [Jekyll]<a href="https://jekyllrb.com/" class="underline" target="_blank">https://jekyllrb.com/</a> with [al-folio]<a href="https://github.com/alshedivat/al-folio" class="underline" target="_blank">https://github.com/alshedivat/al-folio</a> theme.
+  Hosted by [GitHub Pages]<a href="https://pages.github.com/." class="underline" target="_blank">https://pages.github.com/.</a>
+  Photos from [Unsplash]<a href="https://unsplash.com." class="underline" target="_blank">https://unsplash.com.</a>
 keywords: jekyll, jekyll-theme, academic-website, portfolio-website
 lang: en
 icon: prof_pic.jpg # 推荐放置于 assets/img/prof_pic.jpg
@@ -109,7 +109,7 @@ disqus_shortname: al-folio
 
 external_sources:
   - name: medium.com
-    rss_url: <a href="https://medium.com/@al-folio/feed" class="underline" target="_blank">https://medium.com/@al-folio/feed</a>
+    rss_url: "<a href="https://medium.com/@al-folio/feed"" class="underline" target="_blank">https://medium.com/@al-folio/feed"</a>
 
 # -----------------------------------------------------------------------------
 # Collections
