@@ -1,104 +1,210 @@
----
-layout: default
----
-<div class="post">
-  <header class="post-header">
-    <h1 class="post-title">
-      {% if site.title == 'blank' %}
-        <span class="font-weight-bold">{{ site.first_name }}</span> {{ site.middle_name }}
-        {{ site.last_name }}
+<!doctype html>
+<html lang="{{ site.lang }}">
+  <!-- Head -->
+  <head>
+    {% if page.redirect %}
+      {% if page.redirect == true %}
+        {% assign redirect = site.baseurl | append: '/' %}
+      {% elsif page.redirect contains '://' %}
+        {% assign redirect = page.redirect %}
       {% else %}
-        {{ site.title }}
+        {% assign redirect = page.redirect | relative_url %}
       {% endif %}
-    </h1>
-    <p class="desc">{{ page.subtitle }}</p>
-  </header>
+      <meta http-equiv="refresh" content="3; url={{ redirect }}">
+    {% endif %}
+    <!-- AOS CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
 
-  <article>
-    {% if page.profile %}
-      <div class="profile float-{% if page.profile.align == 'left' %}left{% else %}right{% endif %}">
-        {% if page.profile.image %}
-          {% assign profile_image_path = page.profile.image | prepend: 'assets/img/' %}
-          {% if page.profile.image_circular %}
-            {% assign profile_image_class = 'img-fluid z-depth-1 rounded-circle' %}
-          {% else %}
-            {% assign profile_image_class = 'img-fluid z-depth-1
-      rounded' %}
-          {% endif %}
-          {% capture sizes %}(min-width: {{site.max_width}}) {{ site.max_width | minus: 30 | times: 0.3}}px, (min-width: 576px)
-      30vw, 95vw"{% endcapture %}
-          {%
-            include figure.liquid loading="eager" path=profile_image_path class=profile_image_class sizes=sizes alt=page.profile.image
-            cache_bust=true
-          %}
+    <style>
+      /* 全局动画和UI样式 */
+      body {
+        background: #fff;
+        color: #1c1c1e;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        line-height: 1.6;
+        margin: 0;
+        padding: 0;
+      }
+
+      header {
+        position: fixed;
+        width: 100%;
+        background: transparent;
+        transition: background 0.3s ease, box-shadow 0.3s ease, backdrop-filter 0.3s ease;
+        padding: 1rem 2rem;
+        z-index: 1000;
+      }
+
+      nav a {
+        color: #007aff;
+        text-decoration: none;
+        margin: 0 1rem;
+        font-weight: 600;
+        transition: color 0.3s ease;
+      }
+
+      nav a:hover {
+        color: #0051a8;
+      }
+
+      button {
+        background: #007aff;
+        border: none;
+        border-radius: 12px;
+        color: white;
+        padding: 0.6rem 1.4rem;
+        font-weight: 600;
+        cursor: pointer;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+
+      button:hover {
+        transform: scale(1.05);
+        box-shadow: 0 8px 15px rgba(0, 122, 255, 0.3);
+      }
+
+      .card {
+        background: #fafafa;
+        margin: 3rem auto;
+        padding: 2rem;
+        max-width: 800px;
+        border-radius: 14px;
+        box-shadow: 0 4px 14px rgba(0,0,0,0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+
+      .card:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 12px 24px rgba(0,0,0,0.15);
+      }
+
+      /* 浮动文字条样式 */
+      .floating-header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 0.6rem 1rem;
+        background: rgba(255, 255, 255, 0.4);
+        backdrop-filter: saturate(180%) blur(12px);
+        color: #1c1c1e;
+        font-weight: 700;
+        font-size: 1.1rem;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        z-index: 1600;
+        pointer-events: none;
+        text-align: center;
+        user-select: none;
+        box-shadow: 0 1px 8px rgba(0,0,0,0.08);
+        letter-spacing: 0.05em;
+      }
+
+      /* subtitle 样式 */
+      .subtitle {
+        font-size: 1.0rem;
+        color: #555;
+        margin-top: 0.3rem;
+        letter-spacing: 0.02em;
+        font-weight: 500;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      }
+
+      .subtitle a {
+        color: #007aff;
+        text-decoration: none;
+        transition: color 0.3s ease;
+      }
+
+      .subtitle a:hover {
+        color: #0051a8;
+        text-decoration: underline;
+      }
+    </style>
+
+    {% include head.liquid %}
+  </head>
+
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+  <script>
+    AOS.init({
+      duration: 800,
+      easing: 'ease-in-out',
+      once: true,
+    });
+
+    // 导航栏滚动背景动画
+    window.addEventListener('scroll', () => {
+      const nav = document.querySelector('header');
+      if (window.scrollY > 50) {
+        nav.style.background = 'rgba(255,255,255,0.95)';
+        nav.style.backdropFilter = 'saturate(180%) blur(20px)';
+        nav.style.boxShadow = '0 1px 6px rgba(0,0,0,0.1)';
+      } else {
+        nav.style.background = 'transparent';
+        nav.style.backdropFilter = 'none';
+        nav.style.boxShadow = 'none';
+      }
+    });
+  </script>
+
+  <!-- Body -->
+  <body class="{% if site.navbar_fixed %}fixed-top-nav{% endif %} {% unless site.footer_fixed %}sticky-bottom-footer{% endunless %}">
+    <!-- Header -->
+    {% include header.liquid %}
+
+    <!-- 浮动文字条 -->
+    <div class="floating-header">
+      LI Varadize ZEYI — Hong Kong Baptist University.
+    </div>
+
+    <!-- Content -->
+    <div class="container mt-5" role="main" style="padding-top: 3rem;">
+      {% if page.toc and page.toc.sidebar %}
+        {% if page.toc.sidebar == 'right' %}
+          <div class="row">
+            <!-- main content area -->
+            <div class="col-sm-9">{{ content }}</div>
+            <!-- sidebar, which will move to the top on a small screen -->
+            <div class="col-sm-3">
+              <nav id="toc-sidebar" class="sticky-top"></nav>
+            </div>
+          </div>
+        {% else %}
+          <div class="row">
+            <!-- sidebar, which will move to the top on a small screen -->
+            <div class="col-sm-3">
+              <nav id="toc-sidebar" class="sticky-top"></nav>
+            </div>
+            <!-- main content area -->
+            <div class="col-sm-9">{{ content }}</div>
+          </div>
         {% endif %}
-        {% if page.profile.more_info %}
-          <div class="more-info">{{ page.profile.more_info }}</div>
-        {% endif %}
-      </div>
-    {% endif %}
+      {% else %}
+        {{ content }}
+      {% endif %}
+    </div>
 
-    <div class="clearfix">{{ content }}</div>
+    <!-- Footer -->
+    {% include footer.liquid %}
 
-    <!-- News -->
-    {% if page.news and site.announcements.enabled %}
-      <h2>
-        <a href="{{ '/news/' | relative_url }}" style="color: inherit">news</a>
-      </h2>
-      {% include news.liquid limit=true %}
-    {% endif %}
-
-    <!-- Latest posts -->
-    {% if page.latest_posts %}
-      <h2>
-        <a href="{{ '/blog/' | relative_url }}" style="color: inherit">latest posts</a>
-      </h2>
-      {% include latest_posts.liquid %}
-    {% endif %}
-
-    <!-- Selected papers -->
-    {% if page.selected_papers %}
-      <h2>
-        <a href="{{ '/publications/' | relative_url }}" style="color: inherit">selected publications</a>
-      </h2>
-      {% include selected_papers.liquid %}
-    {% endif %}
-
-    <!-- Social -->
-    {% if page.social %}
-      <div class="social">
-        <div class="contact-icons">{% include social.liquid %}</div>
-
-        <div class="contact-note">{{ site.contact_note }}</div>
-      </div>
-    {% endif %}
-  </article>
-</div>
-
----
-title: 首页
----
-
-<section class="card" data-aos="fade-up">
-  <h1>欢迎来到我的个人网站</h1>
-  <p>这是一个带有苹果风格交互动画的内容卡片，随着滚动缓缓显现。</p>
-  <button>了解更多</button>
-</section>
-
-<section class="card" data-aos="fade-left">
-  <h2>关于我</h2>
-  <p>这里是另一块内容，滑动从左侧进入，展现生动的动画效果。</p>
-  <button>点击体验</button>
-</section>
-
-<section class="card" data-aos="fade-right">
-  <h2>我的项目</h2>
-  <p>展示我的项目，带有右侧滑入动画。</p>
-  <button>查看项目</button>
-</section>
-
-<section class="card" data-aos="zoom-in">
-  <h2>联系我</h2>
-  <p>放大渐显动画，吸引用户注意。</p>
-  <button>发送邮件</button>
-</section>
+    <!-- JavaScripts -->
+    {% include scripts/jquery.liquid %}
+    {% include scripts/bootstrap.liquid %}
+    {% include scripts/masonry.liquid %}
+    {% include scripts/mermaid.liquid %}
+    {% include scripts/diff2html.liquid %}
+    {% include scripts/leaflet.liquid %}
+    {% include scripts/chartjs.liquid %}
+    {% include scripts/echarts.liquid %}
+    {% include scripts/vega.liquid %}
+    {% include scripts/tikzjax.liquid %}
+    {% include scripts/misc.liquid %}
+    {% include scripts/badges.liquid %}
+    {% include scripts/mathjax.liquid %}
+    {% include scripts/analytics.liquid %}
+    {% include scripts/progressBar.liquid %}
+    {% include scripts/wechatModal.liquid %}
+    {% include scripts/imageLayouts.liquid %}
+  </body>
+</html>
