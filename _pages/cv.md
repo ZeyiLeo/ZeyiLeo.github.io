@@ -5,7 +5,7 @@ title: "CV"
 nav: true
 nav_order: 5
 cv_pdf: "zeyi_li.pdf"
-description: 
+description: "My personal curriculum vitae."
 toc:
   sidebar: left
 ---
@@ -20,17 +20,17 @@ To download a PDF version of my CV, click the button at the top or [click here](
 
 ## Education
 
-- **Hongkong Baptist University**, Communication — 2025–2029
-- **HongKong University**, Taster — 2024
+- **Hong Kong Baptist University**, Communication — 2025–2029  
+- **The University of Hong Kong**, Taster Program — 2024
 
 ## Experience
 
-- **Role**, DIZE Shenzhen International Trade .LTd — 2024-now 
-  
+- **Intern**, DIZE Shenzhen International Trade Ltd. — 2024–present  
+  Participated in cross-border communication and trade processing.
 
 ## Skills
 
-- Programming: Python, C++, Java
+- Programming: Python, C++, Java  
 - Tools: LaTeX, Git, VSCode
 
 <!-- Add more sections as needed -->
