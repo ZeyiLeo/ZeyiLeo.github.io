@@ -2,7 +2,17 @@
 # Site settings
 # -----------------------------------------------------------------------------
 
-title: blank # the website title (if blank, full name will be used instead)
+title: Zeyi Li
+author:
+  name: Zeyi Li
+mdb:
+  version: 4.20.0
+  integrity:
+    css: "sha384-xxxx"
+bootstrap-table:
+  version: 1.21.1
+# 其他配置项……
+ # the website title (if blank, full name will be used instead)
 first_name: LI
 middle_name: Varadize
 last_name: ZEYI
