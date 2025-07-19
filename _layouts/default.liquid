@@ -13,7 +13,7 @@
       <meta http-equiv="refresh" content="3; url={{ redirect }}">
     {% endif %}
     <!-- AOS CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+    <link href="<a href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"" class="underline" target="_blank">https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"</a> rel="stylesheet" />
 
     <style>
       /* 全局动画和UI样式 */
@@ -80,10 +80,10 @@
 
     </style>
 
-    {% include head.liquid %}
+    {% include head.html %}
   </head>
 
-  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script src="<a href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>" class="underline" target="_blank">https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script></a>
 
   <script>
     AOS.init({
@@ -110,7 +110,7 @@
   <!-- Body -->
   <body class="{% if site.navbar_fixed %}fixed-top-nav{% endif %} {% unless site.footer_fixed %}sticky-bottom-footer{% endunless %}">
     <!-- Header -->
-    {% include header.liquid %}
+    {% include header.html %}
 
     <!-- Content -->
     <div class="container mt-5" role="main" style="padding-top: 2.5rem;">
@@ -140,25 +140,25 @@
     </div>
 
     <!-- Footer -->
-    {% include footer.liquid %}
+    {% include footer.html %}
 
     <!-- JavaScripts -->
-    {% include scripts/jquery.liquid %}
-    {% include scripts/bootstrap.liquid %}
-    {% include scripts/masonry.liquid %}
-    {% include scripts/mermaid.liquid %}
-    {% include scripts/diff2html.liquid %}
-    {% include scripts/leaflet.liquid %}
-    {% include scripts/chartjs.liquid %}
-    {% include scripts/echarts.liquid %}
-    {% include scripts/vega.liquid %}
-    {% include scripts/tikzjax.liquid %}
-    {% include scripts/misc.liquid %}
-    {% include scripts/badges.liquid %}
-    {% include scripts/mathjax.liquid %}
-    {% include scripts/analytics.liquid %}
-    {% include scripts/progressBar.liquid %}
-    {% include scripts/wechatModal.liquid %}
-    {% include scripts/imageLayouts.liquid %}
+    {% include scripts/jquery.html %}
+    {% include scripts/bootstrap.html %}
+    {% include scripts/masonry.html %}
+    {% include scripts/mermaid.html %}
+    {% include scripts/diff2html.html %}
+    {% include scripts/leaflet.html %}
+    {% include scripts/chartjs.html %}
+    {% include scripts/echarts.html %}
+    {% include scripts/vega.html %}
+    {% include scripts/tikzjax.html %}
+    {% include scripts/misc.html %}
+    {% include scripts/badges.html %}
+    {% include scripts/mathjax.html %}
+    {% include scripts/analytics.html %}
+    {% include scripts/progressBar.html %}
+    {% include scripts/wechatModal.html %}
+    {% include scripts/imageLayouts.html %}
   </body>
 </html>
