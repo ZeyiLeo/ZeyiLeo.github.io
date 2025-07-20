@@ -78,9 +78,26 @@
         box-shadow: 0 12px 24px rgba(0,0,0,0.15);
       }
 
+      /* 新增浮动文字样式 */
+      .floating-header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 0.4rem 1rem;
+        background: rgba(255, 255, 255, 0.3);
+        backdrop-filter: saturate(180%) blur(10px);
+        color: #1c1c1e;
+        font-weight: 600;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        z-index: 1500;
+        pointer-events: none;
+        text-align: center;
+        user-select: none;
+      }
     </style>
 
-    {% include head.html %}
+    {% include head.liquid %}
   </head>
 
   <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
@@ -110,7 +127,13 @@
   <!-- Body -->
   <body class="{% if site.navbar_fixed %}fixed-top-nav{% endif %} {% unless site.footer_fixed %}sticky-bottom-footer{% endunless %}">
     <!-- Header -->
-    {% include header.html %}
+    {% include header.liquid %}
+
+    <!-- 浮动文字条 -->
+    <div class="floating-header">
+      LI Varadize ZEYI<br>
+      Hong Kong Baptist University.
+    </div>
 
     <!-- Content -->
     <div class="container mt-5" role="main" style="padding-top: 2.5rem;">
@@ -140,25 +163,25 @@
     </div>
 
     <!-- Footer -->
-    {% include footer.html %}
+    {% include footer.liquid %}
 
     <!-- JavaScripts -->
-    {% include scripts/jquery.html %}
-    {% include scripts/bootstrap.html %}
-    {% include scripts/masonry.html %}
-    {% include scripts/mermaid.html %}
-    {% include scripts/diff2html.html %}
-    {% include scripts/leaflet.html %}
-    {% include scripts/chartjs.html %}
-    {% include scripts/echarts.html %}
-    {% include scripts/vega.html %}
-    {% include scripts/tikzjax.html %}
-    {% include scripts/misc.html %}
-    {% include scripts/badges.html %}
-    {% include scripts/mathjax.html %}
-    {% include scripts/analytics.html %}
-    {% include scripts/progressBar.html %}
-    {% include scripts/wechatModal.html %}
-    {% include scripts/imageLayouts.html %}
+    {% include scripts/jquery.liquid %}
+    {% include scripts/bootstrap.liquid %}
+    {% include scripts/masonry.liquid %}
+    {% include scripts/mermaid.liquid %}
+    {% include scripts/diff2html.liquid %}
+    {% include scripts/leaflet.liquid %}
+    {% include scripts/chartjs.liquid %}
+    {% include scripts/echarts.liquid %}
+    {% include scripts/vega.liquid %}
+    {% include scripts/tikzjax.liquid %}
+    {% include scripts/misc.liquid %}
+    {% include scripts/badges.liquid %}
+    {% include scripts/mathjax.liquid %}
+    {% include scripts/analytics.liquid %}
+    {% include scripts/progressBar.liquid %}
+    {% include scripts/wechatModal.liquid %}
+    {% include scripts/imageLayouts.liquid %}
   </body>
 </html>

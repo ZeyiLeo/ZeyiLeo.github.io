@@ -1,110 +1,127 @@
-<!DOCTYPE html>
-<html lang="{{ page.lang | default: site.lang | default: 'en' }}">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>{{ page.title | default: site.title }}</title>
+<!-- Metadata, OpenGraph and Schema.org -->
+{% include metadata.liquid %}
 
-  {% if page.redirect %}
-    {% if page.redirect == true %}
-      {% assign redirect = site.baseurl | append: '/' %}
-    {% elsif page.redirect contains '://' %}
-      {% assign redirect = page.redirect %}
-    {% else %}
-      {% assign redirect = page.redirect | relative_url %}
-    {% endif %}
-    <meta http-equiv="refresh" content="3; url={{ redirect }}">
-  {% endif %}
+<!-- Bootstrap & MDB -->
+<link rel="stylesheet" href="{{ '/assets/css/bootstrap.min.css' | relative_url | bust_file_cache }}">
+<!-- <link rel="stylesheet" href="{{ '/assets/css/mdb.min.css' | relative_url | bust_file_cache }}"> -->
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/mdbootstrap@{{ site.mdb.version }}/css/mdb.min.css"
+  integrity="{{ site.mdb.integrity.css }}"
+  crossorigin="anonymous"
+>
 
-  {% include head %}
-  
-  <!-- AOS 动画 CSS -->
+<!-- Bootstrap Table -->
+{% if page.pretty_table %}
+  <link defer rel="stylesheet" href="https://unpkg.com/bootstrap-table@{{ site.bootstrap-table.version }}/dist/bootstrap-table.min.css">
+{% endif %}
+
+<!-- Fonts & Icons -->
+<link defer rel="stylesheet" href="{{ '/assets/css/academicons.min.css' | relative_url | bust_file_cache }}">
+<link
+  defer
+  rel="stylesheet"
+  type="text/css"
+  href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons&display=swap"
+>
+
+<!-- Code Syntax Highlighting -->
+<link
+  defer
+  rel="stylesheet"
+  href="{{ '/assets/css/jekyll-pygments-themes-github.css' | relative_url | bust_file_cache }}"
+  media=""
+  id="highlight_theme_light"
+>
+
+{% if page.toc and page.toc.sidebar %}
+  <!-- Sidebar Table of Contents -->
+  <link defer href="{{ '/assets/css/bootstrap-toc.min.css' | relative_url | bust_file_cache }}" rel="stylesheet">
+{% endif %}
+
+<!-- Styles -->
+{% if site.icon.size <= 4 %}
   <link
+    rel="shortcut icon"
+    href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>{{ site.icon }}</text></svg>"
+  >
+{% elsif site.icon != blank %}
+  <link rel="shortcut icon" href="{{ site.icon | prepend: '/assets/img/' | relative_url | bust_file_cache}}">
+{% endif %}
+<link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url | bust_css_cache }}">
+<link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
+
+<!-- Dark Mode -->
+{% if site.enable_darkmode %}
+  <link
+    defer
     rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
-  />
-  
-  <style>
-    /* Apple 风格简洁设计基础样式示例 */
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-        Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-      background: #f5f7fa;
-      color: #1d1d1f;
-      line-height: 1.6;
-      margin: 0;
-      padding: 0;
-    }
-    header {
-      background: #fff;
-      box-shadow: 0 1px 3px rgb(0 0 0 / 0.1);
-      padding: 1rem 2rem;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      position: sticky;
-      top: 0;
-      z-index: 100;
-    }
-    header .logo {
-      font-weight: 700;
-      font-size: 1.5rem;
-      color: #0071e3; /* Apple 蓝 */
-      user-select: none;
-    }
-    nav a {
-      color: #1d1d1f;
-      margin-left: 1.5rem;
-      text-decoration: none;
-      font-weight: 500;
-      transition: color 0.3s ease;
-    }
-    nav a:hover {
-      color: #0071e3;
-    }
-    main {
-      max-width: 900px;
-      margin: 2rem auto;
-      padding: 0 1rem;
-    }
-    footer {
-      text-align: center;
-      padding: 1rem;
-      color: #6e6e73;
-      font-size: 0.9rem;
-      border-top: 1px solid #e1e1e1;
-      margin-top: 3rem;
-    }
-  </style>
-</head>
+    href="{{ '/assets/css/jekyll-pygments-themes-native.css' | relative_url | bust_file_cache }}"
+    media="none"
+    id="highlight_theme_dark"
+  >
+  <script src="{{ '/assets/js/theme.js' | relative_url | bust_file_cache }}"></script>
+{% endif %}
 
-<body>
-  <header data-aos="fade-down" data-aos-duration="800">
-    <div class="logo">{{ site.title }}</div>
-    <nav>
-      <a href="{{ '/' | relative_url }}">Home</a>
-      <a href="{{ '/about/' | relative_url }}">About</a>
-      <a href="{{ '/publications/' | relative_url }}">Publications</a>
-      <a href="{{ '/contact/' | relative_url }}">Contact</a>
-    </nav>
-  </header>
+<!-- GeoJSON support via Leaflet -->
+{% if page.map %}
+  <link
+    defer
+    rel="stylesheet"
+    href="https://unpkg.com/leaflet@{{ site.leaflet.version }}/dist/leaflet.css"
+    integrity="{{ site.leaflet.integrity.css }}"
+    crossorigin=""
+  >
+{% endif %}
 
-  <main data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
-    {{ content }}
-  </main>
+<!-- diff2html -->
+{% if page.code_diff %}
+  <link
+    defer
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/highlight.js@{{ site.highlightjs.version }}/styles/github.min.css"
+    integrity="{{ site.highlightjs.integrity.css.light }}"
+    crossorigin="anonymous"
+    media="screen and (prefers-color-scheme: light)"
+  >
+  <link
+    defer
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/highlight.js@{{ site.highlightjs.version }}/styles/github-dark.min.css"
+    integrity="{{ site.highlightjs.integrity.css.dark }}"
+    crossorigin="anonymous"
+    media="screen and (prefers-color-scheme: dark)"
+  >
+  <link
+    defer
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/diff2html@{{ site.diff2html.version }}/bundles/css/diff2html.min.css"
+    integrity="{{ site.diff2html.integrity.css }}"
+    crossorigin="anonymous"
+  >
+{% endif %}
 
-  <footer data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
-    &copy; {{ site.time | date: '%Y' }} {{ site.author.name }}. All rights reserved.
-  </footer>
+{% if page.images %}
+  <!-- Image comparison slider -->
+  {% if page.images.compare %}
+    <link
+      defer
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/img-comparison-slider@{{ site.img-comparison-slider.version }}/dist/styles.min.css"
+    >
+  {% endif %}
+  <!-- Image slider -->
+  {% if page.images.slider %}
+    <link
+      defer
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@{{ site.swiper.version }}/swiper-bundle.min.css"
+      integrity="{{ site.swiper.integrity.css }}"
+      crossorigin="anonymous"
+    >
+  {% endif %}
+{% endif %}
 
-  <!-- AOS 动画脚本 -->
-  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-  <script>
-    AOS.init({
-      once: true,
-      easing: 'ease-out-cubic',
-      duration: 800,
-    });
-  </script>
-</body>
-</html>
+{% if page.tikzjax %}
+  <link defer rel="stylesheet" type="text/css" href="https://tikzjax.com/v1/fonts.css">
+{% endif %}
