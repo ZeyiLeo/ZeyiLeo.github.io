@@ -6,7 +6,6 @@ subtitle: LI Varadize ZEYI — <a href="https://www.hkbu.edu.hk" class="subtitle
 
 profile:
   align: right
-  image: /assets/img/indoor_img/IMG_1258.JPG  # ✅ 路径修正
   image_circular: false
   more_info: >
     <p>13324004000</p>
@@ -42,7 +41,7 @@ social: true
 <div class="about-container" data-aos="fade-up">
   <div class="about-text" data-aos="fade-right">
     <p>
-      This section can include more personal insights, current projects, or featured work. You can customize it freely or remove it.
+     
     </p>
   </div>
   <div class="about-photo" data-aos="fade-left">
