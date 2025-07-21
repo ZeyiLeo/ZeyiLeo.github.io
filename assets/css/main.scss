@@ -18,32 +18,3 @@ $max-content-width: {{ site.max_width }};
   "font-awesome/solid",
   "font-awesome/regular"
 ;
-.about-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 2rem;
-  align-items: center;
-  padding: 3rem 1rem;
-  max-width: 1000px;
-  margin: auto;
-}
-
-.profile-pic {
-  border-radius: 1.5rem;
-  width: 250px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-}
-
-.university {
-  font-size: 1.25rem;
-  color: #007aff; // Apple 蓝色
-  margin-bottom: 1rem;
-}
-
-.contact-info {
-  font-family: Menlo, Monaco, monospace;
-  font-size: 0.9rem;
-  color: #333;
-  margin-top: 1rem;
-}
