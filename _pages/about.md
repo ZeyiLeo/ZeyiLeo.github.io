@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='https://www.hku.hk/'>Hong Kong University</a>. Address. Contacts. Moto. Etc.
+subtitle: <a href='https://www.hku.hk/'>Hong Kong University</a>. The University of Hong Kong, Pokfulam, Hong Kong
 
 profile:
   align: right
