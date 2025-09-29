@@ -9,9 +9,10 @@ profile:
   image: 02.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>555 yoooooour office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+    <p>+852 6943 8310</p>
+    <p>+86 133 2400 4000</p>
+    <p>HongKong SAR</p>
+    <p>zeyileo@connect.hku.hk</p>
 
 news: true # includes a list of news items
 latest_posts: true # includes a list of the newest posts
