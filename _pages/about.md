@@ -20,7 +20,7 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
-Hi I am a student from HongKong University, studying in the LKS med school.Yet I also hold lots of other skills including coding, data analyzing, marketing and communicating. Maenwhile, I have interest in various fields and always seeking for chances to explore my horizon.
+Hi I am a student from HongKong University, recently working in the LKS med school.Yet, I am also excel in lots of other skills including coding, data analyzing, marketing and communicating. Maenwhile, I have interest in various fields and always seeking for chances to explore my horizon.
 
 You will find part of my info through my web and plaese feel free to connect me.
 
