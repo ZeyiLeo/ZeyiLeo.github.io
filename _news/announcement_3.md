@@ -10,7 +10,7 @@ HKU Med social SA is a team to support our faculty communication related works l
 
 ---
 
-Jean shorts raw denim Vice normcore, art party High Life PBR skateboard stumptown vinyl kitsch. Four loko meh 8-bit, tousled banh mi tilde forage Schlitz dreamcatcher twee 3 wolf moon. Chambray asymmetrical paleo salvia, sartorial umami four loko master cleanse drinking vinegar brunch. <a href="https://www.pinterest.com">Pinterest</a> DIY authentic Schlitz, hoodie Intelligentsia butcher trust fund brunch shabby chic Kickstarter forage flexitarian. Direct trade <a href="https://en.wikipedia.org/wiki/Cold-pressed_juice">cold-pressed</a> meggings stumptown plaid, pop-up taxidermy. Hoodie XOXO fingerstache scenester Echo Park. Plaid ugh Wes Anderson, freegan pug selvage fanny pack leggings pickled food truck DIY irony Banksy.
+We worked as the HKU Med social SA team to shoot on the video on our recently opened canteens at our faculty. As there was really few food court to grab lunch or dinner at LKS faculty of Med, there is a saying in Cantonese which is Sassoon mo ye sik which translated into English is there is no food to eat in sassoon road at Medical school. Yet, to resolve this problem our faculty gathered several canteens. Then, our group desided to shoot for that serious of videos for social media to help others get more infomation on that.
 
 #### Hipster list
 
