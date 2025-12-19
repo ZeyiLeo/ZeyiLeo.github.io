@@ -6,7 +6,7 @@ inline: false
 related_posts: false
 ---
 
-Announcements and news can be much longer than just quick inline posts. In fact, they can have all the features available for the standard blog posts. See below.
+HKU Med social SA is a team to support our faculty communication related works like working on instagram and other social media.As a social student ambassador at HKU Med, I acted as various roles to support my team. 
 
 ---
 
