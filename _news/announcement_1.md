@@ -6,7 +6,8 @@ inline: false
 related_posts: false
 ---
 
-Announcements and news can be much longer than just quick inline posts. In fact, they can have all the features available for the standard blog posts. See below.
+> The spring breeze turns the page, and civilization is symphonic.On April 22nd, the third “Reading Spring” event of the Global Times was held at the Embassy of Colombia in China.This event is the first event of the ”Sino-Latin American Literature Salon", which aims to enhance the exchange of civilizations and mutual learning between China and Latin American countries.A number of well-known writers and cultural figures from China and Colombia have jointly embarked on a journey of Sino-Latin literary dialogue and civilization exchange and mutual appreciation across mountains and seas.
+> —Global Times
 
 ---
 
