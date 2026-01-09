@@ -20,7 +20,7 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
-Hi I am a student from The Univeristy of HongKong, recently studying in the LKS med school.Yet, I am also excel in lots of other skills including marketing, coding, data analyzing and communicating. I am also quite experienced in bilingual broadcasting. I have hosted various evenets.Maenwhile, I have interest in various fields and always seeking for chances to explore.
+Hi I am a student from The Univeristy of HongKong, recently studying in the LKS med school.Yet, I am also excel in lots of other skills including marketing, coding, data analyzing and communicating. I am also quite experienced in bilingual broadcasting and have hosted various evenets.Maenwhile, I have interest in various fields and always seeking for chances to explore.
 
 I am recently focusing on global health and humanlity issues, health finance and marketing. At the same time, I am also leading a group in global eye health care projects based on the support of Orbis. Please connect me if there is any thing related to my fields and I would be more than pleased to work with you.
 
