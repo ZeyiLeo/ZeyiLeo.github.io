@@ -1,1 +1,0 @@
-Ziqi has been focusing on equity products and solution businesses. She joined HSBC as a graduate analyst in Global Markets, and gained hands-on experience in fixed incomes and equities across sales and trading. She then moved on to Goldman Sachs and specializes in strategic equity products.
