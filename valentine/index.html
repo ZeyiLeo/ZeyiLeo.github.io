@@ -1,30 +1,28 @@
 <!DOCTYPE html>
 <html lang="zh">
 <head>
-<meta charset="UTF-8"/>
-<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
-<title>feifei happy Valentine Day</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>情人节小问 💕</title>
 
 <style>
 body{
 margin:0;
 height:100vh;
-background:linear-gradient(135deg,#ffebee 0%,#fffde7 100%);
-font-family:'Segoe UI',system-ui,sans-serif;
 display:flex;
 flex-direction:column;
-align-items:center;
 justify-content:center;
-color:#d32f2f;
+align-items:center;
+font-family:-apple-system,BlinkMacSystemFont,"Segoe UI";
+background:linear-gradient(135deg,#ffebee,#fffde7);
 overflow:hidden;
-position:relative;
+color:#d32f2f;
 }
 
 h1{
-font-size:3.2rem;
-margin:30px;
+font-size:3rem;
 text-align:center;
-text-shadow:2px 2px 12px rgba(255,82,82,.4);
+margin:40px;
 animation:pulse 2s infinite;
 }
 
@@ -34,114 +32,97 @@ animation:pulse 2s infinite;
 }
 
 button{
-font-size:2.2rem;
-padding:22px 65px;
+font-size:2rem;
+padding:20px 60px;
 border:none;
 border-radius:70px;
 cursor:pointer;
+position:fixed;
 transition:.25s;
-box-shadow:0 12px 30px rgba(255,64,129,.3);
-white-space:nowrap;
 }
 
 #yes{
-position:fixed;
+background:#ff4081;
+color:white;
 left:50%;
 top:60%;
 transform:translate(-50%,-50%);
-background:linear-gradient(135deg,#ff4081 0%,#f50057 100%);
-color:white;
 z-index:10;
 }
 
-#yes:hover{
-transform:translate(-50%,-50%) scale(1.12);
-}
-
 #no{
-position:fixed;
+background:#90a4ae;
+color:white;
 left:50%;
 top:60%;
 transform:translate(-50%,-50%);
-background:linear-gradient(135deg,#90a4ae 0%,#78909c 100%);
-color:white;
-z-index:5;
 }
 
-.heart-bg{
+.heart{
 position:absolute;
-font-size:3rem;
-opacity:.5;
-animation:float 10s infinite ease-in-out;
-pointer-events:none;
+font-size:2rem;
+animation:float 8s linear infinite;
+opacity:.6;
 }
 
 @keyframes float{
-0%,100%{transform:translateY(0) rotate(0);opacity:.5}
-50%{transform:translateY(-70px) rotate(20deg);opacity:1}
+0%{transform:translateY(0)}
+100%{transform:translateY(-100vh)}
 }
 </style>
 </head>
 
 <body>
 
-<h1>洞洞鞋战士<br>你要跟我一起过情人节嘛？😘</h1>
+<h1>feifei<br>要不要跟我一起过情人节嘛 😌</h1>
 
-<button id="yes" onclick="window.location.href='yes.html'">要啊～</button>
+<button id="yes">要啊～</button>
 <button id="no">不要...</button>
 
 <script>
-const noBtn=document.getElementById('no');
 const yesBtn=document.getElementById('yes');
+const noBtn=document.getElementById('no');
 
 let yesScale=1;
 
 const texts=[
-"再想想嘛...",
-"别点我😭",
+"再想想嘛",
+"你确定嘛",
+"别点我😳",
 "我害羞了",
 "真的不要吗",
-"你确定？？",
-"点不到的😏",
-"再试试～"
+"再试试？",
+"你抓不到的"
 ];
 
 function shake(){
 document.body.animate(
 [
 {transform:'translateX(0)'},
-{transform:'translateX(-6px)'},
-{transform:'translateX(6px)'},
+{transform:'translateX(-5px)'},
+{transform:'translateX(5px)'},
 {transform:'translateX(0)'}
 ],
-{duration:150}
+{duration:120}
 );
 }
 
 function moveNo(){
 
 const yesRect=yesBtn.getBoundingClientRect();
-const safeRadius=Math.max(yesRect.width,yesRect.height)*1.6;
+const safe=Math.max(yesRect.width,yesRect.height)*1.6;
 
-const yesCenterX=yesRect.left+yesRect.width/2;
-const yesCenterY=yesRect.top+yesRect.height/2;
-
-const btnWidth=noBtn.offsetWidth;
-const btnHeight=noBtn.offsetHeight;
-
-let newLeft,newTop,distance;
+let newLeft,newTop,dist;
 
 do{
+newLeft=Math.random()*(window.innerWidth-noBtn.offsetWidth);
+newTop=Math.random()*(window.innerHeight-noBtn.offsetHeight);
 
-newLeft=Math.random()*(window.innerWidth-btnWidth);
-newTop=Math.random()*(window.innerHeight-btnHeight);
+const dx=newLeft-yesRect.left;
+const dy=newTop-yesRect.top;
+dist=Math.hypot(dx,dy);
 
-const noCenterX=newLeft+btnWidth/2;
-const noCenterY=newTop+btnHeight/2;
-
-distance=Math.hypot(noCenterX-yesCenterX,noCenterY-yesCenterY);
-
-}while(distance<safeRadius);
+}while(dist<safe);
 
 noBtn.style.left=newLeft+'px';
 noBtn.style.top=newTop+'px';
@@ -155,21 +136,30 @@ shake();
 }
 
 noBtn.addEventListener('mouseenter',moveNo);
-
 noBtn.addEventListener('click',e=>{
 e.preventDefault();
 moveNo();
 });
 
+let holdTimer;
+yesBtn.addEventListener('mousedown',()=>{
+holdTimer=setTimeout(()=>{
+window.location.href='yes.html';
+},1000);
+});
+
+yesBtn.addEventListener('mouseup',()=>{
+clearTimeout(holdTimer);
+});
+
 setInterval(()=>{
 const heart=document.createElement('div');
-heart.className='heart-bg';
+heart.className='heart';
 heart.textContent=Math.random()>0.5?'💖':'💕';
 heart.style.left=Math.random()*100+'vw';
-heart.style.animationDuration=(Math.random()*4+8)+'s';
 document.body.appendChild(heart);
-setTimeout(()=>heart.remove(),12000);
-},900);
+setTimeout(()=>heart.remove(),8000);
+},800);
 </script>
 
 </body>
