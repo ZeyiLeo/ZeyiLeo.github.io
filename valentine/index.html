@@ -29,14 +29,13 @@
       0%, 100% { transform: scale(1); }
       50% { transform: scale(1.05); }
     }
-    .buttons {
+    .buttons-container {
       position: relative;
-      margin-top: 60px;
-      width: 100%;
-      height: 50vh; /* 给按钮足够活动空间 */
+      width: 500px;
+      height: 200px;
       display: flex;
-      justify-content: center;
       align-items: center;
+      justify-content: center;
     }
     button {
       font-size: 2.2rem;
@@ -47,14 +46,18 @@
       transition: all 0.3s ease;
       box-shadow: 0 12px 30px rgba(255, 64, 129, 0.3);
       position: absolute;
+      white-space: nowrap;
     }
     #yes {
       background: linear-gradient(135deg, #ff4081 0%, #f50057 100%);
       color: white;
       z-index: 10;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
     }
     #yes:hover {
-      transform: scale(1.15) rotate(2deg);
+      transform: translate(-50%, -50%) scale(1.12) rotate(2deg);
       box-shadow: 0 15px 40px rgba(255, 64, 129, 0.5);
     }
     #no {
@@ -63,11 +66,10 @@
       left: 50%;
       top: 50%;
       transform: translate(-50%, -50%);
-      min-width: 180px; /* 防止缩得太小无法点击 */
-      min-height: 70px;
+      z-index: 5;
     }
     #no:active {
-      transform: translate(-50%, -50%) scale(0.92);
+      transform: translate(-50%, -50%) scale(0.95);
     }
     .heart-bg {
       position: absolute;
@@ -86,52 +88,76 @@
 
   <h1>洞洞鞋战士<br>你要跟我一起过情人节嘛？😘</h1>
 
-  <div class="buttons">
+  <div class="buttons-container">
     <button id="yes" onclick="window.location.href='yes.html'">要啊～</button>
     <button id="no">不要...</button>
   </div>
 
   <script>
     const noBtn = document.getElementById('no');
-    let scale = 1;
-    const margin = 80; // 安全边距，确保不贴边
+    const yesBtn = document.getElementById('yes');
+    const container = document.querySelector('.buttons-container');
+
+    // 获取“是”按钮的中心坐标和半径（用于避开）
+    function getYesSafeZone() {
+      const rect = yesBtn.getBoundingClientRect();
+      const centerX = rect.left + rect.width / 2;
+      const centerY = rect.top + rect.height / 2;
+      const safeRadius = Math.max(rect.width, rect.height) * 1.4; // 安全距离，比按钮大一点
+      return { centerX, centerY, safeRadius };
+    }
 
     function moveNo() {
-      const containerWidth = window.innerWidth;
-      const containerHeight = window.innerHeight;
+      const containerRect = container.getBoundingClientRect();
+      const { centerX, centerY, safeRadius } = getYesSafeZone();
 
+      // 按钮自身尺寸
       const btnWidth = noBtn.offsetWidth;
       const btnHeight = noBtn.offsetHeight;
 
-      const maxLeft = containerWidth - btnWidth - margin * 2;
-      const maxTop = containerHeight - btnHeight - margin * 2;
+      // 活动范围：容器内，留边距
+      const margin = 40;
+      const maxLeft = containerRect.width - btnWidth - margin * 2;
+      const maxTop = containerRect.height - btnHeight - margin * 2;
 
-      const newLeft = margin + Math.random() * maxLeft;
-      const newTop = margin + Math.random() * maxTop;
+      let newLeft, newTop, attempts = 0;
+      const maxAttempts = 50; // 防止死循环
+
+      do {
+        newLeft = margin + Math.random() * maxLeft;
+        newTop = margin + Math.random() * maxTop;
+
+        // 计算新位置中心与“是”中心的距离
+        const noCenterX = containerRect.left + newLeft + btnWidth / 2;
+        const noCenterY = containerRect.top + newTop + btnHeight / 2;
+        const distance = Math.hypot(noCenterX - centerX, noCenterY - centerY);
+
+        attempts++;
+        if (attempts > maxAttempts) {
+          // 极端情况，强制移远一点
+          newLeft = margin + Math.random() * (maxLeft / 2);
+          newTop = margin + Math.random() * maxTop;
+          break;
+        }
+      } while (distance < safeRadius);
 
       noBtn.style.left = newLeft + 'px';
       noBtn.style.top = newTop + 'px';
-      noBtn.style.transform = 'none'; // 移除translate，改用left/top定位
-
-      // 轻微缩小
-      scale = Math.max(0.6, scale - 0.08);
-      noBtn.style.transform = `scale(${scale})`;
-      noBtn.style.padding = `${22 * scale}px ${65 * scale}px`;
-      noBtn.style.fontSize = `${2.2 * scale}rem`;
+      noBtn.style.transform = 'none';
     }
 
     noBtn.addEventListener('click', (e) => {
-      e.preventDefault(); // 防止任何默认行为
+      e.preventDefault();
       moveNo();
     });
 
-    // hover时轻微抖动反馈（可选增强互动感）
+    // hover 轻微反馈
     noBtn.addEventListener('mouseenter', () => {
-      noBtn.style.transform = `scale(${scale * 1.08}) rotate(3deg)`;
+      noBtn.style.transform = 'scale(1.06)';
     });
 
     noBtn.addEventListener('mouseleave', () => {
-      noBtn.style.transform = `scale(${scale})`;
+      noBtn.style.transform = 'none';
     });
 
     // 随机飘爱心
