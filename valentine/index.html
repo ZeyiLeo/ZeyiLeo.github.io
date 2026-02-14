@@ -3,116 +3,106 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>情人节小游戏 🎉</title>
+  <title>情人节小问</title>
   <style>
     body {
       margin: 0;
       height: 100vh;
-      font-family: system-ui, -apple-system, sans-serif;
-      background: linear-gradient(135deg, #ffe4e1 0%, #fff0f5 100%);
+      background: linear-gradient(135deg, #ffecb3 0%, #ffccbc 100%);
+      font-family: system-ui, sans-serif;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
       color: #333;
       overflow: hidden;
-      position: relative;
     }
-    h1 { font-size: 3rem; margin: 20px; color: #ff6b6b; text-shadow: 1px 1px 5px rgba(255,107,107,0.3); }
-    h2 { font-size: 1.8rem; margin: 15px; color: #555; }
+    h1 {
+      font-size: 3.2rem;
+      margin: 20px;
+      text-align: center;
+      color: #d81b60;
+      text-shadow: 2px 2px 10px rgba(0,0,0,0.2);
+    }
     .buttons {
       position: relative;
+      margin-top: 50px;
       display: flex;
-      align-items: center;
       gap: 100px;
-      margin-top: 40px;
     }
     button {
-      font-size: 1.6rem;
-      padding: 14px 45px;
+      font-size: 2rem;
+      padding: 20px 60px;
       border: none;
-      border-radius: 999px;
+      border-radius: 60px;
       cursor: pointer;
-      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
-      transition: transform 0.2s;
+      transition: all 0.3s;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.2);
     }
     #yes {
-      background: #ff6b6b;
+      background: #f06292;
       color: white;
     }
-    #yes:hover { transform: scale(1.08); }
-    #no-container {
+    #yes:hover { transform: scale(1.12); background: #ec407a; }
+    #no {
+      background: #78909c;
+      color: white;
       position: absolute;
       left: 50%;
-      top: 0;
       transform: translateX(-50%);
-      display: flex;
-      align-items: center;
-      transition: all 0.45s ease-out;
+      transition: all 0.4s ease;
     }
-    #no {
-      background: #a0a0a0;
-      color: white;
-      margin-left: 12px;
-    }
-    #character {
-      width: 65px;
-      height: 65px;
-      background: url('https://emojiapi.dev/api/v1/bear/512.png') no-repeat center/cover;
-      /* 或者用本地图片：url('./cute-bear.png') */
-    }
-    .heart {
+    .heart-bg {
       position: absolute;
-      font-size: 2rem;
-      pointer-events: none;
-      animation: float 8s infinite ease-in-out;
+      font-size: 3rem;
       opacity: 0.6;
+      animation: float 12s infinite ease-in-out;
+      pointer-events: none;
     }
     @keyframes float {
       0%,100% { transform: translateY(0) rotate(0deg); }
-      50% { transform: translateY(-35px) rotate(12deg); }
+      50% { transform: translateY(-60px) rotate(15deg); }
     }
   </style>
 </head>
 <body>
 
-  <h1>嘿～情人节到了</h1>
-  <h2>要不要...跟我一起过呀？😏</h2>
+  <h1>洞洞鞋战士<br>你要跟我一起过情人节嘛？</h1>
 
   <div class="buttons">
-    <button id="yes" onclick="yesClick()">嗯，好啊～</button>
-    <div id="no-container">
-      <div id="character"></div>
-      <button id="no">不要吧...</button>
-    </div>
+    <button id="yes" onclick="window.location.href='yes.html'">要啊～</button>
+    <button id="no">不要...</button>
   </div>
 
   <script>
-    const noContainer = document.getElementById('no-container');
-    noContainer.addEventListener('mouseover', () => {
-      const maxX = window.innerWidth - 280;
-      const maxY = window.innerHeight - 180;
+    const noBtn = document.getElementById('no');
+    let scale = 1;
+
+    noBtn.addEventListener('mouseover', () => {
+      const maxX = window.innerWidth - noBtn.offsetWidth - 40;
+      const maxY = window.innerHeight - noBtn.offsetHeight - 40;
       const x = Math.random() * maxX;
       const y = Math.random() * maxY;
-      noContainer.style.left = x + 'px';
-      noContainer.style.top = y + 'px';
-      noContainer.style.transform = 'none';
+      noBtn.style.left = x + 'px';
+      noBtn.style.top = y + 'px';
+      noBtn.style.transform = 'translate(0,0)';
+
+      // 越追越小（最小0.4倍）
+      scale = Math.max(0.4, scale - 0.08);
+      noBtn.style.transform = `scale(${scale})`;
+      noBtn.style.padding = `${20 * scale}px ${60 * scale}px`;
+      noBtn.style.fontSize = `${2 * scale}rem`;
     });
 
-    function yesClick() {
-      alert("哈哈，选这个就对了！\n那今晚...一起吃个饭/看电影？😉");
-      // 可以改成你们的具体计划，比如“一起去喝奶茶？”或“等我消息哦～”
-    }
-
-    // 轻飘飘的心，美化但不夸张
+    // 随机飘爱心背景
     setInterval(() => {
       const heart = document.createElement('div');
-      heart.className = 'heart';
-      heart.innerHTML = '💕';
+      heart.className = 'heart-bg';
+      heart.textContent = '❤️';
       heart.style.left = Math.random() * 100 + 'vw';
-      heart.style.animationDuration = (Math.random() * 5 + 6) + 's';
+      heart.style.animationDuration = (Math.random() * 6 + 8) + 's';
       document.body.appendChild(heart);
-      setTimeout(() => heart.remove(), 12000);
+      setTimeout(() => heart.remove(), 15000);
     }, 1200);
   </script>
 
