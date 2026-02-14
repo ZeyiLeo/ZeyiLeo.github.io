@@ -9,7 +9,7 @@
       margin: 0;
       height: 100vh;
       overflow: hidden;
-      background: radial-gradient(ellipse at bottom, #2c3e50 0%, #0d1117 100%);
+      background: radial-gradient(ellipse at bottom, #0f0c29 0%, #302b63 50%, #24243e 100%);
       font-family: 'Segoe UI', system-ui, sans-serif;
       color: #fff;
       display: flex;
@@ -24,25 +24,31 @@
       width: 100%; height: 100%;
       z-index: 1;
     }
-    h1 {
-      font-size: 4.5rem;
+    .text-container {
       z-index: 10;
-      text-shadow: 0 0 25px #ff4081, 0 0 50px #f50057;
+      text-align: center;
+      pointer-events: none;
+    }
+    h1 {
+      font-size: 5rem;
+      margin: 0;
+      text-shadow: 0 0 30px #ff69b4, 0 0 60px #ff1493;
       animation: glow 4s infinite alternate;
     }
     p {
-      font-size: 2rem;
-      z-index: 10;
-      margin-top: 25px;
-      text-shadow: 0 0 18px rgba(255,255,255,0.8);
-      animation: fadeIn 2s ease-in;
+      font-size: 2.8rem;
+      font-style: italic;
+      margin: 20px 0 0;
+      font-weight: 300;
+      text-shadow: 0 0 20px rgba(255, 105, 180, 0.8);
+      animation: fadeIn 3s ease-out;
     }
     @keyframes glow {
-      from { text-shadow: 0 0 15px #ff4081, 0 0 30px #f50057; }
-      to   { text-shadow: 0 0 40px #ff4081, 0 0 80px #f50057; }
+      from { text-shadow: 0 0 20px #ff69b4, 0 0 40px #ff1493; }
+      to   { text-shadow: 0 0 50px #ff69b4, 0 0 100px #ff1493; }
     }
     @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(20px); }
+      from { opacity: 0; transform: translateY(30px); }
       to   { opacity: 1; transform: translateY(0); }
     }
   </style>
@@ -51,8 +57,10 @@
 
   <canvas id="canvas"></canvas>
 
-  <h1>耶～ Feifei 一起过啦！</h1>
-  <p>洞洞鞋战士最棒 ❤️ 鼠标动动，看星星和爱心围着你的名字转～</p>
+  <div class="text-container">
+    <h1>耶～一起过啦！</h1>
+    <p>Happy Valentine's Day</p>
+  </div>
 
   <script>
     const canvas = document.getElementById('canvas');
@@ -65,60 +73,69 @@
       canvas.height = window.innerHeight;
     });
 
-    // 粒子类（星星、心、闪光混合）
     class Particle {
-      constructor(type) {
-        this.type = type; // 'star', 'heart', 'spark'
+      constructor() {
         this.reset();
       }
-      reset() {
+      reset(isHeart = false) {
         this.x = Math.random() * canvas.width;
         this.y = Math.random() * canvas.height;
-        this.size = Math.random() * 3 + 1;
-        this.speed = Math.random() * 0.4 + 0.2;
+        this.size = Math.random() * 2.5 + 0.8;
+        this.speed = Math.random() * 0.4 + 0.15;
         this.angle = Math.random() * Math.PI * 2;
-        this.color = this.type === 'heart' ? '#ff4081' : (this.type === 'spark' ? '#ffd54f' : '#ffffff');
-        this.opacity = Math.random() * 0.5 + 0.5;
+        this.type = isHeart ? 'heart' : (Math.random() > 0.6 ? 'star' : 'spark');
+        this.color = this.type === 'heart' ? '#ff69b4' : (this.type === 'spark' ? '#ffd54f' : '#e0f7ff');
+        this.opacity = Math.random() * 0.4 + 0.6;
       }
-      update(mouseX, mouseY) {
-        const dx = mouseX - this.x;
-        const dy = mouseY - this.y;
-        const dist = Math.sqrt(dx*dx + dy*dy);
-        if (dist < 250) {
-          this.x += dx * 0.001;
-          this.y += dy * 0.001;
+      update(mouseX, mouseY, heartCenterX, heartCenterY) {
+        // 向大心中心轻微吸引（让粒子倾向于填充心形）
+        const dx = heartCenterX - this.x;
+        const dy = heartCenterY - this.y;
+        const dist = Math.hypot(dx, dy);
+        if (dist > 50) {
+          this.x += dx * 0.0005;
+          this.y += dy * 0.0005;
         }
+
+        // 鼠标扰动
+        const mdx = mouseX - this.x;
+        const mdy = mouseY - this.y;
+        const mDist = Math.hypot(mdx, mdy);
+        if (mDist < 220) {
+          this.x += mdx * 0.001;
+          this.y += mdy * 0.001;
+        }
+
+        // 正常漂移
         this.x += Math.cos(this.angle) * this.speed;
-        this.y += Math.sin(this.angle) * this.speed + 0.15;
+        this.y += Math.sin(this.angle) * this.speed * 0.8;
         if (this.x < 0 || this.x > canvas.width || this.y < 0 || this.y > canvas.height) {
-          this.reset();
+          this.reset(this.type === 'heart');
         }
       }
       draw() {
         ctx.save();
-        ctx.globalAlpha = this.opacity + Math.random() * 0.2;
+        ctx.globalAlpha = this.opacity + Math.sin(Date.now() * 0.001 + this.x) * 0.2;
         ctx.fillStyle = this.color;
         ctx.beginPath();
         if (this.type === 'heart') {
-          ctx.moveTo(this.x, this.y + this.size * 0.8);
-          ctx.bezierCurveTo(this.x - this.size * 1.2, this.y - this.size * 0.5,
-                            this.x - this.size * 0.6, this.y - this.size * 1.2,
-                            this.x, this.y - this.size);
-          ctx.bezierCurveTo(this.x + this.size * 0.6, this.y - this.size * 1.2,
-                            this.x + this.size * 1.2, this.y - this.size * 0.5,
-                            this.x, this.y + this.size * 0.8);
+          const s = this.size;
+          ctx.moveTo(this.x, this.y + s * 0.8);
+          ctx.bezierCurveTo(this.x - s*1.1, this.y - s*0.4, this.x - s*0.7, this.y - s*1.1, this.x, this.y - s);
+          ctx.bezierCurveTo(this.x + s*0.7, this.y - s*1.1, this.x + s*1.1, this.y - s*0.4, this.x, this.y + s*0.8);
         } else if (this.type === 'spark') {
-          ctx.arc(this.x, this.y, this.size * 0.5, 0, Math.PI * 2); // 小闪光点
+          ctx.arc(this.x, this.y, this.size * 0.6, 0, Math.PI * 2);
         } else {
-          // 星星：简单十字星
+          // 星星：十字
           ctx.moveTo(this.x - this.size, this.y);
           ctx.lineTo(this.x + this.size, this.y);
           ctx.moveTo(this.x, this.y - this.size);
           ctx.lineTo(this.x, this.y + this.size);
           ctx.strokeStyle = this.color;
-          ctx.lineWidth = 1;
+          ctx.lineWidth = 1.2;
           ctx.stroke();
-          return; // 不fill
+          ctx.restore();
+          return;
         }
         ctx.fill();
         ctx.restore();
@@ -126,9 +143,16 @@
     }
 
     const particles = [];
-    const types = ['star', 'heart', 'spark'];
-    for (let i = 0; i < 250; i++) { // 更多粒子
-      particles.push(new Particle(types[Math.floor(Math.random() * types.length)]));
+    for (let i = 0; i < 300; i++) {
+      particles.push(new Particle());
+    }
+
+    // 额外的心形粒子（专门填充大心）
+    const heartParticles = [];
+    for (let i = 0; i < 150; i++) {
+      const p = new Particle();
+      p.reset(true); // force heart type
+      heartParticles.push(p);
     }
 
     let mouseX = canvas.width / 2;
@@ -139,68 +163,71 @@
       mouseY = e.clientY;
     });
 
-    // 点击爆爱心
+    // 点击爆更多小爱心
     canvas.addEventListener('click', (e) => {
-      for (let i = 0; i < 30; i++) {
-        const p = new Particle('heart');
+      for (let i = 0; i < 40; i++) {
+        const p = new Particle();
+        p.reset(true);
         p.x = e.clientX;
         p.y = e.clientY;
-        p.speed = Math.random() * 4 + 3;
+        p.speed = Math.random() * 5 + 2;
         p.angle = Math.random() * Math.PI * 2;
         particles.push(p);
       }
     });
 
-    // 专属小巧思：粒子拼“Feifei” (简单路径动画，每10s触发一次)
-    let feifeiParticles = [];
-    function createFeifei() {
+    // 大心形中心坐标（屏幕中心偏上）
+    const heartCenterX = canvas.width / 2;
+    const heartCenterY = canvas.height / 2 - 80;
+
+    // 每12秒触发一次 Feifei 名字粒子聚拢
+    function triggerFeifei() {
+      // 临时把部分粒子拉到 Feifei 路径
+      const tempParticles = heartParticles.slice(0, 80); // 用80个心粒子拼名字
+      const fontSize = Math.min(120, canvas.width * 0.15);
+      ctx.font = `bold ${fontSize}px serif`;
       const text = 'Feifei';
-      const fontSize = 80;
-      ctx.font = `${fontSize}px serif`;
-      const textMetrics = ctx.measureText(text);
-      const centerX = canvas.width / 2 - textMetrics.width / 2;
-      const centerY = canvas.height / 2;
+      const metrics = ctx.measureText(text);
+      const textX = heartCenterX - metrics.width / 2;
+      const textY = heartCenterY + fontSize / 3;
 
-      // 生成粒子沿文字路径
-      ctx.fillText(text, centerX, centerY);
-      const imageData = ctx.getImageData(centerX, centerY - fontSize, textMetrics.width, fontSize * 1.5);
-      ctx.clearRect(0, 0, canvas.width, canvas.height); // 清空临时绘制
+      // 模拟路径：简单把粒子移向文字位置（实际用更精细采样更好，但简化性能）
+      tempParticles.forEach((p, idx) => {
+        const progress = idx / tempParticles.length;
+        p.targetX = textX + Math.sin(progress * Math.PI * 6) * (metrics.width / 2) * 0.8; // 波浪形分布
+        p.targetY = textY + Math.cos(progress * Math.PI * 4) * (fontSize / 2);
+        p.isTargeting = true;
+      });
 
-      for (let py = 0; py < imageData.height; py += 4) {
-        for (let px = 0; px < imageData.width; px += 4) {
-          if (imageData.data[(py * imageData.width + px) * 4 + 3] > 128) { // 非透明像素
-            const p = new Particle('heart');
-            p.x = centerX + px;
-            p.y = centerY - fontSize + py;
-            p.speed = 0; // 初始静止
-            feifeiParticles.push(p);
-          }
-        }
-      }
-
-      // 动画：粒子从文字位置慢慢扩散
       setTimeout(() => {
-        feifeiParticles.forEach(p => {
-          p.speed = Math.random() * 1 + 0.5;
-          p.angle = Math.random() * Math.PI * 2;
+        tempParticles.forEach(p => {
+          p.isTargeting = false;
+          p.speed = Math.random() * 1.2 + 0.6; // 扩散
         });
-        setTimeout(() => feifeiParticles = [], 5000); // 5s后清空
-      }, 3000); // 3s展示文字形状
+      }, 4000); // 展示4秒后扩散
     }
 
-    setInterval(createFeifei, 15000); // 每15s触发一次“Feifei”粒子
+    setInterval(triggerFeifei, 12000);
+    triggerFeifei(); // 首次立即触发
 
     function animate() {
-      ctx.fillStyle = 'rgba(13,17,23,0.1)'; // 柔和拖尾
+      ctx.fillStyle = 'rgba(15, 12, 41, 0.12)'; // 柔和拖尾，营造星空感
       ctx.fillRect(0, 0, canvas.width, canvas.height);
 
-      particles.forEach(p => {
-        p.update(mouseX, mouseY);
+      // 绘制所有粒子
+      heartParticles.forEach(p => {
+        if (p.isTargeting && p.targetX && p.targetY) {
+          const dx = p.targetX - p.x;
+          const dy = p.targetY - p.y;
+          p.x += dx * 0.03;
+          p.y += dy * 0.03;
+        }
+        p.update(mouseX, mouseY, heartCenterX, heartCenterY);
         p.draw();
       });
 
-      feifeiParticles.forEach(p => {
-        p.update(mouseX, mouseY);
+      particles.forEach(p => {
+        p.update(mouseX, mouseY, heartCenterX, heartCenterY);
         p.draw();
       });
 
