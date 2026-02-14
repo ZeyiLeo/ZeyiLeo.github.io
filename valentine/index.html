@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
-<title>Hey Happy Valentine Day feifei 💕</title>
+<title>情人节 💕</title>
 
 <style>
 body{
@@ -16,6 +16,7 @@ align-items:center;
 font-family:-apple-system,BlinkMacSystemFont,"Segoe UI";
 background:linear-gradient(135deg,#ffebee,#fffde7);
 overflow:hidden;
+transition:transform .15s;
 }
 
 h1{
@@ -31,7 +32,7 @@ border:none;
 border-radius:70px;
 cursor:pointer;
 position:fixed;
-transition:.25s;
+transition:.2s;
 }
 
 #yes{
@@ -39,25 +40,27 @@ background:#ff4081;
 color:white;
 left:50%;
 top:60%;
-transform:translate(-50%,-50%);
+transform:translate(-50%,-50%) scale(1);
+z-index:10;
 }
 
 #no{
 background:#90a4ae;
 color:white;
-left:50%;
-top:60%;
+left:70%;
+top:70%;
 transform:translate(-50%,-50%);
+z-index:5;
 }
 
-.msg{
+.tip{
 position:fixed;
 bottom:40px;
 background:white;
 padding:10px 16px;
 border-radius:20px;
 box-shadow:0 5px 15px rgba(0,0,0,.15);
-animation:fade 3s forwards;
+animation:fade 2.5s forwards;
 }
 
 @keyframes fade{
@@ -80,58 +83,81 @@ animation:fade 3s forwards;
 const yes=document.getElementById('yes');
 const no=document.getElementById('no');
 
-let yesScale=1;
-let noClicks=0;
 let startTime=Date.now();
+let holdTimer;
+let holdInterval;
+let scale=1;
+let firstTap=true;
+let vx=0,vy=0;
 
-const texts=[
-"再想想嘛",
-"你确定？",
-"😳",
-"别点我啦",
-"你抓不到的",
-"真的不要？",
-"你是不是其实想点要 😏"
-];
-
+// ====== 工具 ======
 function vibrate(){
-if(navigator.vibrate)navigator.vibrate(20);
+if(navigator.vibrate)navigator.vibrate(15);
 }
 
-function popMsg(t){
+function tip(t){
 const m=document.createElement('div');
-m.className='msg';
+m.className='tip';
 m.textContent=t;
 document.body.appendChild(m);
-setTimeout(()=>m.remove(),3000);
+setTimeout(()=>m.remove(),2500);
 }
 
-function moveNo(){
+// ====== Apple 微倾斜 ======
+document.addEventListener('mousemove',e=>{
+const x=(e.clientX/window.innerWidth-.5)*6;
+const y=(e.clientY/window.innerHeight-.5)*6;
+document.body.style.transform=`rotateY(${x}deg) rotateX(${-y}deg)`;
+});
 
-let x,y;
-do{
-x=Math.random()*(window.innerWidth-no.offsetWidth);
-y=Math.random()*(window.innerHeight-no.offsetHeight);
-}while(Math.hypot(x-window.innerWidth/2,y-window.innerHeight/2)<200);
+// ====== YES 长按机制 ======
+yes.addEventListener('click',()=>{
+if(firstTap){
+tip("要长按才算答应哦 😌");
+firstTap=false;
+}
+});
+
+yes.addEventListener('mousedown',()=>{
+scale=1;
+holdInterval=setInterval(()=>{
+scale+=0.04;
+yes.style.transform=`translate(-50%,-50%) scale(${scale})`;
+},30);
+
+holdTimer=setTimeout(()=>{
+localStorage.setItem("hesitate",Date.now()-startTime);
+window.location.href='yes.html';
+},900);
+});
+
+yes.addEventListener('mouseup',()=>{
+clearTimeout(holdTimer);
+clearInterval(holdInterval);
+yes.style.transform='translate(-50%,-50%) scale(1)';
+});
+
+yes.addEventListener('mouseleave',()=>{
+clearTimeout(holdTimer);
+clearInterval(holdInterval);
+yes.style.transform='translate(-50%,-50%) scale(1)';
+});
+
+// ====== NO 物理逃跑 ======
+function moveNo(){
+vx+=(Math.random()-.5)*220;
+vy+=(Math.random()-.5)*220;
+
+let x=no.offsetLeft+vx*0.02;
+let y=no.offsetTop+vy*0.02;
+
+x=Math.max(0,Math.min(window.innerWidth-no.offsetWidth,x));
+y=Math.max(0,Math.min(window.innerHeight-no.offsetHeight,y));
 
 no.style.left=x+'px';
 no.style.top=y+'px';
 
-yesScale+=0.05;
-yes.style.transform=`translate(-50%,-50%) scale(${yesScale})`;
-
-no.textContent=texts[Math.floor(Math.random()*texts.length)];
-
-noClicks++;
 vibrate();
-
-if(noClicks===4)popMsg("你真的有在认真拒绝吗 😏");
-if(noClicks===10)popMsg("真的不考虑一下嘛");
-
-document.body.animate(
-[{transform:'translateX(0)'},{transform:'translateX(-5px)'},{transform:'translateX(5px)'},{transform:'translateX(0)'}],
-{duration:120}
-);
 }
 
 no.addEventListener('mouseenter',moveNo);
@@ -139,16 +165,6 @@ no.addEventListener('click',e=>{
 e.preventDefault();
 moveNo();
 });
-
-let timer;
-yes.addEventListener('mousedown',()=>{
-timer=setTimeout(()=>{
-localStorage.setItem("hesitate",Date.now()-startTime);
-window.location.href='yes.html';
-},800);
-});
-yes.addEventListener('mouseup',()=>clearTimeout(timer));
-
 </script>
 
 </body>
