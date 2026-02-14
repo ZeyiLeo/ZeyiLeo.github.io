@@ -2,169 +2,147 @@
 <html lang="zh">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1.0">
-<title>feifei 💕</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>已锁定 💘</title>
 
 <style>
 body{
 margin:0;
 height:100vh;
 display:flex;
-flex-direction:column;
 justify-content:center;
 align-items:center;
-font-family:-apple-system,BlinkMacSystemFont,"Segoe UI";
-background:linear-gradient(135deg,#ffebee,#fffde7);
+flex-direction:column;
+font-family:-apple-system,BlinkMacSystemFont;
+background:black;
+color:white;
 overflow:hidden;
-transition:transform .15s;
+transition:background 1.5s ease;
 }
 
 h1{
-font-size:3rem;
+font-size:36px;
+opacity:0;
+transform:translateY(20px);
+transition:1s ease;
 text-align:center;
-margin:40px;
 }
 
-button{
-font-size:2rem;
-padding:20px 60px;
-border:none;
-border-radius:70px;
-cursor:pointer;
-position:fixed;
-transition:.2s;
+p{
+font-size:20px;
+opacity:0;
+transition:1.2s ease;
+text-align:center;
 }
 
-#yes{
-background:#ff4081;
-color:white;
-left:50%;
-top:60%;
-transform:translate(-50%,-50%) scale(1);
-z-index:10;
+.scan{
+font-size:22px;
+opacity:0.9;
+animation:blink 1.2s infinite;
 }
 
-#no{
-background:#90a4ae;
-color:white;
-left:70%;
-top:70%;
-transform:translate(-50%,-50%);
-z-index:5;
+@keyframes blink{
+0%,100%{opacity:0.2;}
+50%{opacity:1;}
 }
 
-.tip{
-position:fixed;
-bottom:40px;
-background:white;
-padding:10px 16px;
-border-radius:20px;
-box-shadow:0 5px 15px rgba(0,0,0,.15);
-animation:fade 2.5s forwards;
+.heart{
+position:absolute;
+font-size:24px;
+animation:explode 2s forwards;
+pointer-events:none;
 }
 
-@keyframes fade{
-0%{opacity:0;transform:translateY(20px)}
-20%{opacity:1}
-80%{opacity:1}
-100%{opacity:0}
+.floatHeart{
+position:absolute;
+font-size:20px;
+opacity:0.6;
+animation:float 8s linear forwards;
+pointer-events:none;
+}
+
+@keyframes explode{
+0%{
+transform:scale(0) translate(0,0);
+opacity:1;
+}
+100%{
+transform:scale(2.5) translate(var(--x),var(--y));
+opacity:0;
+}
+}
+
+@keyframes float{
+0%{
+transform:translateY(0);
+opacity:0;
+}
+20%{opacity:0.7;}
+100%{
+transform:translateY(-200px);
+opacity:0;
+}
 }
 </style>
 </head>
 
 <body>
 
-<h1>feifei 😌<br>要不要一起过情人节</h1>
+<div class="scan">正在确认 feifei 的选择…</div>
 
-<button id="yes">YES!</button>
-<button id="no">No.....</button>
+<h1 id="title">好耶，那我们约会吧 feifei 💕</h1>
+<p id="desc">系统已记录：你刚刚长按的是 YES 😈</p>
 
 <script>
-const yes=document.getElementById('yes');
-const no=document.getElementById('no');
 
-let startTime=Date.now();
-let holdTimer;
-let holdInterval;
-let scale=1;
-let firstTap=true;
-let vx=0,vy=0;
+const scanText=document.querySelector('.scan');
+const title=document.getElementById('title');
+const desc=document.getElementById('desc');
 
-// ====== 工具 ======
-function vibrate(){
-if(navigator.vibrate)navigator.vibrate(15);
+setTimeout(()=>{
+scanText.textContent="匹配成功 ❤️";
+},700);   // 🔥 原来1500 → 加快
+
+setTimeout(()=>{
+document.body.style.background="#ffdee9";
+scanText.style.opacity="0";
+explodeHearts();
+startFloatingHearts();   // ⭐ 新增持续爱心
+},1400);   // 🔥 原来3000 → 加快
+
+setTimeout(()=>{
+title.style.opacity="1";
+title.style.transform="translateY(0)";
+desc.style.opacity="1";
+},2200);   // 🔥 原来4500 → 加快
+
+function explodeHearts(){
+for(let i=0;i<60;i++){
+const heart=document.createElement('div');
+heart.className='heart';
+heart.textContent=Math.random()>0.5?'💖':'💕';
+heart.style.left=window.innerWidth/2+'px';
+heart.style.top=window.innerHeight/2+'px';
+heart.style.setProperty('--x',(Math.random()*600-300)+'px');
+heart.style.setProperty('--y',(Math.random()*600-300)+'px');
+document.body.appendChild(heart);
+setTimeout(()=>heart.remove(),2000);
+}
 }
 
-function tip(t){
-const m=document.createElement('div');
-m.className='tip';
-m.textContent=t;
-document.body.appendChild(m);
-setTimeout(()=>m.remove(),2500);
+// ⭐⭐⭐ 新增：持续随机漂浮爱心（画面会一直活着）
+function startFloatingHearts(){
+setInterval(()=>{
+const heart=document.createElement('div');
+heart.className='floatHeart';
+heart.textContent=Math.random()>0.5?'💖':'💕';
+heart.style.left=Math.random()*100+'vw';
+heart.style.bottom='-20px';
+document.body.appendChild(heart);
+setTimeout(()=>heart.remove(),8000);
+},500);
 }
 
-// ====== Apple 微倾斜 ======
-document.addEventListener('mousemove',e=>{
-const x=(e.clientX/window.innerWidth-.5)*6;
-const y=(e.clientY/window.innerHeight-.5)*6;
-document.body.style.transform=`rotateY(${x}deg) rotateX(${-y}deg)`;
-});
-
-// ====== YES 长按机制 ======
-yes.addEventListener('click',()=>{
-if(firstTap){
-tip("要长按才算答应哦 😌");
-firstTap=false;
-}
-});
-
-yes.addEventListener('mousedown',()=>{
-scale=1;
-holdInterval=setInterval(()=>{
-scale+=0.04;
-yes.style.transform=`translate(-50%,-50%) scale(${scale})`;
-},30);
-
-holdTimer=setTimeout(()=>{
-localStorage.setItem("hesitate",Date.now()-startTime);
-window.location.href='yes.html';
-},900);
-});
-
-yes.addEventListener('mouseup',()=>{
-clearTimeout(holdTimer);
-clearInterval(holdInterval);
-yes.style.transform='translate(-50%,-50%) scale(1)';
-});
-
-yes.addEventListener('mouseleave',()=>{
-clearTimeout(holdTimer);
-clearInterval(holdInterval);
-yes.style.transform='translate(-50%,-50%) scale(1)';
-});
-
-// ====== NO 物理逃跑 ======
-function moveNo(){
-vx+=(Math.random()-.5)*220;
-vy+=(Math.random()-.5)*220;
-
-let x=no.offsetLeft+vx*0.02;
-let y=no.offsetTop+vy*0.02;
-
-x=Math.max(0,Math.min(window.innerWidth-no.offsetWidth,x));
-y=Math.max(0,Math.min(window.innerHeight-no.offsetHeight,y));
-
-no.style.left=x+'px';
-no.style.top=y+'px';
-
-vibrate();
-}
-
-no.addEventListener('mouseenter',moveNo);
-no.addEventListener('click',e=>{
-e.preventDefault();
-moveNo();
-});
 </script>
 
 </body>
