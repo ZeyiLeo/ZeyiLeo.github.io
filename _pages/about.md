@@ -9,7 +9,7 @@ profile:
   image: 02.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>+852 6943-8310</p>
+    <p>+852 6096-9378</p>
     <p>+86 133-2400-4000</p>
     <p>zeyileo@connect.hku.hk</p>
     <p>HongKong SAR</p>
