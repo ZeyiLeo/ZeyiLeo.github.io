@@ -2,96 +2,106 @@
   type: map
   contents:
     - name: Full Name
-      value: Albert Einstein
-    - name: Date of Birth
-      value: 14th March 1879
+      value: Zeyi "Leo" Li
+    - name: University
+      value: The University of Hong Kong
+    - name: Faculty
+      value: Li Ka Shing Faculty of Medicine
+    - name: Focus
+      value: Healthcare, health communication, ageing, cognitive health, public health, research, entrepreneurship
     - name: Languages
-      value: English, German
+      value: English, Mandarin Chinese, Cantonese exposure
 
 - title: Education
   type: time_table
   contents:
-    - title: PhD
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1905
+    - title: Bachelor of Science in Nursing
+      institution: Li Ka Shing Faculty of Medicine, The University of Hong Kong
+      year: 2025 - 2029
       description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Federal teaching diploma
-      institution: Eidgenössische Technische Hochschule, Zurich, Switzerland
-      year: 1900
-      description:
-        - Description 1.
-        - Description 2.
+        - Healthcare education with interests in ageing, cognitive health, public health communication, and interdisciplinary collaboration.
+        - Active in student-facing, communication-related, and project-based work within the medical faculty context.
 
-- title: Experience
+- title: Research and Healthcare Projects
   type: time_table
   contents:
-    - title: Professor of Theoretical Physics
-      institution: Institute for Advanced Study, Princeton University
-      year: 1933 - 1955
+    - title: Research Assistant
+      institution: Healthcare / ageing-related research projects
+      year: 2026 - Present
       description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Visiting Professor
-      institution: California Institute of Technology, Pasadena, California, US
-      year: 1933
+        - Supporting research tasks related to older adults, cognitive health, and nursing care.
+        - Developing skills in academic reading, evidence synthesis, project coordination, and research communication.
+    - title: Future Vision Leader Campaign
+      institution: Orbis
+      year: 2025 - 2026
       description:
-        - Description 1.
-        - Description 2.
-
-    - title: Director
-      institution: Kaiser Wilhelm Institute for Physics, Berlin, Germany.
-      year: 1917-1933
-
-    - title: Professor of Theoretical Physics
-      institution: Karl-Ferdinand University, Prague, Czechoslovakia
-      year: 1911 - 1917
+        - Contributed to glaucoma awareness and public health education activities.
+        - Worked on outreach planning, target audience design, health education content, and community engagement.
+    - title: U21 HSG IPE Student Challenge
+      institution: Universitas 21 Health Sciences Group
+      year: 2026
       description:
+        - Participated in an international interprofessional challenge with students from different disciplines and countries.
+        - Focused on global health collaboration, team communication, and interdisciplinary problem-solving.
 
-    - title: Associate Professor of Theoretical Physics
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1909 - 1911
-
-- title: Open Source Projects
+- title: Communication and Leadership
   type: time_table
   contents:
-    - title: <a href="https://github.com/alshedivat/al-folio">al-folio</a>
-      year: 2015-now
-      description: A beautiful, simple, clean, and responsive Jekyll theme for academics.
+    - title: Social Student Ambassador
+      institution: HKU Medicine
+      year: 2025 - Present
+      description:
+        - Supported faculty communication work, social media content, video shooting, and student-facing storytelling.
+        - Helped make faculty life and medical education more visible and accessible to wider audiences.
+    - title: Bilingual Public Speaking and Broadcasting
+      institution: Communication and public speaking background
+      year: 2024 - Present
+      description:
+        - Experienced in bilingual communication, hosting, speech delivery, and public-facing presentation.
+        - Previously received national-level recognition in bilingual broadcasting and hosting assessment.
+    - title: Master of Ceremony and Student Ambassador
+      institution: 15th HKINF cum PHA Forum Dinner
+      year: 2025
+      description:
+        - Served as master of ceremony and supported on-site coordination, reception, and event communication.
 
-- title: Honors and Awards
+- title: Business and Entrepreneurship
   type: time_table
   contents:
-    - year: 1921
-      items:
-        - Nobel Prize in Physics
-        - Matteucci Medal
-    - year: 2029
-      items:
-        - Max Planck Medal
+    - title: Founder
+      institution: Cross-border E-commerce Brand
+      year: 2025 - Present
+      description:
+        - Built a brand and completed trademark-related processes.
+        - Planned and launched Amazon store operations for the North American market.
+        - Used market research, product selection, listing optimization, advertising data, and conversion analysis to improve performance.
+    - title: Marketing and Shipping Assistant
+      institution: Amazon-related international trade work
+      year: 2024 - 2025
+      description:
+        - Supported product page content, A+ advertising materials, data organization, and shipping-related workflow.
+        - Gained practical exposure to international trade, e-commerce operations, and data-driven marketing.
 
 - title: Academic Interests
   type: nested_list
   contents:
-    - title: Topic 1.
+    - title: Ageing and cognitive health
       items:
-        - Description 1.
-        - Description 2.
-    - title: Topic 2.
+        - Dementia-related care
+        - Older adult communication
+        - Community-based nursing support
+    - title: Health communication
       items:
-        - Description 1.
-        - Description 2.
+        - Patient education
+        - Public health campaigns
+        - Cross-cultural communication
+    - title: Interdisciplinary innovation
+      items:
+        - Healthcare and business thinking
+        - Global health collaboration
+        - Digital storytelling and outreach
 
 - title: Other Interests
   type: list
   contents:
-    - <u>Hobbies:</u> Hobby 1, Hobby 2, etc.
+    - <u>Creative interests:</u> film, storytelling, public speaking, bilingual communication, digital design.

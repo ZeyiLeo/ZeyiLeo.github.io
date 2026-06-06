@@ -1102,3 +1102,247 @@ swiper-container {
   --swiper-pagination-color: var(--global-theme-color);
   --swiper-pagination-bullet-inactive-color: var(--global-text-color);
 }
+
+
+/*******************************************************************************
+ * Leo personal brand upgrade
+ ******************************************************************************/
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  line-height: 1.7;
+  letter-spacing: -0.01em;
+  background:
+    radial-gradient(circle at 10% 0%, rgba(0, 118, 223, 0.10), transparent 28rem),
+    radial-gradient(circle at 90% 12%, rgba(181, 9, 172, 0.10), transparent 28rem),
+    var(--global-bg-color);
+}
+
+.navbar {
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  background-color: rgba(255, 255, 255, 0.76);
+}
+
+html[data-theme="dark"] .navbar {
+  background-color: rgba(28, 28, 29, 0.76);
+}
+
+.post-header .post-title {
+  letter-spacing: -0.055em;
+}
+
+.profile {
+  border-radius: 1.4rem;
+
+  img {
+    border-radius: 1.4rem !important;
+    box-shadow: 0 1.25rem 3rem rgba(0, 0, 0, 0.12);
+  }
+
+  .more-info {
+    padding: 0.85rem 0.95rem;
+    margin-top: 0.85rem;
+    border: 1px solid var(--global-divider-color);
+    border-radius: 1rem;
+    background: rgba(255, 255, 255, 0.62);
+    font-family: inherit;
+    font-size: 0.82rem;
+
+    p {
+      margin: 0.12rem 0;
+      display: block;
+    }
+  }
+}
+
+html[data-theme="dark"] .profile .more-info {
+  background: rgba(33, 37, 41, 0.68);
+}
+
+.leo-hero {
+  padding: 3.4rem 0 2.2rem;
+}
+
+.leo-kicker,
+.leo-card-label {
+  margin-bottom: 0.55rem;
+  color: var(--global-theme-color);
+  font-size: 0.78rem;
+  font-weight: 750;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.leo-hero h1 {
+  max-width: 850px;
+  margin-bottom: 1rem;
+  font-size: clamp(2.45rem, 6vw, 5.3rem);
+  font-weight: 820;
+  line-height: 0.98;
+  letter-spacing: -0.075em;
+}
+
+.leo-lead {
+  max-width: 760px;
+  color: var(--global-text-color-light);
+  font-size: clamp(1.05rem, 2vw, 1.35rem);
+}
+
+.leo-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+  margin-top: 1.5rem;
+}
+
+.leo-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.72rem 1.05rem;
+  border: 1px solid var(--global-divider-color);
+  border-radius: 999px;
+  background: var(--global-card-bg-color);
+  color: var(--global-text-color) !important;
+  font-weight: 650;
+  text-decoration: none !important;
+  transition: transform 180ms ease, border-color 180ms ease, box-shadow 180ms ease;
+}
+
+.leo-button:hover {
+  transform: translateY(-2px);
+  border-color: var(--global-theme-color);
+  box-shadow: 0 0.75rem 1.8rem rgba(0, 0, 0, 0.10);
+}
+
+.leo-button-primary {
+  background: var(--global-theme-color);
+  color: var(--global-hover-text-color) !important;
+  border-color: var(--global-theme-color);
+}
+
+.leo-section-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+  margin: 1.4rem 0 2.2rem;
+}
+
+.leo-card-stack {
+  display: grid;
+  gap: 1rem;
+  margin: 1.4rem 0 2.2rem;
+}
+
+.leo-card,
+.card {
+  border: 1px solid var(--global-divider-color);
+  border-radius: 1.25rem;
+  background: rgba(255, 255, 255, 0.72);
+  box-shadow: 0 1rem 2.4rem rgba(0, 0, 0, 0.06);
+  transition: transform 180ms ease, box-shadow 180ms ease, border-color 180ms ease;
+  overflow: hidden;
+}
+
+html[data-theme="dark"] .leo-card,
+html[data-theme="dark"] .card {
+  background: rgba(33, 37, 41, 0.72);
+}
+
+.leo-card {
+  padding: 1.1rem;
+}
+
+.leo-card:hover,
+.card.hoverable:hover {
+  transform: translateY(-4px);
+  border-color: var(--global-theme-color);
+  box-shadow: 0 1.25rem 3rem rgba(0, 0, 0, 0.12);
+}
+
+.leo-card h3 {
+  margin-bottom: 0.45rem;
+  font-size: 1.08rem;
+  letter-spacing: -0.025em;
+}
+
+.leo-card p,
+.leo-highlight-list p {
+  color: var(--global-text-color-light);
+}
+
+.leo-highlight-list {
+  display: grid;
+  gap: 0.9rem;
+  margin: 1.2rem 0 2.2rem;
+}
+
+.leo-highlight-list > div {
+  padding: 1rem 1.1rem;
+  border-left: 3px solid var(--global-theme-color);
+  border-radius: 0 1rem 1rem 0;
+  background: rgba(128, 128, 128, 0.06);
+}
+
+.leo-highlight-list h3 {
+  margin-bottom: 0.3rem;
+  font-size: 1.05rem;
+}
+
+.leo-tag-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+  margin: 1rem 0 1.8rem;
+}
+
+.leo-tag-list span {
+  padding: 0.42rem 0.72rem;
+  border: 1px solid var(--global-divider-color);
+  border-radius: 999px;
+  background: rgba(128, 128, 128, 0.08);
+  color: var(--global-text-color);
+  font-size: 0.86rem;
+  font-weight: 620;
+}
+
+.leo-note-box {
+  padding: 1rem 1.1rem;
+  margin-top: 1.4rem;
+  border: 1px solid var(--global-divider-color);
+  border-radius: 1rem;
+  background: rgba(128, 128, 128, 0.07);
+}
+
+.projects .category {
+  margin-top: 2.2rem;
+  margin-bottom: 1rem;
+  text-transform: capitalize;
+  letter-spacing: -0.04em;
+}
+
+.projects .grid-item .card-title {
+  text-transform: none !important;
+  letter-spacing: -0.03em;
+}
+
+@media (max-width: 768px) {
+  .leo-section-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .leo-hero {
+    padding-top: 1.6rem;
+  }
+
+  .profile.float-right,
+  .profile.float-left {
+    float: none !important;
+    width: 100%;
+    margin: 0 0 1.4rem;
+  }
+}
