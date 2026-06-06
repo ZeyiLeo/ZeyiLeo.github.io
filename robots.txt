@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://ZeyiLeo.github.io/sitemap.xml
+Sitemap: https://zeyileo.github.io/sitemap.xml
