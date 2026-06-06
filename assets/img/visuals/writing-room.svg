@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+  <title id="title">Writing Room</title>
+  <desc id="desc">ideas · voice · cognition · culture</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#07111f"/>
+      <stop offset="0.55" stop-color="#101827"/>
+      <stop offset="1" stop-color="#1d1233"/>
+    </linearGradient>
+    <radialGradient id="a" cx="25%" cy="20%" r="70%">
+      <stop offset="0" stop-color="#f97316" stop-opacity="0.65"/>
+      <stop offset="0.45" stop-color="#f97316" stop-opacity="0.16"/>
+      <stop offset="1" stop-color="#f97316" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="b" cx="80%" cy="70%" r="65%">
+      <stop offset="0" stop-color="#a78bfa" stop-opacity="0.55"/>
+      <stop offset="0.46" stop-color="#a78bfa" stop-opacity="0.14"/>
+      <stop offset="1" stop-color="#a78bfa" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="blur"><feGaussianBlur stdDeviation="16"/></filter>
+    <style>
+      .thin{fill:none;stroke:#f7fbff;stroke-opacity:.16;stroke-width:2}
+      .line{fill:none;stroke:#f7fbff;stroke-opacity:.34;stroke-width:3;stroke-linecap:round}
+      .accent{fill:none;stroke:#f97316;stroke-width:6;stroke-linecap:round;stroke-linejoin:round}
+      .accent2{fill:none;stroke:#a78bfa;stroke-width:5;stroke-linecap:round;stroke-linejoin:round}
+      .dot{fill:#f7fbff;fill-opacity:.82}
+      .soft{fill:#f7fbff;fill-opacity:.08}
+      .label{font-family:-apple-system,BlinkMacSystemFont,'SF Pro Display','Inter',Arial,sans-serif;font-weight:700;letter-spacing:.14em;fill:#d9e6ff;fill-opacity:.72;font-size:26px;text-transform:uppercase}
+      .title{font-family:-apple-system,BlinkMacSystemFont,'SF Pro Display','Inter',Arial,sans-serif;font-weight:800;fill:#f5f8ff;font-size:58px;letter-spacing:-.06em}
+      .micro{font-family:-apple-system,BlinkMacSystemFont,'SF Mono',monospace;fill:#9fb3c8;font-size:20px}
+    </style>
+  </defs>
+  <rect width="1200" height="760" rx="56" fill="url(#bg)"/>
+  <rect width="1200" height="760" rx="56" fill="url(#a)"/>
+  <rect width="1200" height="760" rx="56" fill="url(#b)"/>
+  <g opacity=".38">
+    <path class="thin" d="M80 140 H1120 M80 260 H1120 M80 380 H1120 M80 500 H1120 M80 620 H1120"/>
+    <path class="thin" d="M160 70 V690 M340 70 V690 M520 70 V690 M700 70 V690 M880 70 V690 M1060 70 V690"/>
+  </g>
+  
+  <g transform="translate(130,150)">
+    <rect x="0" y="40" width="390" height="300" rx="36" class="soft"/>
+    <rect x="470" y="0" width="420" height="340" rx="36" fill="#f7fbff" fill-opacity=".065"/>
+    <path class="line" d="M70 120 H320 M70 175 H300 M70 230 H270"/>
+    <path class="accent" d="M570 90 C680 20 785 45 825 135 C860 215 800 275 710 275 C595 275 520 180 570 90Z"/>
+    <path class="accent2" d="M610 190 C670 140 730 145 790 198"/>
+    <circle cx="70" cy="285" r="12" class="dot"/><circle cx="120" cy="285" r="12" class="dot"/><circle cx="170" cy="285" r="12" class="dot"/>
+  </g>
+  <text x="82" y="106" class="label">ZY LEE SYSTEM</text>
+  <text x="82" y="668" class="title">Writing Room</text>
+  <text x="84" y="706" class="micro">ideas · voice · cognition · culture</text>
+</svg>
