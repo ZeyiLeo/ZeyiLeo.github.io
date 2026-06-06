@@ -8,10 +8,10 @@ middle_name:
 last_name: LEE
 email: zeyileo@connect.hku.hk
 description: >
-  Personal website of ZY LEE, also known as Leo, a healthcare student at The University of Hong Kong working across health communication, research, public health, entrepreneurship, and cross-cultural collaboration.
+  Personal website of ZY LEE, also known as Leo, a healthcare student at The University of Hong Kong working across healthcare, ageing-related research, public health communication, entrepreneurship, and cross-cultural collaboration.
 footer_text: >
   Built with Jekyll and al-folio. Hosted by GitHub Pages.
-keywords: healthcare, health communication, research, public health, HKU, portfolio, entrepreneurship
+keywords: ZY LEE, Leo, healthcare, health communication, ageing research, public health, HKU, portfolio, entrepreneurship
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: 🩺
 
@@ -103,7 +103,7 @@ zotero_username: # your zotero username
 wechat_qr: # filename of your wechat qr-code saved as an image (e.g., wechat-qr.png if saved to assets/img/wechat-qr.png)
 
 contact_note: >
-  Open to conversations on healthcare, research, communication, public health, entrepreneurship, and cross-cultural collaboration.
+  Open to conversations on healthcare, ageing research, communication, public health, entrepreneurship, and cross-cultural collaboration.
 
 # -----------------------------------------------------------------------------
 # Analytics and search engine verification
@@ -280,8 +280,8 @@ display_categories: ["blockquotes"] # these categories will be displayed on the 
 # -----------------------------------------------------------------------------
 
 scholar:
-  last_name: [LEE, Li]
-  first_name: [ZY, ZEYI, Zeyi, Leo]
+  last_name: [Li]
+  first_name: [ZEYI, Zeyi, Leo]
 
   style: apa
   locale: en
