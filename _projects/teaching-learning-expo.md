@@ -3,6 +3,7 @@ layout: page
 title: HKUMed Teaching & Learning Expo 2025
 permalink: /projects/teaching-learning-expo/
 description: Exposure to AI, health sciences education, simulation, and student engagement at HKUMed.
+hide_header: true
 img: assets/img/projects/teaching-learning-expo/cover.jpg
 importance: 8
 category: education
@@ -26,7 +27,7 @@ category: education
 
 ## Why it belongs here
 
-This event connects with my interest in healthcare communication and innovation. The question is not whether AI exists. Very observant, it does. The more useful question is how future health professionals learn with it while preserving clinical judgment, ethics, and human care.
+This event connects with my interest in healthcare communication and innovation. The useful question is how future health professionals learn with AI while preserving clinical judgment, ethics, and human care.
 
 <div class="leo-photo-grid">
 <figure>
@@ -54,4 +55,4 @@ The official HKUMed Teaching and Learning Expo 2025 page states that the event t
 
 ## What it develops
 
-It helped me frame digital health education not as a tech trend, but as a communication and training problem: how do we teach better, simulate better, and help healthcare students think with tools without outsourcing their brain to them? A low bar, apparently still worth defending.
+It helped me frame digital health education not as a technology trend, but as a communication and training problem: how do we teach better, simulate better, and help healthcare students think with tools while retaining responsibility for judgment?

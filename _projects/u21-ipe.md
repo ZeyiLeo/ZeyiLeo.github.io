@@ -3,6 +3,7 @@ layout: page
 title: U21 HSG IPE Student Challenge
 permalink: /projects/u21-ipe/
 description: International interprofessional collaboration on inclusive and sustainable healthcare practice.
+hide_header: true
 img: assets/img/visuals/impact-pipeline.svg
 importance: 3
 category: global-health
@@ -12,7 +13,7 @@ category: global-health
   <div>
     <p class="leo-kicker">Global health · IPE · Collaboration</p>
     <h1>Working across disciplines, time zones, and healthcare languages.</h1>
-    <p>The U21 HSG IPE Student Challenge is where my bridge-builder instinct becomes useful instead of merely dramatic: students from different health disciplines and institutions have to turn different assumptions into one shared solution.</p>
+    <p>The U21 HSG IPE Student Challenge gives practical form to my bridge-building interest: students from different health disciplines and institutions have to turn different assumptions into one shared solution.</p>
   </div>
   <img src="{{ '/assets/img/visuals/impact-pipeline.svg' | relative_url }}" alt="Abstract collaboration pipeline">
 </div>
@@ -49,4 +50,4 @@ U21 Health Sciences describes the IPE International Student Challenge as an annu
 
 ## What this develops
 
-This project is less about adding another title and more about practicing a very specific skill: making interdisciplinary teamwork produce something coherent. This is apparently harder than it sounds, because “collaboration” often means everyone brings a perspective and nobody brings a structure.
+This project is less about adding another title and more about practicing a specific skill: making interdisciplinary teamwork produce something coherent. Collaboration works best when different perspectives are paired with structure.

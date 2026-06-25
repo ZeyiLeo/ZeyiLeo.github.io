@@ -3,6 +3,7 @@ layout: page
 title: Cross-border E-commerce Brand
 permalink: /projects/ecommerce-brand/
 description: Brand building, Amazon operations, and data-informed marketing for a North America-facing e-commerce project.
+hide_header: true
 img: assets/img/visuals/business-ops.svg
 importance: 4
 category: entrepreneurship
@@ -29,7 +30,7 @@ category: entrepreneurship
 <div class="leo-feature-grid">
   <div><span>01</span><h3>Brand setup</h3><p>Brand positioning, trademark-related work, and product-page identity.</p></div>
   <div><span>02</span><h3>Market operations</h3><p>Product selection, store launch, listing optimisation, promotional content, and logistics coordination.</p></div>
-  <div><span>03</span><h3>Data thinking</h3><p>Monitoring sales, traffic, conversion, ACoS and TACoS to adjust strategy instead of worshipping vibes, a common human business error.</p></div>
+  <div><span>03</span><h3>Data thinking</h3><p>Monitoring sales, traffic, conversion, ACoS and TACoS to adjust strategy with evidence rather than intuition alone.</p></div>
 </div>
 
 ## Why this belongs on a healthcare-facing website

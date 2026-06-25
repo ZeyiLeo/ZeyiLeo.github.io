@@ -3,6 +3,7 @@ layout: page
 title: Orbis Future Vision Leader · Glaucoma Awareness
 permalink: /projects/orbis-glaucoma/
 description: A public health campaign translating glaucoma prevention into community-facing education.
+hide_header: true
 img: assets/img/projects/orbis-glaucoma/cover.jpg
 importance: 2
 category: public-health
@@ -26,7 +27,7 @@ category: public-health
 
 ## Project idea
 
-Glaucoma is difficult to communicate because it often sounds abstract until vision loss becomes personal. So the campaign had to avoid the classic public-health curse: technically correct, emotionally dead on arrival.
+Glaucoma is difficult to communicate because it often sounds abstract until vision loss becomes personal. The campaign therefore needed to be technically accurate, accessible, and concrete enough to prompt attention.
 
 My role focused on health communication: explaining causes, prevention, risk awareness, and early detection in a way that different audiences could understand. The campaign used visual materials, booth interaction, and accessible language to make eye health less remote.
 
@@ -72,4 +73,4 @@ Orbis describes the Future Vision Leaders Program 2025/26 as a tertiary-student 
 
 ## What I learned
 
-Public health outreach is not just about distributing information. It is about designing an encounter: what people notice, what they ask, what they remember, and whether they leave with a reason to care. Tiny detail, apparently central to whether campaigns do anything beyond decorating a booth.
+Public health outreach is not just about distributing information. It is about designing an encounter: what people notice, what they ask, what they remember, and whether they leave with a reason to care.

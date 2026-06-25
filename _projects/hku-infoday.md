@@ -3,6 +3,7 @@ layout: page
 title: HKU Student Ambassador & Info Day
 permalink: /projects/hku-infoday/
 description: Admissions-facing communication, student ambassador work, and HKUMed outreach.
+hide_header: true
 img: assets/img/projects/hku-infoday/cover.jpg
 importance: 7
 category: education
@@ -11,7 +12,7 @@ category: education
 <div class="leo-project-hero">
   <div>
     <p class="leo-kicker">HKU · Admissions · Student ambassador</p>
-    <h1>Helping prospective students understand HKU without drowning them in brochure language.</h1>
+    <h1>Helping prospective students understand HKU in clear, useful language.</h1>
     <p>As a student ambassador, I support admissions-facing communication and HKUMed outreach by translating student experience, programme information, and campus life into conversations that feel usable.</p>
   </div>
   <img src="{{ '/assets/img/projects/hku-infoday/cover.jpg' | relative_url }}" alt="HKUMed student ambassador group at Information Day">
@@ -26,7 +27,7 @@ category: education
 
 ## What this work involves
 
-Student ambassador work is not just smiling next to a banner, although civilization insists on taking many photos of that. The actual skill is listening quickly, understanding what the visitor is really asking, and giving an answer that is clear, honest, and matched to their background.
+Student ambassador work is not only representation. The practical skill is listening quickly, understanding what the visitor is really asking, and giving an answer that is clear, honest, and matched to their background.
 
 <div class="leo-photo-grid">
 <figure>

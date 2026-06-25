@@ -3,6 +3,7 @@ layout: page
 title: HK International Nursing Forum & 30th Anniversary
 permalink: /projects/nursing-forum/
 description: Hosting and student ambassador work at HKU School of Nursing’s major international forum and anniversary celebration.
+hide_header: true
 img: assets/img/projects/nursing-forum/cover.jpg
 importance: 6
 category: education
@@ -26,7 +27,7 @@ category: education
 
 ## My role
 
-This was a professional communication setting, not a casual school activity. The work involved stage presence, bilingual awareness, event flow, guest-facing communication, and the ability to sound composed while many moving parts quietly threaten to become chaos. Event work is basically public speaking plus logistics with better clothes.
+This was a professional communication setting, not a casual school activity. The work involved stage presence, bilingual awareness, event flow, guest-facing communication, and composure while many moving parts had to stay aligned.
 
 <div class="leo-photo-grid">
 <figure>

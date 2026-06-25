@@ -3,6 +3,7 @@ layout: page
 title: Personal Website & Digital System
 permalink: /projects/digital-system/
 description: A digital platform for personal branding, project documentation, writing, and public-facing work.
+hide_header: true
 img: assets/img/visuals/digital-system.svg
 importance: 10
 category: digital
@@ -29,7 +30,7 @@ category: digital
 <div class="leo-feature-grid">
   <div><span>01</span><h3>Identity system</h3><p>Shifted the public-facing brand toward ZY LEE, with Leo as the nickname.</p></div>
   <div><span>02</span><h3>Project pages</h3><p>Created dedicated case pages for research, outreach, events, communication, and entrepreneurship.</p></div>
-  <div><span>03</span><h3>Visual evidence</h3><p>Integrated real photos, curated galleries, and official-context sections so the site feels less like a template wearing a blazer.</p></div>
+  <div><span>03</span><h3>Visual evidence</h3><p>Integrated real photos, curated galleries, and official-context sections so the site feels specific, verifiable, and personal.</p></div>
 </div>
 
 ## Future version

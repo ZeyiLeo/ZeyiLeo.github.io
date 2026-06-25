@@ -584,6 +584,586 @@ footer.sticky-bottom {
   }
 }
 
+/*******************************************************************************
+ * ZY LEE portfolio system
+ ******************************************************************************/
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family:
+    -apple-system, BlinkMacSystemFont, "Segoe UI", Inter, Helvetica, Arial,
+    sans-serif;
+  background:
+    radial-gradient(circle at 20% 0%, rgba(47, 111, 104, 0.08), transparent 28rem),
+    var(--leo-bg);
+}
+
+body.fixed-top-nav {
+  padding-top: 70px;
+}
+
+.container {
+  max-width: min(1120px, calc(100vw - 32px));
+}
+
+a:focus-visible,
+button:focus-visible {
+  outline: 3px solid rgba(47, 111, 104, 0.38);
+  outline-offset: 4px;
+  border-radius: 8px;
+}
+
+.navbar {
+  min-height: 64px;
+  border-bottom: 1px solid var(--leo-border);
+  background-color: var(--leo-bg);
+  backdrop-filter: blur(18px);
+}
+
+.navbar .container {
+  max-width: min(1180px, calc(100vw - 28px));
+}
+
+.navbar-brand.title {
+  letter-spacing: 0;
+  font-size: 0.98rem;
+}
+
+.navbar.navbar-light .navbar-nav .nav-item .nav-link {
+  color: var(--leo-muted);
+  font-size: 0.9rem;
+  padding: 0.45rem 0.75rem;
+  border-radius: 999px;
+}
+
+.navbar.navbar-light .navbar-nav .nav-item.active > .nav-link,
+.navbar.navbar-light .navbar-nav .nav-item .nav-link:hover {
+  color: var(--leo-text);
+  background: var(--leo-surface-soft);
+}
+
+.post {
+  max-width: none;
+}
+
+.post article {
+  font-size: 1.04rem;
+  line-height: 1.75;
+}
+
+.leo-kicker,
+.leo-card-label,
+.leo-work-strip span,
+.leo-timeline span,
+.leo-contact-card span {
+  display: inline-flex;
+  align-items: center;
+  color: var(--leo-accent);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.leo-home-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1.12fr) minmax(280px, 0.58fr);
+  gap: clamp(2rem, 6vw, 5.5rem);
+  align-items: center;
+  min-height: calc(100vh - 120px);
+  padding: clamp(3rem, 8vw, 7rem) 0 clamp(2.5rem, 6vw, 5rem);
+}
+
+.leo-home-copy h1,
+.leo-page-hero h1,
+.leo-section-header h2,
+.leo-bridge-section h2,
+.leo-closing h2 {
+  max-width: 980px;
+  color: var(--leo-text);
+  font-size: clamp(2.6rem, 7vw, 6.8rem);
+  line-height: 0.96;
+  letter-spacing: 0;
+  margin: 0.5rem 0 1.2rem;
+}
+
+.leo-section-header h2,
+.leo-bridge-section h2,
+.leo-closing h2 {
+  font-size: clamp(2rem, 4.4vw, 4.5rem);
+  line-height: 1.02;
+}
+
+.leo-lead {
+  max-width: 720px;
+  color: var(--leo-text);
+  font-size: clamp(1.18rem, 2.1vw, 1.55rem);
+  line-height: 1.45;
+}
+
+.leo-home-copy > p:not(.leo-kicker):not(.leo-lead),
+.leo-section-header p,
+.leo-page-hero p,
+.leo-about-copy p,
+.leo-bridge-grid p,
+.leo-timeline p,
+.leo-closing p,
+.leo-contact-card p {
+  color: var(--leo-muted);
+}
+
+.leo-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  margin-top: 2rem;
+}
+
+.leo-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  padding: 0.78rem 1.05rem;
+  border: 1px solid var(--leo-border);
+  border-radius: 999px;
+  background: var(--leo-surface);
+  color: var(--leo-text);
+  font-weight: 700;
+  text-decoration: none;
+  transition:
+    transform 220ms var(--leo-ease),
+    border-color 220ms var(--leo-ease),
+    background 220ms var(--leo-ease);
+}
+
+.leo-button:hover {
+  transform: translateY(-2px);
+  border-color: var(--leo-accent);
+  color: var(--leo-text);
+  text-decoration: none;
+}
+
+.leo-button-primary {
+  background: var(--leo-text);
+  color: var(--leo-bg);
+  border-color: var(--leo-text);
+}
+
+.leo-button-primary:hover {
+  color: var(--leo-bg);
+}
+
+.leo-portrait {
+  margin: 0;
+}
+
+.leo-portrait img,
+.leo-about-layout figure img {
+  width: 100%;
+  max-width: none;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  border-radius: calc(var(--leo-radius) + 10px);
+  box-shadow: var(--leo-shadow);
+}
+
+.leo-portrait figcaption,
+.leo-about-layout figcaption,
+.leo-photo-grid figcaption {
+  color: var(--leo-muted);
+  font-size: 0.86rem;
+  margin-top: 0.8rem;
+}
+
+.leo-section,
+.leo-closing {
+  padding: clamp(3.5rem, 8vw, 7rem) 0;
+  border-top: 1px solid var(--leo-border);
+}
+
+.leo-section-header {
+  margin-bottom: clamp(1.6rem, 4vw, 3rem);
+}
+
+.leo-featured-work {
+  display: grid;
+  gap: 1.2rem;
+}
+
+.leo-work-feature,
+.leo-work-feature-reverse,
+.leo-work-strip a,
+.leo-contact-card,
+.leo-values-panel > div,
+.leo-timeline article,
+.leo-card,
+.leo-case-card,
+.leo-dashboard-card,
+.leo-visual-card {
+  border: 1px solid var(--leo-border);
+  background: var(--leo-surface);
+  border-radius: var(--leo-radius);
+  box-shadow: none;
+  text-decoration: none;
+}
+
+.leo-work-feature {
+  display: grid;
+  grid-template-columns: minmax(0, 0.95fr) minmax(280px, 0.8fr);
+  gap: clamp(1.2rem, 4vw, 3rem);
+  align-items: center;
+  padding: clamp(1rem, 2.5vw, 1.5rem);
+}
+
+.leo-work-feature-reverse img {
+  order: 2;
+}
+
+.leo-work-feature img,
+.leo-work-strip img,
+.leo-case-visual,
+.leo-card-visual,
+.leo-visual-card img,
+.leo-project-hero img,
+.leo-photo-grid img {
+  width: 100%;
+  max-width: none;
+  object-fit: cover;
+  background: var(--leo-surface-soft);
+}
+
+.leo-work-feature img {
+  aspect-ratio: 16 / 10;
+  border-radius: calc(var(--leo-radius) - 4px);
+}
+
+.leo-work-feature h3,
+.leo-work-strip h3,
+.leo-timeline h3,
+.leo-contact-card h2,
+.leo-values-panel h3,
+.leo-bridge-grid span {
+  color: var(--leo-text);
+}
+
+.leo-work-feature h3 {
+  font-size: clamp(1.55rem, 2.8vw, 2.5rem);
+  line-height: 1.1;
+  margin: 0.5rem 0 0.8rem;
+}
+
+.leo-work-feature p {
+  color: var(--leo-muted);
+  font-size: 1.06rem;
+}
+
+.leo-work-feature strong {
+  display: block;
+  color: var(--leo-text);
+  margin-top: 1.1rem;
+}
+
+.leo-work-strip,
+.leo-bridge-grid,
+.leo-values-panel,
+.leo-contact-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+  margin-top: 1.2rem;
+}
+
+.leo-work-strip a,
+.leo-contact-card,
+.leo-values-panel > div {
+  padding: 1rem;
+  transition:
+    transform 220ms var(--leo-ease),
+    border-color 220ms var(--leo-ease);
+}
+
+.leo-work-strip a:hover,
+.leo-contact-card:hover,
+.leo-case-card:hover,
+.leo-dashboard-card:hover,
+.leo-visual-card:hover {
+  transform: translateY(-3px);
+  border-color: var(--leo-accent);
+  text-decoration: none;
+}
+
+.leo-work-strip img {
+  aspect-ratio: 4 / 3;
+  border-radius: var(--leo-radius-sm);
+  margin-bottom: 1rem;
+}
+
+.leo-work-strip h3 {
+  font-size: 1.25rem;
+  line-height: 1.2;
+  margin-top: 0.35rem;
+}
+
+.leo-bridge-section {
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+  gap: clamp(1.5rem, 5vw, 4rem);
+  align-items: start;
+}
+
+.leo-bridge-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin: 0;
+}
+
+.leo-bridge-grid div {
+  padding: 1.2rem 0;
+  border-top: 1px solid var(--leo-border);
+}
+
+.leo-bridge-grid span {
+  display: block;
+  font-size: 1.1rem;
+  font-weight: 800;
+  margin-bottom: 0.45rem;
+}
+
+.leo-timeline {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.leo-timeline article {
+  padding: 1.2rem;
+}
+
+.leo-timeline h3 {
+  font-size: 1.2rem;
+  margin: 0.4rem 0;
+}
+
+.leo-closing {
+  padding-bottom: clamp(4rem, 10vw, 8rem);
+}
+
+.leo-page-hero {
+  padding: clamp(3rem, 7vw, 6.5rem) 0 clamp(1.8rem, 5vw, 3.5rem);
+}
+
+.leo-page-hero-editorial h1 {
+  max-width: 900px;
+}
+
+.leo-page-hero p {
+  max-width: 760px;
+  font-size: 1.12rem;
+}
+
+.leo-about-layout {
+  display: grid;
+  grid-template-columns: minmax(260px, 0.55fr) minmax(0, 1fr);
+  gap: clamp(1.8rem, 6vw, 5rem);
+  align-items: start;
+  padding-bottom: clamp(3rem, 7vw, 5.5rem);
+}
+
+.leo-about-layout figure {
+  position: sticky;
+  top: 90px;
+  margin: 0;
+}
+
+.leo-about-copy {
+  max-width: 720px;
+}
+
+.leo-about-copy h2 {
+  color: var(--leo-text);
+  font-size: clamp(1.45rem, 2.2vw, 2rem);
+  margin-top: 0;
+  padding-top: 1.7rem;
+}
+
+.leo-values-panel > div span {
+  color: var(--leo-accent);
+  font-weight: 800;
+}
+
+.leo-contact-grid {
+  padding-bottom: clamp(4rem, 8vw, 7rem);
+}
+
+.leo-contact-card {
+  display: block;
+  min-height: 210px;
+}
+
+.leo-contact-card h2 {
+  overflow-wrap: anywhere;
+  font-size: clamp(1.25rem, 2vw, 1.6rem);
+}
+
+.leo-project-hero,
+.leo-case-meta,
+.leo-feature-grid,
+.leo-photo-grid,
+.leo-section-grid,
+.leo-dashboard,
+.leo-case-grid,
+.leo-visual-grid,
+.leo-metric-grid {
+  gap: 1rem;
+}
+
+.leo-project-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(280px, 0.55fr);
+  align-items: center;
+  padding: clamp(2.5rem, 6vw, 5rem) 0;
+}
+
+.leo-project-hero h1 {
+  color: var(--leo-text);
+  font-size: clamp(2.2rem, 5vw, 4.6rem);
+  line-height: 1;
+}
+
+.leo-project-hero img {
+  aspect-ratio: 4 / 3;
+  border-radius: var(--leo-radius);
+}
+
+.leo-case-meta,
+.leo-feature-grid,
+.leo-photo-grid,
+.leo-section-grid,
+.leo-dashboard,
+.leo-case-grid,
+.leo-visual-grid,
+.leo-metric-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.leo-case-meta {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  margin-bottom: 2.5rem;
+}
+
+.leo-case-meta > div,
+.leo-feature-grid > div,
+.leo-metric-grid > div {
+  padding: 1rem;
+  border: 1px solid var(--leo-border);
+  border-radius: var(--leo-radius-sm);
+  background: var(--leo-surface);
+}
+
+.leo-case-meta span,
+.leo-feature-grid span,
+.leo-metric-grid span {
+  display: block;
+  color: var(--leo-accent);
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.leo-photo-grid figure {
+  margin: 0;
+}
+
+.leo-photo-grid img {
+  aspect-ratio: 4 / 3;
+  border-radius: var(--leo-radius-sm);
+}
+
+@media (max-width: 900px) {
+  .leo-home-hero,
+  .leo-work-feature,
+  .leo-bridge-section,
+  .leo-about-layout,
+  .leo-project-hero {
+    grid-template-columns: 1fr;
+  }
+
+  .leo-work-feature-reverse img {
+    order: 0;
+  }
+
+  .leo-about-layout figure {
+    position: static;
+  }
+
+  .leo-work-strip,
+  .leo-bridge-grid,
+  .leo-values-panel,
+  .leo-contact-grid,
+  .leo-case-meta,
+  .leo-feature-grid,
+  .leo-photo-grid,
+  .leo-section-grid,
+  .leo-dashboard,
+  .leo-case-grid,
+  .leo-visual-grid,
+  .leo-metric-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .leo-timeline {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 575px) {
+  body.fixed-top-nav {
+    padding-top: 64px;
+  }
+
+  .leo-home-hero {
+    min-height: auto;
+  }
+
+  .leo-home-copy h1,
+  .leo-page-hero h1 {
+    font-size: clamp(2.35rem, 14vw, 3.7rem);
+  }
+
+  .leo-actions {
+    flex-direction: column;
+  }
+
+  .leo-button {
+    width: 100%;
+  }
+
+  .navbar.navbar-light .navbar-nav .nav-item .nav-link {
+    min-height: 44px;
+    text-align: left;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 1ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 1ms !important;
+  }
+}
+
 // Distill
 
 .distill {

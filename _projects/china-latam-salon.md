@@ -3,6 +3,7 @@ layout: page
 title: China-Latin America Literature Salon
 permalink: /projects/china-latam-salon/
 description: Cross-cultural public speaking at the Spring Reading China-Latin America Literature Salon.
+hide_header: true
 img: assets/img/projects/china-latam-salon/cover.jpg
 importance: 5
 category: communication
@@ -11,7 +12,7 @@ category: communication
 <div class="leo-project-hero">
   <div>
     <p class="leo-kicker">Culture · Literature · Public voice</p>
-    <h1>Speaking across cultures before I had the good sense to make life simpler.</h1>
+    <h1>Speaking across cultures through literature, translation, and youth perspective.</h1>
     <p>I was invited to speak in a China-Latin America literature exchange setting, where literature became a bridge for discussing culture, translation, and how young people understand distant worlds through stories.</p>
   </div>
   <img src="{{ '/assets/img/projects/china-latam-salon/cover.jpg' | relative_url }}" alt="Speaking at China-Latin America literature salon">
@@ -28,7 +29,7 @@ category: communication
 
 This event matters to my website because it explains the communication half of my profile. Before healthcare, I was already interested in how people from different cultural systems explain themselves, listen to each other, and translate abstract ideas into something alive.
 
-The event was not just a speech opportunity. It was a training ground for cross-cultural framing: how to speak with respect, clarity, and enough personality to avoid becoming a human press release.
+The event was not just a speech opportunity. It was a training ground for cross-cultural framing: how to speak with respect, clarity, and enough specificity for the audience to understand the person behind the message.
 
 <div class="leo-photo-grid">
 <figure>

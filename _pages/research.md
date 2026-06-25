@@ -3,7 +3,8 @@ layout: page
 title: research
 permalink: /research/
 description: Research interests, methods, and academic direction.
-nav: true
+hide_header: true
+nav: false
 nav_order: 3
 ---
 

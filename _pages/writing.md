@@ -3,14 +3,15 @@ layout: page
 title: writing
 permalink: /writing/
 description: Essays, reflections, notes, and public-facing writing.
+hide_header: true
 nav: true
-nav_order: 6
+nav_order: 5
 ---
 
 <div class="leo-page-hero">
   <p class="leo-kicker">Writing room</p>
-  <h1>Where ideas stop pretending to be bullet points.</h1>
-  <p>Writing is where I connect healthcare, cognition, communication, culture, and lived experience. This page is designed as a future home for essays, speeches, public health notes, and project reflections.</p>
+  <h1>Essays, notes, and public-facing thinking.</h1>
+  <p>Writing is the home for connecting healthcare, cognition, communication, culture, and lived experience. This page is currently a structured space for future essays, speeches, public health notes, and project reflections.</p>
 </div>
 
 <div class="leo-visual-frame leo-visual-frame-page">

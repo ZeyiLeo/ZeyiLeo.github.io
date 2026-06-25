@@ -3,6 +3,7 @@ layout: page
 title: Research Assistant Work
 permalink: /projects/research-assistant/
 description: Research support in ageing, cognitive health, and nursing communication.
+hide_header: true
 img: assets/img/projects/research-assistant/cover.jpg
 importance: 1
 category: research
@@ -26,7 +27,7 @@ category: research
 
 ## What this page is about
 
-This page documents my developing research direction rather than a single finished publication. The central question is simple and irritatingly difficult: how can evidence about ageing and cognition become something that clinicians, patients, families, and communities can actually use?
+This page documents my developing research direction rather than a single finished publication. The central question is practical: how can evidence about ageing and cognition become something that clinicians, patients, families, and communities can actually use?
 
 My work has involved research coordination, academic reading, preparation of study materials, and building a clearer understanding of older adult care, cognitive impairment, dementia-related communication, and non-pharmacological intervention design.
 

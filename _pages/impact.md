@@ -3,13 +3,14 @@ layout: page
 title: impact
 permalink: /impact/
 description: How my projects create public-facing, educational, and cross-disciplinary impact.
-nav: true
+hide_header: true
+nav: false
 nav_order: 4
 ---
 
 <div class="leo-page-hero">
   <p class="leo-kicker">Impact system</p>
-  <h1>Impact is not a slogan. It is what changes after people meet the work.</h1>
+  <h1>Impact is what changes after people meet the work.</h1>
   <p>This page maps how my projects move from knowledge to audience to action: research support, public health outreach, event communication, student ambassador work, and cross-cultural speaking.</p>
 </div>
 

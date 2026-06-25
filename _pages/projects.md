@@ -1,18 +1,19 @@
 ---
 layout: page
-title: projects
+title: work
 permalink: /projects/
-description: Dedicated project pages across healthcare, research, public health, communication, education, entrepreneurship, and digital work.
+description: Selected work by ZY LEE across healthcare, public health communication, AI and education, leadership, entrepreneurship, and digital systems.
+hide_header: true
 nav: true
-nav_order: 2
+nav_order: 3
 display_categories: [research, public-health, global-health, communication, education, entrepreneurship, digital]
 horizontal: false
 ---
 
 <div class="leo-page-hero leo-page-hero-compact">
-  <p class="leo-kicker">Project archive</p>
-  <h1>Each project gets its own room now.</h1>
-  <p>This archive is organised as a set of case pages, not a pile of titles. Each page combines personal photos, official context, role framing, and reflection, because apparently a project should explain what actually happened.</p>
+  <p class="leo-kicker">Selected work</p>
+  <h1>Healthcare, communication, technology, and execution in public view.</h1>
+  <p>This archive collects case pages with available evidence: personal photos, official context, role framing, and concise reflection. It separates completed work from current interests and future directions.</p>
 </div>
 
 <div class="leo-visual-grid">

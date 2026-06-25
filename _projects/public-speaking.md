@@ -3,6 +3,7 @@ layout: page
 title: Public Speaking & Communication
 permalink: /projects/public-speaking/
 description: Bilingual hosting, public speaking, cross-cultural communication, and health communication.
+hide_header: true
 img: assets/img/projects/public-speaking/cover.jpg
 importance: 9
 category: communication
