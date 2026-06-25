@@ -17,6 +17,13 @@ nav: false
       <a class="leo-button leo-button-primary" href="{{ '/projects/' | relative_url }}">View selected work</a>
       <a class="leo-button" href="{{ '/about/' | relative_url }}">Read the story</a>
     </div>
+    <div class="leo-social-pills" aria-label="Social links">
+      <a href="https://instagram.com/{{ site.instagram_id }}">Instagram · @{{ site.instagram_id }}</a>
+      <a href="https://www.linkedin.com/in/{{ site.linkedin_username }}/">LinkedIn</a>
+      {% if site.xiaohongshu_url %}
+        <a href="{{ site.xiaohongshu_url }}">小红书</a>
+      {% endif %}
+    </div>
   </div>
   <figure class="leo-portrait">
     <img src="{{ '/assets/img/02.jpg' | relative_url }}" alt="Portrait of ZY LEE" width="960" height="1200" fetchpriority="high">
@@ -120,6 +127,7 @@ nav: false
   <h2 id="closing-title">For conversations across healthcare, communication, technology, and interdisciplinary work.</h2>
   <div class="leo-actions">
     <a class="leo-button leo-button-primary" href="mailto:{{ site.email }}">Email ZY LEE</a>
+    <a class="leo-button" href="https://instagram.com/{{ site.instagram_id }}">Instagram</a>
     <a class="leo-button" href="{{ '/contact/' | relative_url }}">Contact details</a>
   </div>
 </section>

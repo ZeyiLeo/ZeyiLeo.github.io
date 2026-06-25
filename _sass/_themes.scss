@@ -61,27 +61,27 @@
 }
 
 html[data-theme="dark"] {
-  --global-bg-color: #0b0f19;
+  --global-bg-color: #070707;
   --global-code-bg-color: #{$code-bg-color-dark};
-  --global-text-color: #{$grey-color-light};
-  --global-text-color-light: #{$grey-color-light};
-  --global-theme-color: #{$cyan-color};
-  --global-hover-color: #{$cyan-color};
+  --global-text-color: #f5f5f7;
+  --global-text-color-light: #a1a1a6;
+  --global-theme-color: #0a84ff;
+  --global-hover-color: #66b7ff;
   --global-hover-text-color: #{$white-color};
   --global-footer-bg-color: #{$grey-color-light};
   --global-footer-text-color: #{$grey-color-dark};
   --global-footer-link-color: #{$black-color};
   --global-distill-app-color: #{$grey-color-light};
-  --global-divider-color: #424246;
-  --global-card-bg-color: #111827;
-  --leo-bg: #0b0f12;
-  --leo-surface: #11181d;
-  --leo-surface-soft: #182126;
-  --leo-text: #f3f1ea;
-  --leo-muted: #b8b8ae;
-  --leo-border: rgba(243, 241, 234, 0.14);
-  --leo-accent: #74b9ae;
-  --leo-accent-strong: #9fd8d0;
+  --global-divider-color: rgba(255, 255, 255, 0.14);
+  --global-card-bg-color: #1c1c1e;
+  --leo-bg: #070707;
+  --leo-surface: rgba(28, 28, 30, 0.78);
+  --leo-surface-soft: rgba(44, 44, 46, 0.72);
+  --leo-text: #f5f5f7;
+  --leo-muted: #a1a1a6;
+  --leo-border: rgba(255, 255, 255, 0.14);
+  --leo-accent: #0a84ff;
+  --leo-accent-strong: #66b7ff;
   --leo-radius: 18px;
   --leo-radius-sm: 10px;
   --leo-shadow: 0 20px 60px rgba(0, 0, 0, 0.32);

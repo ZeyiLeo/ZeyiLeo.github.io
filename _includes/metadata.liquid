@@ -200,6 +200,9 @@
     {% capture link %}https://instagram.com/{{ site.instagram_id }}{% endcapture %}
     {% assign sameaslinks = sameaslinks | push: link %}
   {% endif %}
+  {% if site.xiaohongshu_url %}
+    {% assign sameaslinks = sameaslinks | push: site.xiaohongshu_url %}
+  {% endif %}
   {% if site.facebook_id %}
     {% capture link %}https://facebook.com/{{ site.facebook_id }}{% endcapture %}
     {% assign sameaslinks = sameaslinks | push: link %}

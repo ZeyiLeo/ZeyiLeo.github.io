@@ -2576,3 +2576,205 @@ html[data-theme="dark"] .leo-collab-panel {
     height: 220px;
   }
 }
+
+
+/* -----------------------------------------------------------------------------
+   ZY LEE repair pass: visible socials, complete photos, Apple-like interaction
+----------------------------------------------------------------------------- */
+
+.leo-social-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+  margin-top: 1.1rem;
+}
+
+.leo-social-pills a,
+.xhs-social-link {
+  display: inline-flex;
+  align-items: center;
+  min-height: 36px;
+  padding: 0.45rem 0.72rem;
+  border: 1px solid var(--leo-border);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.62);
+  color: var(--leo-text);
+  font-size: 0.88rem;
+  font-weight: 750;
+  text-decoration: none;
+  backdrop-filter: blur(18px) saturate(180%);
+  -webkit-backdrop-filter: blur(18px) saturate(180%);
+  transition:
+    transform 260ms var(--leo-ease),
+    border-color 260ms var(--leo-ease),
+    background 260ms var(--leo-ease);
+}
+
+.leo-social-pills a:hover,
+.xhs-social-link:hover {
+  transform: translateY(-2px) scale(1.015);
+  border-color: var(--leo-accent);
+  color: var(--leo-text);
+  text-decoration: none;
+}
+
+.leo-contact-grid {
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+}
+
+.leo-portrait,
+.leo-about-layout figure {
+  padding: clamp(0.7rem, 1.6vw, 1rem);
+  border: 1px solid var(--leo-border);
+  border-radius: 30px;
+  background:
+    linear-gradient(145deg, rgba(255, 255, 255, 0.76), rgba(255, 255, 255, 0.34)),
+    var(--leo-surface-soft);
+  box-shadow: var(--leo-shadow);
+  backdrop-filter: blur(18px) saturate(180%);
+  -webkit-backdrop-filter: blur(18px) saturate(180%);
+}
+
+.leo-portrait img,
+.leo-about-layout figure img {
+  width: 100%;
+  max-width: none;
+  max-height: min(72vh, 680px);
+  aspect-ratio: auto;
+  object-fit: contain;
+  border-radius: 22px;
+  box-shadow: none;
+  background: transparent;
+}
+
+.leo-work-feature img,
+.leo-project-hero img,
+.leo-photo-grid img {
+  object-fit: contain;
+  background:
+    linear-gradient(135deg, rgba(255, 255, 255, 0.72), rgba(245, 245, 247, 0.45)),
+    var(--leo-surface-soft);
+}
+
+.leo-work-strip img,
+.leo-case-visual,
+.leo-card-visual,
+.leo-visual-card img {
+  object-fit: contain;
+  background: var(--leo-surface-soft);
+}
+
+.navbar {
+  background-color: rgba(247, 245, 240, 0.72);
+  backdrop-filter: blur(22px) saturate(180%);
+  -webkit-backdrop-filter: blur(22px) saturate(180%);
+}
+
+.leo-button,
+.leo-work-feature,
+.leo-work-strip a,
+.leo-contact-card,
+.leo-timeline article,
+.leo-case-card,
+.leo-dashboard-card,
+.leo-visual-card,
+.leo-feature-grid > div,
+.leo-case-meta div,
+.leo-photo-grid figure {
+  transition:
+    transform 320ms var(--leo-ease),
+    box-shadow 320ms var(--leo-ease),
+    border-color 320ms var(--leo-ease),
+    background 320ms var(--leo-ease);
+}
+
+.leo-work-feature:hover,
+.leo-work-strip a:hover,
+.leo-contact-card:hover,
+.leo-case-card:hover,
+.leo-dashboard-card:hover,
+.leo-visual-card:hover,
+.leo-timeline article:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 22px 60px rgba(20, 20, 20, 0.12);
+}
+
+.leo-button:hover {
+  transform: translateY(-2px) scale(1.015);
+  box-shadow: 0 14px 34px rgba(20, 20, 20, 0.10);
+}
+
+.leo-reveal {
+  opacity: 0;
+  transform: translateY(18px);
+  transition:
+    opacity 700ms var(--leo-ease),
+    transform 700ms var(--leo-ease);
+}
+
+.leo-reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+html[data-theme="dark"] body {
+  background:
+    radial-gradient(circle at 16% 0%, rgba(10, 132, 255, 0.22), transparent 30rem),
+    radial-gradient(circle at 86% 10%, rgba(94, 92, 230, 0.16), transparent 28rem),
+    #070707;
+}
+
+html[data-theme="dark"] .navbar {
+  background-color: rgba(18, 18, 18, 0.72);
+  border-bottom-color: rgba(255, 255, 255, 0.12);
+}
+
+html[data-theme="dark"] .leo-social-pills a,
+html[data-theme="dark"] .xhs-social-link,
+html[data-theme="dark"] .leo-portrait,
+html[data-theme="dark"] .leo-about-layout figure,
+html[data-theme="dark"] .leo-work-feature,
+html[data-theme="dark"] .leo-work-strip a,
+html[data-theme="dark"] .leo-contact-card,
+html[data-theme="dark"] .leo-timeline article,
+html[data-theme="dark"] .leo-case-card,
+html[data-theme="dark"] .leo-dashboard-card,
+html[data-theme="dark"] .leo-visual-card,
+html[data-theme="dark"] .leo-feature-grid > div,
+html[data-theme="dark"] .leo-case-meta div,
+html[data-theme="dark"] .leo-photo-grid figure {
+  background: rgba(28, 28, 30, 0.72);
+  border-color: rgba(255, 255, 255, 0.14);
+  box-shadow: 0 22px 70px rgba(0, 0, 0, 0.35);
+  backdrop-filter: blur(22px) saturate(180%);
+  -webkit-backdrop-filter: blur(22px) saturate(180%);
+}
+
+html[data-theme="dark"] .leo-work-feature img,
+html[data-theme="dark"] .leo-work-strip img,
+html[data-theme="dark"] .leo-project-hero img,
+html[data-theme="dark"] .leo-photo-grid img,
+html[data-theme="dark"] .leo-case-visual,
+html[data-theme="dark"] .leo-card-visual,
+html[data-theme="dark"] .leo-visual-card img {
+  background: rgba(44, 44, 46, 0.68);
+}
+
+html[data-theme="dark"] .leo-work-feature:hover,
+html[data-theme="dark"] .leo-work-strip a:hover,
+html[data-theme="dark"] .leo-contact-card:hover,
+html[data-theme="dark"] .leo-case-card:hover,
+html[data-theme="dark"] .leo-dashboard-card:hover,
+html[data-theme="dark"] .leo-visual-card:hover,
+html[data-theme="dark"] .leo-timeline article:hover {
+  border-color: rgba(10, 132, 255, 0.72);
+  box-shadow: 0 26px 80px rgba(10, 132, 255, 0.16);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .leo-reveal,
+  .leo-reveal.is-visible {
+    opacity: 1;
+    transform: none;
+  }
+}
