@@ -17,10 +17,10 @@ horizontal: false
 </div>
 
 <div class="leo-visual-grid">
-  <a class="leo-visual-card" href="{{ '/projects/orbis-glaucoma/' | relative_url }}"><img src="{{ '/assets/img/projects/orbis-glaucoma/cover.jpg' | relative_url }}" alt="Glaucoma project"><span>Public health</span></a>
-  <a class="leo-visual-card" href="{{ '/projects/nursing-forum/' | relative_url }}"><img src="{{ '/assets/img/projects/nursing-forum/cover.jpg' | relative_url }}" alt="Nursing forum"><span>Event</span></a>
-  <a class="leo-visual-card" href="{{ '/projects/china-latam-salon/' | relative_url }}"><img src="{{ '/assets/img/projects/china-latam-salon/cover.jpg' | relative_url }}" alt="China Latin America salon"><span>Speaking</span></a>
-  <a class="leo-visual-card" href="{{ '/projects/hku-infoday/' | relative_url }}"><img src="{{ '/assets/img/projects/hku-infoday/cover.jpg' | relative_url }}" alt="HKU Info Day"><span>Ambassador</span></a>
+  <a class="leo-visual-card" href="{{ '/projects/orbis-glaucoma/' | relative_url }}"><img src="{{ '/assets/img/projects/orbis-glaucoma/materials.jpg' | relative_url }}" alt="Glaucoma project materials"><span>Public health</span></a>
+  <a class="leo-visual-card" href="{{ '/projects/nursing-forum/' | relative_url }}"><img src="{{ '/assets/img/projects/nursing-forum/poster.jpg' | relative_url }}" alt="Nursing forum event poster"><span>Event</span></a>
+  <a class="leo-visual-card" href="{{ '/projects/china-latam-salon/' | relative_url }}"><img src="{{ '/assets/img/projects/china-latam-salon/stage.jpg' | relative_url }}" alt="China Latin America salon stage moment"><span>Speaking</span></a>
+  <a class="leo-visual-card" href="{{ '/projects/hku-infoday/' | relative_url }}"><img src="{{ '/assets/img/projects/hku-infoday/cover.jpg' | relative_url }}" alt="HKU Info Day ambassador booth"><span>Ambassador</span></a>
 </div>
 
 <div class="leo-tag-list leo-filter-note">

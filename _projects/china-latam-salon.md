@@ -4,7 +4,7 @@ title: China-Latin America Literature Salon
 permalink: /projects/china-latam-salon/
 description: Cross-cultural public speaking at the Spring Reading China-Latin America Literature Salon.
 hide_header: true
-img: assets/img/projects/china-latam-salon/cover.jpg
+img: assets/img/projects/china-latam-salon/portrait.jpg
 importance: 5
 category: communication
 ---
@@ -15,7 +15,7 @@ category: communication
     <h1>Speaking across cultures through literature, translation, and youth perspective.</h1>
     <p>I was invited to speak in a China-Latin America literature exchange setting, where literature became a bridge for discussing culture, translation, and how young people understand distant worlds through stories.</p>
   </div>
-  <img src="{{ '/assets/img/projects/china-latam-salon/cover.jpg' | relative_url }}" alt="Speaking at China-Latin America literature salon">
+  <img src="{{ '/assets/img/projects/china-latam-salon/portrait.jpg' | relative_url }}" alt="Portrait from China-Latin America literature salon">
 </div>
 
 <div class="leo-case-meta">

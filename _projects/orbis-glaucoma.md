@@ -4,7 +4,7 @@ title: Orbis Future Vision Leader · Glaucoma Awareness
 permalink: /projects/orbis-glaucoma/
 description: A public health campaign translating glaucoma prevention into community-facing education.
 hide_header: true
-img: assets/img/projects/orbis-glaucoma/cover.jpg
+img: assets/img/projects/orbis-glaucoma/materials.jpg
 importance: 2
 category: public-health
 ---
@@ -15,7 +15,7 @@ category: public-health
     <h1>Making glaucoma prevention easier to see, understand, and act on.</h1>
     <p>Through Orbis Future Vision Leader 2025/26, I worked on a glaucoma awareness campaign that turned eye-health knowledge into booth materials, public education, and community-facing conversations.</p>
   </div>
-  <img src="{{ '/assets/img/projects/orbis-glaucoma/cover.jpg' | relative_url }}" alt="Glaucoma campaign poster">
+  <img src="{{ '/assets/img/projects/orbis-glaucoma/booth.jpg' | relative_url }}" alt="Glaucoma awareness booth setup">
 </div>
 
 <div class="leo-case-meta">

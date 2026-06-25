@@ -40,7 +40,7 @@ nav: false
 
   <div class="leo-featured-work">
     <a class="leo-work-feature" href="{{ '/projects/orbis-glaucoma/' | relative_url }}">
-      <img src="{{ '/assets/img/projects/orbis-glaucoma/cover.jpg' | relative_url }}" alt="Glaucoma awareness campaign poster" width="1200" height="800" loading="lazy">
+      <img src="{{ '/assets/img/projects/orbis-glaucoma/booth.jpg' | relative_url }}" alt="Glaucoma awareness booth setup" width="1200" height="800" loading="lazy">
       <div>
         <span class="leo-card-label">Public health · 2025/26</span>
         <h3>Orbis Future Vision Leader · Glaucoma Awareness</h3>
@@ -62,12 +62,12 @@ nav: false
 
   <div class="leo-work-strip">
     <a href="{{ '/projects/nursing-forum/' | relative_url }}">
-      <img src="{{ '/assets/img/projects/nursing-forum/cover.jpg' | relative_url }}" alt="Hosting at HKU School of Nursing forum" width="800" height="600" loading="lazy">
+      <img src="{{ '/assets/img/projects/nursing-forum/group.jpg' | relative_url }}" alt="HKU School of Nursing forum group moment" width="800" height="600" loading="lazy">
       <span>Healthcare communication</span>
       <h3>HK International Nursing Forum</h3>
     </a>
     <a href="{{ '/projects/china-latam-salon/' | relative_url }}">
-      <img src="{{ '/assets/img/projects/china-latam-salon/cover.jpg' | relative_url }}" alt="Speaking at China-Latin America Literature Salon" width="800" height="600" loading="lazy">
+      <img src="{{ '/assets/img/projects/china-latam-salon/portrait.jpg' | relative_url }}" alt="China-Latin America Literature Salon portrait" width="800" height="600" loading="lazy">
       <span>Cross-cultural voice</span>
       <h3>China-Latin America Literature Salon</h3>
     </a>

@@ -19,9 +19,9 @@ nav_order: 4
 ## Case pathways
 
 <div class="leo-case-grid">
-  <a class="leo-case-card" href="{{ '/projects/orbis-glaucoma/' | relative_url }}"><img class="leo-case-visual" src="{{ '/assets/img/projects/orbis-glaucoma/cover.jpg' | relative_url }}" alt="Glaucoma awareness"><span class="leo-card-label">Public health</span><h3>Glaucoma awareness</h3><p>Health education, visual design, booth interaction, and accessible prevention messages.</p></a>
-  <a class="leo-case-card" href="{{ '/projects/nursing-forum/' | relative_url }}"><img class="leo-case-visual" src="{{ '/assets/img/projects/nursing-forum/cover.jpg' | relative_url }}" alt="Nursing forum"><span class="leo-card-label">Professional communication</span><h3>HK International Nursing Forum</h3><p>Hosting, student ambassador support, and healthcare event communication.</p></a>
-  <a class="leo-case-card" href="{{ '/projects/hku-infoday/' | relative_url }}"><img class="leo-case-visual" src="{{ '/assets/img/projects/hku-infoday/cover.jpg' | relative_url }}" alt="HKU Info Day"><span class="leo-card-label">Admissions outreach</span><h3>HKU Info Day</h3><p>Helping prospective students and families understand programmes and campus life.</p></a>
+  <a class="leo-case-card" href="{{ '/projects/orbis-glaucoma/' | relative_url }}"><img class="leo-case-visual" src="{{ '/assets/img/projects/orbis-glaucoma/simulation.jpg' | relative_url }}" alt="Glaucoma awareness simulation"><span class="leo-card-label">Public health</span><h3>Glaucoma awareness</h3><p>Health education, visual design, booth interaction, and accessible prevention messages.</p></a>
+  <a class="leo-case-card" href="{{ '/projects/nursing-forum/' | relative_url }}"><img class="leo-case-visual" src="{{ '/assets/img/projects/nursing-forum/formal-group.jpg' | relative_url }}" alt="Nursing forum formal group"><span class="leo-card-label">Professional communication</span><h3>HK International Nursing Forum</h3><p>Hosting, student ambassador support, and healthcare event communication.</p></a>
+  <a class="leo-case-card" href="{{ '/projects/hku-infoday/' | relative_url }}"><img class="leo-case-visual" src="{{ '/assets/img/projects/hku-infoday/swag.jpg' | relative_url }}" alt="HKUMed ambassador materials"><span class="leo-card-label">Admissions outreach</span><h3>HKU Info Day</h3><p>Helping prospective students and families understand programmes and campus life.</p></a>
 </div>
 
 ## What I measure

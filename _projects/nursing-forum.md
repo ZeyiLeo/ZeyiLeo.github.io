@@ -4,7 +4,7 @@ title: HK International Nursing Forum & 30th Anniversary
 permalink: /projects/nursing-forum/
 description: Hosting and student ambassador work at HKU School of Nursing’s major international forum and anniversary celebration.
 hide_header: true
-img: assets/img/projects/nursing-forum/cover.jpg
+img: assets/img/projects/nursing-forum/group.jpg
 importance: 6
 category: education
 ---
@@ -15,7 +15,7 @@ category: education
     <h1>Professional hosting at the edge of nursing, ageing, and global health dialogue.</h1>
     <p>I served in a hosting / student ambassador capacity during the HKU School of Nursing international forum and anniversary events, supporting a setting where nursing leadership, proactive ageing, and cross-disciplinary healthcare were the main conversation.</p>
   </div>
-  <img src="{{ '/assets/img/projects/nursing-forum/cover.jpg' | relative_url }}" alt="Hosting at HK International Nursing Forum event">
+  <img src="{{ '/assets/img/projects/nursing-forum/group.jpg' | relative_url }}" alt="Group moment at HK International Nursing Forum event">
 </div>
 
 <div class="leo-case-meta">

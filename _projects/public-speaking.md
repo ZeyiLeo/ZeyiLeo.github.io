@@ -4,7 +4,7 @@ title: Public Speaking & Communication
 permalink: /projects/public-speaking/
 description: Bilingual hosting, public speaking, cross-cultural communication, and health communication.
 hide_header: true
-img: assets/img/projects/public-speaking/cover.jpg
+img: assets/img/projects/public-speaking/stage.jpg
 importance: 9
 category: communication
 ---
@@ -15,7 +15,7 @@ category: communication
     <h1>Communication as infrastructure, not decoration.</h1>
     <p>My background in bilingual speaking, hosting, and cross-cultural presentation shapes how I approach healthcare, research, and public education. The point is not to sound polished. The point is to make people understand and care.</p>
   </div>
-  <img src="{{ '/assets/img/projects/public-speaking/cover.jpg' | relative_url }}" alt="Public speaking event photograph">
+  <img src="{{ '/assets/img/projects/public-speaking/stage.jpg' | relative_url }}" alt="Public speaking stage photograph">
 </div>
 
 <div class="leo-case-meta">
@@ -35,20 +35,8 @@ category: communication
 
 <div class="leo-photo-grid">
 <figure>
-  <img src="{{ '/assets/img/projects/public-speaking/cover.jpg' | relative_url }}" alt="Cross-cultural speaking context.">
-  <figcaption>Cross-cultural speaking context.</figcaption>
-</figure>
-<figure>
-  <img src="{{ '/assets/img/projects/public-speaking/mc.jpg' | relative_url }}" alt="Formal hosting at a healthcare event.">
-  <figcaption>Formal hosting at a healthcare event.</figcaption>
-</figure>
-<figure>
   <img src="{{ '/assets/img/projects/public-speaking/stage.jpg' | relative_url }}" alt="Stage presentation.">
   <figcaption>Stage presentation.</figcaption>
-</figure>
-<figure>
-  <img src="{{ '/assets/img/projects/public-speaking/networking.jpg' | relative_url }}" alt="Conversation and audience-facing exchange.">
-  <figcaption>Conversation and audience-facing exchange.</figcaption>
 </figure>
 </div>
 

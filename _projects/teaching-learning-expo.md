@@ -35,10 +35,6 @@ This event connects with my interest in healthcare communication and innovation.
   <figcaption>Group photo at HKUMed Teaching and Learning Expo context.</figcaption>
 </figure>
 <figure>
-  <img src="{{ '/assets/img/projects/teaching-learning-expo/lab-team.jpg' | relative_url }}" alt="Simulation and clinical skills learning environment.">
-  <figcaption>Simulation and clinical skills learning environment.</figcaption>
-</figure>
-<figure>
   <img src="{{ '/assets/img/projects/teaching-learning-expo/hku-med.jpg' | relative_url }}" alt="HKUMed campus and team setting.">
   <figcaption>HKUMed campus and team setting.</figcaption>
 </figure>

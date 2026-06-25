@@ -35,20 +35,8 @@ Student ambassador work is not only representation. The practical skill is liste
   <figcaption>HKUMed Information Day booth context.</figcaption>
 </figure>
 <figure>
-  <img src="{{ '/assets/img/projects/hku-infoday/campus-team.jpg' | relative_url }}" alt="Team photo at HKU medical campus.">
-  <figcaption>Team photo at HKU medical campus.</figcaption>
-</figure>
-<figure>
-  <img src="{{ '/assets/img/projects/hku-infoday/med-lobby.jpg' | relative_url }}" alt="HKU medical campus exterior.">
-  <figcaption>HKU medical campus exterior.</figcaption>
-</figure>
-<figure>
   <img src="{{ '/assets/img/projects/hku-infoday/swag.jpg' | relative_url }}" alt="HKUMed ambassador materials.">
   <figcaption>HKUMed ambassador materials.</figcaption>
-</figure>
-<figure>
-  <img src="{{ '/assets/img/projects/hku-infoday/hku-med-sign.jpg' | relative_url }}" alt="HKU Medicine campus activity setting.">
-  <figcaption>HKU Medicine campus activity setting.</figcaption>
 </figure>
 </div>
 

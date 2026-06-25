@@ -71,6 +71,6 @@ nav_order: 5
 ## Writing and voice in practice
 
 <div class="leo-case-grid">
-  <a class="leo-case-card" href="{{ '/projects/china-latam-salon/' | relative_url }}"><img class="leo-case-visual" src="{{ '/assets/img/projects/china-latam-salon/cover.jpg' | relative_url }}" alt="Cross-cultural public speaking"><span class="leo-card-label">Culture</span><h3>China-Latin America Literature Salon</h3><p>Public speaking as a form of cultural translation.</p></a>
-  <a class="leo-case-card" href="{{ '/projects/public-speaking/' | relative_url }}"><img class="leo-case-visual" src="{{ '/assets/img/projects/public-speaking/mc.jpg' | relative_url }}" alt="Formal hosting"><span class="leo-card-label">Voice</span><h3>Public speaking system</h3><p>How I structure messages for different audiences.</p></a>
+  <a class="leo-case-card" href="{{ '/projects/china-latam-salon/' | relative_url }}"><img class="leo-case-visual" src="{{ '/assets/img/projects/china-latam-salon/certificate.jpg' | relative_url }}" alt="Cross-cultural public speaking certificate"><span class="leo-card-label">Culture</span><h3>China-Latin America Literature Salon</h3><p>Public speaking as a form of cultural translation.</p></a>
+  <a class="leo-case-card" href="{{ '/projects/public-speaking/' | relative_url }}"><img class="leo-case-visual" src="{{ '/assets/img/projects/public-speaking/stage.jpg' | relative_url }}" alt="Public speaking stage moment"><span class="leo-card-label">Voice</span><h3>Public speaking system</h3><p>How I structure messages for different audiences.</p></a>
 </div>
