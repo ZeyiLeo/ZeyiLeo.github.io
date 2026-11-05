@@ -1,0 +1,6 @@
+---
+title: Connect
+permalink: /contact/
+---
+<header class="page-intro"><p class="eyebrow">Let’s connect</p><h1>Across fields.<br>Across the table.</h1><p class="intro-text">For a project, a speaking opportunity, a shared question, or a conversation that connects different worlds.</p></header>
+<div class="contact-grid">{% for link in site.data.links %}<a class="contact-card" href="{{ link.url }}"><span class="eyebrow">{{ link.name }}</span><h2>{{ link.handle }}</h2><p>{{ link.description }}</p></a>{% endfor %}</div>

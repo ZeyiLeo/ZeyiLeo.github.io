@@ -1,0 +1,12 @@
+- label: About
+  url: /about/
+- label: Work
+  url: /projects/
+- label: Experience
+  url: /experience/
+- label: Journal
+  url: /photography/
+- label: Writing
+  url: /writing/
+- label: CV
+  url: /cv/

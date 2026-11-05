@@ -1,0 +1,6 @@
+---
+title: Visual journal
+permalink: /photography/
+---
+<header class="page-intro"><p class="eyebrow">Photography & moments</p><h1>A life, in<br>the in-between.</h1><p class="intro-text">A small collection of moments around the work: a stage, a conversation, a campus encounter. Event photographs and portraits, gathered along the way.</p></header>
+<div class="gallery">{% for photo in site.data.photos %}<figure><a class="photo-link" href="{{ '/assets/img/' | append: photo.image | append: '-1280.webp' | relative_url }}" data-lightbox data-title="{{ photo.title | escape }}" data-caption="{{ photo.caption | escape }}"><img src="{{ '/assets/img/' | append: photo.image | append: '-640.webp' | relative_url }}" alt="{{ photo.caption | escape }}" width="{{ photo.width }}" height="{{ photo.height }}" loading="lazy"></a><figcaption><span class="accent">0{{ forloop.index }}</span> — {{ photo.title }}</figcaption></figure>{% endfor %}</div>

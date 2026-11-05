@@ -1,0 +1,8 @@
+---
+title: Selected work
+permalink: /projects/
+---
+<header class="page-intro"><p class="eyebrow">The portfolio</p><h1>Work that crosses<br>the usual lines.</h1><p class="intro-text">Health communication, international collaboration, business operations, and digital experiments. Explore the settings, the contributions, and the connections between them.</p></header>
+<div class="filter-bar" role="group" aria-label="Filter projects" hidden><button data-filter="all" aria-pressed="true">All work</button><button data-filter="healthcare" aria-pressed="false">Healthcare</button><button data-filter="communication" aria-pressed="false">Communication</button><button data-filter="business" aria-pressed="false">Business</button><button data-filter="technology" aria-pressed="false">Technology</button><button data-filter="creative" aria-pressed="false">Creative Work</button></div>
+<p class="filter-status" role="status" aria-live="polite">{{ site.projects.size }} projects · All work</p>
+<div class="work-grid page-end">{% assign sorted_projects = site.projects | sort: 'order' %}{% for project in sorted_projects %}{% include project-card.html %}{% endfor %}</div>

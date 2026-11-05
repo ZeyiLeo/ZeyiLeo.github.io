@@ -1,0 +1,9 @@
+{% assign card_heading = 'h2' %}{% if page.home %}{% assign card_heading = 'h3' %}{% endif %}
+<article class="project-card" data-categories="{{ project.filters | join: ' ' }}">
+  <a class="project-image {% unless project.image %}project-art{% endunless %}" href="{{ project.url | relative_url }}" aria-label="Explore {{ project.title | escape }}">
+    {% if project.image %}<img src="{{ '/assets/img/' | append: project.image | append: '-640.webp' | relative_url }}" srcset="{{ '/assets/img/' | append: project.image | append: '-640.webp' | relative_url }} 640w, {{ '/assets/img/' | append: project.image | append: '-1280.webp' | relative_url }} 1280w" sizes="(max-width: 700px) 100vw, 50vw" alt="{{ project.image_alt | escape }}" width="1280" height="960" loading="lazy">{% else %}<span class="art-label">{{ project.art_label }}</span><span class="art-type" aria-hidden="true">{{ project.art_type }}</span><span class="art-foot">{{ project.category }}</span>{% endif %}
+    <span class="image-arrow" aria-hidden="true">↗</span>
+  </a>
+  <div class="project-caption"><div><p class="eyebrow">{{ project.category }}</p><{{ card_heading }}><a href="{{ project.url | relative_url }}">{{ project.title }}</a></{{ card_heading }}></div><span class="project-index" aria-hidden="true">{{ project.order | prepend: '0' }}</span></div>
+  <p class="project-summary">{{ project.description }}</p>
+</article>
