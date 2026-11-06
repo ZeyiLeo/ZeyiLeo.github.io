@@ -1,10 +1,10 @@
 # Project status
 
-Updated 2026-11-06 (Asia/Hong_Kong). Latest scope: three distinct product interactions and a substantial, measured content expansion. Apple remains the shell/proportion reference. Original portrait and finished CV remain unchanged. Owner accepted this version and authorized public release on 2026-11-06; publication is in progress.
+Updated 2026-11-06 (Asia/Hong_Kong). Latest scope: three distinct product interactions and a substantial, measured content expansion. Apple remains the shell/proportion reference. Original portrait and finished CV remain unchanged. Owner accepted this version and authorized public release on 2026-11-06; publication and production-domain verification completed at 11:32 HKT.
 
 ## Repository and source readiness
 
-Canonical checkout: `https://github.com/ZeyiLeo/ZeyiLeo.github.io.git`. Branch `codex/digital-identity`, committed HEAD `854b458`. The preceding implementation and the owner's prompt-guideline documentation were already uncommitted at the start; that work is preserved. Remote HEAD/master rechecked before editing and at handoff: `3d65738ad1dbab8a597f8d87b32ddcd9323d968e`. No commit, push, merge or deployment was performed.
+Canonical checkout: `https://github.com/ZeyiLeo/ZeyiLeo.github.io.git`. Accepted website source: `ed9cff85f85ac1f69b8d9887184bd7a2244c56f3`. Initial normal production merge: `7818a1aa75e4041b3a1ebc1c725d55348d30ad10`; deployed master source after runner repair: `7481a9ee173d0441547a12ecf35c9f797dd4f822`. Published artifact branch commit: `25aff098b4e148592c6784b011ee25b0a700ef60`. Development and production history are preserved; no force-push was used. Final documentation-only updates follow this deployed source and do not change website build inputs.
 
 Active Jekyll source remains `site/`; project notes and historical root theme files remain excluded from output. Preview: http://127.0.0.1:4173/ . Existing core routes, seven cases and legacy continuation routes remain. The three draft essays bring the generated HTML count to 27.
 
@@ -22,7 +22,7 @@ Fixed baseline: 1,611 globally deduplicated body words, 56 structural body modul
 
 Counts exclude CV, navigation/footer/buttons, pure-link directions, TOCs, duplicate prose and identified review/UI instructions. Near-copy sentences are excluded with the same rule before and after. Module counts describe structure, not an independent guarantee of information quality. Editorial review removed repetitive source-boundary language and corrected the overlapping 2025 assistant/founder periods.
 
-Current biographical/task facts come from confirmed records, the supplied CV and approved material. Creative roots use owner-provided historical clues and archived content. New explanatory case prose, About organisation, visual-story text and three essays are local editorial drafts for owner review; no new qualifications, results, audiences or personal incidents are asserted. The essays are visibly labelled new drafts, with hypothetical examples identified. Original Global Times title/date remain unchanged.
+Current biographical/task facts come from confirmed records, the supplied CV and approved material. Creative roots use owner-provided historical clues and archived content. New explanatory case prose, About organisation, visual-story text and three essays were accepted by the owner for this release; no new qualifications, results, audiences or personal incidents are asserted. The essays are visibly labelled new drafts, with hypothetical examples identified. Original Global Times title/date remain unchanged.
 
 ## Immutable assets
 
@@ -30,7 +30,7 @@ Original CV: one page, 235520 bytes, SHA-256 `156c588fa40dacefd97129154c3ef4adac
 
 Headshot: original `assets/img/02.jpg`, 2098×2937, copied unchanged to `site/assets/img/headshot-original.jpg`; SHA-256 `69c2aec2237ebfbb489f333552b6f90f0c561ef4568c2a3d8d3d574dbf9efb3d`. No new documentary imagery or retouching.
 
-## Completed validation
+## Prior local acceptance validation
 
 - Production build; 27-page/seven-case internal links, content exclusions, assets and original-PDF checks; five JavaScript syntax checks; content target check; git whitespace check pass.
 - 38 actual browser page/viewport checks (19 routes at 1440×900 and 390×844), plus five homepage widths 320/375/768/1024/1280: no page horizontal overflow or failed loaded photographs.
@@ -46,15 +46,29 @@ No observed local functional blocker remains. Native browser mobile/touch emulat
 
 The owner accepted the current essays and expanded editorial explanations for this release; existing draft labels remain. More specific case evidence would require approved ACT/U21 outputs, a speech transcript or publishable store materials; none was fabricated. Earlier local-only restrictions are superseded by the owner's explicit 2026-11-06 release authorization. The publication record below tracks actual progress. See the local review package and `CONTENT_INVENTORY.md` for sources and remaining evidence gaps.
 
-## Authorized release — 2026-11-06 (in progress)
+## Authorized release — 2026-11-06 (completed)
 
-- Owner explicitly accepted the local version and authorized commit, push, normal merge, Pages deployment and production verification. Historical local-review-only records are retained.
-- Remote default/source branch: `master`, at `3d65738ad1dbab8a597f8d87b32ddcd9323d968e`; local `854b458` is one commit ahead with no divergence. Existing delivery path: build `site/` on master, push `_site/` to `gh-pages`, then GitHub Pages. The latest existing Pages run used `gh-pages`. Authenticated Pages settings verification is pending.
-- Release preflight: Ruby 3.3.6 production build passes; existing 27-page/seven-case links, anchors, asset and original-CV checks pass; content target passes (9,058 words / 5.623× baseline); all five application scripts parse. Staged whitespace inspection finds only upstream PDF.js/license formatting and an existing blank line in home.js; these accepted/vendor files remain unchanged. Source has no local-only runtime URL or application debug logging. Original CV remains one page, 235,520 bytes, SHA-256 `156c588fa40dacefd97129154c3ef4adac1519d1665682bf844159fa0ea4b1b4`.
-- Accepted website source committed as `ed9cff85f85ac1f69b8d9887184bd7a2244c56f3` on `codex/digital-identity`; all 281 accepted source files are tracked and hash-identical to the reviewed files. Generated build contains 262 files. Ignored output/caches/recordings remain excluded.
-- Push, production merge and deployment are pending GitHub account authentication. `gh auth status` reports: `You are not logged into any GitHub hosts.` Git credential lookup reports `fatal: could not read Username for 'https://github.com': terminal prompts disabled`. Browser also shows GitHub's sign-in form. Official GitHub CLI device login is open, including the workflow scope needed for the existing workflow update. No credentials or device codes are stored in repository files.
-- Actual production-domain visit still displays the former `ZY LEE` homepage, confirming this release is not yet live. New deployment/live interaction checks and production CV download remain pending. Only account login is needed to continue; release authorization is already granted.
+The owner explicitly accepted this version and authorized commits, pushes, normal merges, GitHub Pages deployment and live verification, including the complete unchanged original CV. Prior local-only decisions remain in the brief and changelog as historical records. The GitHub CLI permission prompt was resolved by the owner's explicit approval of the displayed scope. No credentials are stored in this repository.
 
-### Deployment progress and runner repair
+### Source and publication
 
-GitHub CLI login completed as ZeyiLeo after explicit owner approval of the displayed scopes. Authenticated Pages configuration is `legacy`, `gh-pages` branch `/` root; master allows normal pushes and has no applicable rules. Development branch pushed; normal production merge `7818a1aa75e4041b3a1ebc1c725d55348d30ad10` pushed to master. First run: https://github.com/ZeyiLeo/ZeyiLeo.github.io/actions/runs/42155933460 . It failed before build because Ubuntu 26.04 lacks Ruby 3.3.6. The workflow now pins Ubuntu 24.04 (official Ruby binary HTTP 200); rerun pending. Website source hashes remain unchanged. Earlier authentication-blocked entries describe the prior stage.
+- `codex/digital-identity` pushed with accepted source commit [`ed9cff8`](https://github.com/ZeyiLeo/ZeyiLeo.github.io/commit/ed9cff85f85ac1f69b8d9887184bd7a2244c56f3). Master has no applicable branch rules requiring a PR; normal merge [`7818a1a`](https://github.com/ZeyiLeo/ZeyiLeo.github.io/commit/7818a1aa75e4041b3a1ebc1c725d55348d30ad10) was pushed. No PR was needed.
+- First run `42155933460` stopped before build because `ubuntu-latest` selected Ubuntu 26.04, which has no Ruby 3.3.6 binary. Repair [`f1f38f1`](https://github.com/ZeyiLeo/ZeyiLeo.github.io/commit/f1f38f16344fc2cab9f10c19a9e1e24716e39b28) pins the existing job to Ubuntu 24.04; the official Ruby archive returned HTTP 200. Repair merged and pushed as [`7481a9e`](https://github.com/ZeyiLeo/ZeyiLeo.github.io/commit/7481a9ee173d0441547a12ecf35c9f797dd4f822). Website source/content unchanged.
+- [Production build and artifact publication](https://github.com/ZeyiLeo/ZeyiLeo.github.io/actions/runs/42156187944): success, including the production Jekyll build, page/link/asset checks and original-CV integrity check.
+- [GitHub Pages build and deployment](https://github.com/ZeyiLeo/ZeyiLeo.github.io/actions/runs/42156251293): success. Pages API confirms `built`, no error, artifact commit `25aff098b4e148592c6784b011ee25b0a700ef60`; deployed 2026-11-06 at 11:24 HKT. Existing configuration preserved: legacy branch publication from `gh-pages`, `/` root, HTTPS.
+- All 281 accepted website source files remain tracked and hash-identical to the reviewed version. Original source/dependencies/runtime resources and third-party licenses are included. Recordings, screenshots, caches and generated output remain ignored.
+
+### Production-domain verification — completed 11:32 HKT
+
+Target: https://zeyileo.github.io/ . All checks below used the public production domain.
+
+- Downloaded all 262 generated pages/resources from production and compared with the accepted local production build. All match; only numeric HTML asset-version build timestamps were normalized. This includes all CSS, JavaScript, images, original PDF, PDF.js modules, fonts, CMaps, WASM and licenses. The existing checker also passes against the downloaded production mirror: 27 pages, seven cases, internal links/anchors and original-PDF integrity. An unknown route returns HTTP 404; direct `/404.html` correctly returns 200.
+- Actual Chrome desktop (1440×900) and mobile-size (390×844, touch emulation) inspection confirms latest homepage, approved white-background/black-shirt portrait, `HKUMed Bachelor ’29` and three essay draft labels. No horizontal overflow observed in checked core routes and articles.
+- Navigation disclosure/close, grouped real links and 12px backdrop blur verified on desktop; phone root/child/Back/close/link navigation verified. About, Work, Experience, Journal, Writing, all seven case pages and all three article pages open. Article TOCs have six links and perform anchor navigation; cases have seven contents links.
+- Homepage two-sided opening/closing/theme selection and work-layer button/tab/keyboard selection verified. The phone featured-project link reaches the correct public-speaking case. Experience Healthcare filter gives four entries and All resets to nine. Visual-story Next and photograph lightbox open/close work.
+- Desktop original PDF reader renders one page; mobile original-file view opens and zooms to 120%. Actual desktop and phone browser downloads from production both verify as 235,520 bytes / one page / SHA-256 `156c588fa40dacefd97129154c3ef4adac1519d1665682bf844159fa0ea4b1b4`. Separate direct production-domain download matches too. No rewriting or PDF repair.
+- No application warning/error logs observed in checked production views. Screenshots, live-file comparison report and browser-download hashes are saved in ignored `output/release/`.
+
+### Remaining limits
+
+No unresolved release blocker. Mobile verification uses Chrome viewport/touch emulation; physical iOS/Android devices were not tested. Existing workflow versions produce a non-blocking Node 20 deprecation annotation; GitHub runs them on Node 24 and both workflows succeeded. A future routine maintenance change can update those actions separately.

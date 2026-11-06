@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-11-06 — Accepted version published and verified
+
+Published the accepted version to https://zeyileo.github.io/ through the existing master/gh-pages workflow. Production build and Pages deployment succeeded after pinning the runner to Ubuntu 24.04 for the verified Ruby 3.3.6 environment. All 262 public files match the accepted build; desktop/mobile core interactions and routes pass. Original CV downloads remain one page, 235,520 bytes and hash-identical. Accepted copy, draft labels, photos and interaction source are unchanged. See `_project/STATUS.md` for commit/run links and exact production verification.
+
 ## 2026-11-06 — Authorized production release (in progress)
 
 The owner accepted the current version and authorized commit, push, normal merge and GitHub Pages release. The accepted content, draft labels, original portrait, interactions and complete original CV are preserved. Production build, 27-page/seven-case links/assets/PDF checks, five application script syntax checks and content target pass. Final publication and live verification results are recorded in `_project/STATUS.md` and `_project/CHANGELOG.md`. Earlier local-only entries remain historical records.

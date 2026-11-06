@@ -12,7 +12,7 @@ The active website is a lightweight Jekyll site in `site/`. It replaces the al-f
 
 ## Current product iteration
 
-The latest local review uses the owner-confirmed original headshot, grouped global navigation, four reversible material/context connections, and a layered Orbis/Speaking/Commerce browser. About, seven cases, experience, visual stories and three marked writing drafts provide deeper content. The old website is a content/photo provenance source only; Apple remains the interface reference. `home_profile.json`, `connections.json`, `mega_navigation.json`, `experience_notes.json`, `journal_stories.json` and `essays.json` provide structured content; native CSS/JS enhance shared templates. Reduced motion and no-JavaScript views expose all content.
+The current released version uses the owner-confirmed original headshot, grouped global navigation, four reversible material/context connections, and a layered Orbis/Speaking/Commerce browser. About, seven cases, experience, visual stories and three marked writing drafts provide deeper content. The old website is a content/photo provenance source only; Apple remains the interface reference. `home_profile.json`, `connections.json`, `mega_navigation.json`, `experience_notes.json`, `journal_stories.json` and `essays.json` provide structured content; native CSS/JS enhance shared templates. Reduced motion and no-JavaScript views expose all content.
 
 The original finished CV stays unchanged. No CV generation step is part of the build. Current local review is at http://127.0.0.1:4173/ while its preview server is running. See `_project/STATUS.md` for current verification and publication state.
 
@@ -62,7 +62,7 @@ Mozilla PDF.js 6.5.438 is vendored under `site/assets/vendor/pdfjs/`, with Apach
 
 `scripts/check_site.py` checks internal links and anchors, all seven case pages, page headings, image alt attributes, exclusion of internal/template files, and exact original-PDF hash/size/page integrity. Browser checks are also required for UI changes: desktop/mobile layouts, menu, filters, scroll/intro/pinned motion, details, lightbox, keyboard access, and reduced motion.
 
-The production workflow is `.github/workflows/deploy.yml`. The owner accepted the reviewed version and explicitly authorized publication on 2026-11-06; see `_project/STATUS.md` for actual release progress. Pull requests build and validate without deploying. Pushes to `master` or `main` and manually dispatched runs deploy `_site/` to the existing `gh-pages` branch. Deployment access is unchanged. Review and owner authorization are required before a public release. A successful local build is not proof of a completed GitHub Pages deployment.
+The production workflow is `.github/workflows/deploy.yml`. The owner accepted and authorized this version on 2026-11-06. Production build, GitHub Pages deployment and production-domain verification completed successfully; see `_project/STATUS.md` for commit/run links and verification evidence. Pull requests build and validate without deploying. Pushes to `master` or `main` and manually dispatched runs deploy `_site/` to the existing `gh-pages` branch. Deployment access is unchanged. Review and owner authorization are required before a public release. A successful local build is not proof of a completed GitHub Pages deployment.
 
 ## Project continuity
 

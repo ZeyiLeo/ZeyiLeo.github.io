@@ -3,6 +3,16 @@
 Record substantive updates newest first. Use dates in Asia/Hong_Kong.
 For each update, include the reason, affected files, validation results, and publication status.
 
+## 2026-11-06 — Production release completed and verified
+
+Reason: fulfill the owner's explicit authorization to publish the accepted local version. Accepted source `ed9cff8` was pushed, normally merged to master as `7818a1a`, and published after the runner-only repair (`f1f38f1`, merged as `7481a9e`). No PR required by repository rules; no force push. The accepted 281 website source files remain hash-identical, with original portrait, complete original CV, draft labels, copy and interactions preserved.
+
+Production [build/publication run 42156187944](https://github.com/ZeyiLeo/ZeyiLeo.github.io/actions/runs/42156187944) and [Pages deployment run 42156251293](https://github.com/ZeyiLeo/ZeyiLeo.github.io/actions/runs/42156251293) succeeded. Existing `master → gh-pages → Pages` structure retained; artifact `25aff098b4e148592c6784b011ee25b0a700ef60` deployed at 11:24 HKT.
+
+Live verification completed at 11:32 HKT: all 262 production files match the local accepted build after normalizing build-version timestamps; the existing 27-page/seven-case link/asset/CV checker passes on the downloaded production mirror. Actual desktop/mobile browser checks cover the latest homepage, approved portrait, global menu, two-sided themes, layered works, core routes, seven cases, three essays and TOCs, experience filtering, stories/lightbox, CV rendering/open/zoom and actual downloads. Both browser downloads and a direct production download preserve the one-page, 235,520-byte CV SHA-256 `156c588fa40dacefd97129154c3ef4adac1519d1665682bf844159fa0ea4b1b4`.
+
+Publication: https://zeyileo.github.io/ is live with the accepted version. No release blocker remains. Mobile uses browser emulation. Non-blocking action-runtime deprecation annotation is recorded for future maintenance. Final documentation-only status updates do not change or redeploy website content. Earlier local-only, login-pending and first-run-failure records below remain historical evidence.
+
 ## 2026-11-06 — Production runner compatibility repair
 
 The first authorized production run `42155933460` stopped before building: `ubuntu-latest` now selects Ubuntu 26.04, where the pinned Ruby 3.3.6 binary is unavailable. Pin the existing job to `ubuntu-24.04`; the official Ruby 3.3.6 archive for that runner returns HTTP 200. Keep Ruby, dependencies, accepted website content and deployment structure unchanged. Remote production build and deployment will validate the repair.
