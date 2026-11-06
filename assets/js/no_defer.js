@@ -1,1 +1,0 @@
-document.addEventListener("DOMContentLoaded",()=>{const e="dark"===document.documentElement.getAttribute("data-theme");document.querySelectorAll("table").forEach(t=>{t.classList.toggle("table-dark",e);t.closest('[class*="news"], [class*="card"], code')||t.classList.add("table-hover")})});
