@@ -3,6 +3,10 @@
 Record substantive updates newest first. Use dates in Asia/Hong_Kong.
 For each update, include the reason, affected files, validation results, and publication status.
 
+## 2026-11-06 — Production runner compatibility repair
+
+The first authorized production run `42155933460` stopped before building: `ubuntu-latest` now selects Ubuntu 26.04, where the pinned Ruby 3.3.6 binary is unavailable. Pin the existing job to `ubuntu-24.04`; the official Ruby 3.3.6 archive for that runner returns HTTP 200. Keep Ruby, dependencies, accepted website content and deployment structure unchanged. Remote production build and deployment will validate the repair.
+
 ## 2026-11-06 — Owner-authorized production release (in progress)
 
 The owner accepted the reviewed local version and explicitly authorized all normal publication steps to https://zeyileo.github.io/. Earlier local-only history is retained. Preserve accepted copy, draft labels, approved portrait, original CV and interactions.
