@@ -1,0 +1,1166 @@
+{
+  "method_version": "distinct-body-v1",
+  "measured_at": "2026-11-05T16:59:07+08:00",
+  "method": {
+    "scope": "Main content of Home, About, Projects index/all project case routes, Experience, Photography, Writing index/all Writing article routes. CV, contact, legacy and 404 excluded.",
+    "eligible_tags": [
+      "blockquote",
+      "dd",
+      "figcaption",
+      "li",
+      "p"
+    ],
+    "minimum_body_block_words": 8,
+    "word_rule": "Unicode alphanumeric tokens; internal apostrophes/hyphens remain one token. Headings and alt text are not counted.",
+    "hidden_content": "Unique content in hidden tabs/details is counted once; hidden state never removes real content from this audit.",
+    "exclusions": "Navigation/footer/buttons/TOC/status/role/date/eyebrow labels, explicit UI instructions/placeholders and data-content-ignore/data-animation-copy regions.",
+    "deduplication": "Across all measured pages in fixed route order: exact normalised paragraph/sentence duplicates removed. Sentences with at least 12 words also removed at >=90% token-sequence similarity, with comparable length and >=75% token-set overlap.",
+    "modules": "Each nearest article/section/details container plus preceding content heading with at least one accepted body block. Titles themselves add no words. Structural heading changes alone do not prove a new editorial topic.",
+    "limitation": "Same-word or near-copy inflation is suppressed; semantic information value and unsupported facts still require editorial review. The audit does not count photographs themselves as words."
+  },
+  "total_words": 1611,
+  "total_body_blocks": 80,
+  "total_independent_modules": 56,
+  "pages": [
+    {
+      "route": "/",
+      "source_sha256": "23343c74c76e329ccacc3931731968664204a526866489ae1faa1800f606ab78",
+      "words": 320,
+      "body_blocks": 11,
+      "independent_modules": 8,
+      "modules": [
+        {
+          "heading": "Zeyi Li.",
+          "words": 34,
+          "body_blocks": 1
+        },
+        {
+          "heading": "The background. The work. The interests.",
+          "words": 13,
+          "body_blocks": 1
+        },
+        {
+          "heading": "Healthcare is my starting point.",
+          "words": 69,
+          "body_blocks": 2
+        },
+        {
+          "heading": "The work happens in the details.",
+          "words": 65,
+          "body_blocks": 2
+        },
+        {
+          "heading": "Film, language, and the way a story is told.",
+          "words": 75,
+          "body_blocks": 2
+        },
+        {
+          "heading": "Eye health, out in the community.",
+          "words": 23,
+          "body_blocks": 1
+        },
+        {
+          "heading": "A literature conversation across cultures.",
+          "words": 17,
+          "body_blocks": 1
+        },
+        {
+          "heading": "From a brand to an Amazon store.",
+          "words": 24,
+          "body_blocks": 1
+        }
+      ],
+      "blocks": [
+        {
+          "tag": "p",
+          "module": "Zeyi Li.",
+          "words": 34,
+          "source_text": "I’m studying at HKU’s Li Ka Shing Faculty of Medicine. My work spans health communication, international programme operations, and cross-border e-commerce. Film, literature, and languages are part of the background I bring to it.",
+          "counted_text": "I’m studying at HKU’s Li Ka Shing Faculty of Medicine. My work spans health communication, international programme operations, and cross-border e-commerce. Film, literature, and languages are part of the background I bring to it.",
+          "excluded_sentences": []
+        },
+        {
+          "tag": "p",
+          "module": "The background. The work. The interests.",
+          "words": 13,
+          "source_text": "From healthcare education and practical projects to the creative interests that came first.",
+          "counted_text": "From healthcare education and practical projects to the creative interests that came first.",
+          "excluded_sentences": []
+        },
+        {
+          "tag": "p",
+          "module": "Healthcare is my starting point.",
+          "words": 44,
+          "source_text": "I’m studying at The University of Hong Kong’s Li Ka Shing Faculty of Medicine, with expected graduation in 2029. My interests include global health, health communication, and practical uses of AI. Alongside my studies, I take part in public-facing projects and international health-sciences collaboration.",
+          "counted_text": "I’m studying at The University of Hong Kong’s Li Ka Shing Faculty of Medicine, with expected graduation in 2029. My interests include global health, health communication, and practical uses of AI. Alongside my studies, I take part in public-facing projects and international health-sciences collaboration.",
+          "excluded_sentences": []
+        },
+        {
+          "tag": "p",
+          "module": "Healthcare is my starting point.",
+          "words": 25,
+          "source_text": "In the U21 Health Sciences Group International Programme 2026, I served as a Group Leader, bringing research, cross-cultural teamwork, and presentations into the same project.",
+          "counted_text": "In the U21 Health Sciences Group International Programme 2026, I served as a Group Leader, bringing research, cross-cultural teamwork, and presentations into the same project.",
+          "excluded_sentences": []
+        },
+        {
+          "tag": "p",
+          "module": "The work happens in the details.",
+          "words": 36,
+          "source_text": "During my June–August 2026 internship with HKU Admissions Office, I supported HKU Academy for the Talented: programme administration, student communication, logistics, and admissions data. In Orbis projects, I worked as Group Leader on community outreach planning.",
+          "counted_text": "During my June–August 2026 internship with HKU Admissions Office, I supported HKU Academy for the Talented: programme administration, student communication, logistics, and admissions data. In Orbis projects, I worked as Group Leader on community outreach planning.",
+          "excluded_sentences": []
+        },
+        {
+          "tag": "p",
+          "module": "The work happens in the details.",
+          "words": 29,
+          "source_text": "Outside the university, I founded a cross-border e-commerce venture, registered a brand, launched an Amazon store for North America, and used sales, traffic, and advertising data to inform decisions.",
+          "counted_text": "Outside the university, I founded a cross-border e-commerce venture, registered a brand, launched an Amazon store for North America, and used sales, traffic, and advertising data to inform decisions.",
+          "excluded_sentences": []
+        },
+        {
+          "tag": "p",
+          "module": "Film, language, and the way a story is told.",
+          "words": 44,
+          "source_text": "My interest in cinema, visual art, literature, and traditional theatre began before university. Early explorations of comparative literature and different languages gave me ways to think about stories, images, and cultural context. My earlier personal website was a place to start recording those interests.",
+          "counted_text": "My interest in cinema, visual art, literature, and traditional theatre began before university. Early explorations of comparative literature and different languages gave me ways to think about stories, images, and cultural context. My earlier personal website was a place to start recording those interests.",
+          "excluded_sentences": []
+        },
+        {
+          "tag": "p",
+          "module": "Film, language, and the way a story is told.",
+          "words": 31,
+          "source_text": "I continue to explore these interests alongside my studies and project work. Bilingual speaking and the China–Latin American literature roundtable have given me opportunities to discuss ideas across languages and cultures.",
+          "counted_text": "I continue to explore these interests alongside my studies and project work. Bilingual speaking and the China–Latin American literature roundtable have given me opportunities to discuss ideas across languages and cultures.",
+          "excluded_sentences": []
+        },
+        {
+          "tag": "p",
+          "module": "Eye health, out in the community.",
+          "words": 23,
+          "source_text": "Worked with cross-functional teams on community outreach plans. The project documentation includes a glaucoma awareness booth, printed education materials, and an interactive demonstration.",
+          "counted_text": "Worked with cross-functional teams on community outreach plans. The project documentation includes a glaucoma awareness booth, printed education materials, and an interactive demonstration.",
+          "excluded_sentences": []
+        },
+        {
+          "tag": "p",
+          "module": "A literature conversation across cultures.",
+          "words": 17,
+          "source_text": "Delivered a keynote speech on Sino-Latin American literary exchange and joined roundtable discussions with the Colombian Ambassador.",
+          "counted_text": "Delivered a keynote speech on Sino-Latin American literary exchange and joined roundtable discussions with the Colombian Ambassador.",
+          "excluded_sentences": []
+        },
+        {
+          "tag": "p",
+          "module": "From a brand to an Amazon store.",
+          "words": 24,
+          "source_text": "Completed USPTO trademark registration and independently planned and launched an Amazon store for North America, covering market research, product selection, content, and operational analysis.",
+          "counted_text": "Completed USPTO trademark registration and independently planned and launched an Amazon store for North America, covering market research, product selection, content, and operational analysis.",
+          "excluded_sentences": []
+        }
+      ],
+      "excluded_body_blocks": [
+        {
+          "text": "Explore the role, the work, and the context.",
+          "reason": "UI instruction or explicit placeholder"
+        },
+        {
+          "text": "Read the full background, browse the projects, or start a conversation.",
+          "reason": "UI instruction or explicit placeholder"
+        }
+      ]
+    },
+    {
+      "route": "/about/",
+      "source_sha256": "1722b32de5c2ed85b1587ca3c719cfdb866090b5ae0eef1589d8a18e3efb6e80",
+      "words": 163,
+      "body_blocks": 5,
+      "independent_modules": 5,
+      "modules": [
+        {
+          "heading": "One person. Several ways of seeing.",
+          "words": 26,
+          "body_blocks": 1
+        },
+        {
+          "heading": "Healthcare is a starting point.",
+          "words": 34,
+          "body_blocks": 1
+        },
+        {
+          "heading": "Communication is the thread.",
+          "words": 35,
+          "body_blocks": 1
+        },
+        {
+          "heading": "Ideas become useful through practice.",
+          "words": 40,
+          "body_blocks": 1
+        },
+        {
+          "heading": "There is always another frame.",
+          "words": 28,
+          "body_blocks": 1
+        }
+      ],
+      "blocks": [
+        {
+          "tag": "p",
+          "module": "One person. Several ways of seeing.",
+          "words": 26,
+          "source_text": "I’m Zeyi Li. You can call me Leo. I’m studying at The University of Hong Kong, and I’m drawn to the spaces where different disciplines meet.",
+          "counted_text": "I’m Zeyi Li. You can call me Leo. I’m studying at The University of Hong Kong, and I’m drawn to the spaces where different disciplines meet.",
+          "excluded_sentences": []
+        },
+        {
+          "tag": "p",
+          "module": "Healthcare is a starting point.",
+          "words": 34,
+          "source_text": "My education at HKUMed gives me a place to begin: people, care, and the systems around them. My interests extend into global health, health communication, and the practical questions raised by AI in healthcare.",
+          "counted_text": "My education at HKUMed gives me a place to begin: people, care, and the systems around them. My interests extend into global health, health communication, and the practical questions raised by AI in healthcare.",
+          "excluded_sentences": []
+        },
+        {
+          "tag": "p",
+          "module": "Communication is the thread.",
+          "words": 35,
+          "source_text": "Bilingual public speaking, hosting, and cross-cultural conversations are part of my experience. I enjoy understanding how an audience sees a subject, then finding a way to make a complex idea clear without losing what matters.",
+          "counted_text": "Bilingual public speaking, hosting, and cross-cultural conversations are part of my experience. I enjoy understanding how an audience sees a subject, then finding a way to make a complex idea clear without losing what matters.",
+          "excluded_sentences": []
+        },
+        {
+          "tag": "p",
+          "module": "Ideas become useful through practice.",
+          "words": 40,
+          "source_text": "Cross-border e-commerce has brought me into brand building, Amazon operations, and marketing analytics. Programme work at HKU Admissions Office has involved logistics, data, and international student communication. Both ask for attention to the details that help a larger idea work.",
+          "counted_text": "Cross-border e-commerce has brought me into brand building, Amazon operations, and marketing analytics. Programme work at HKU Admissions Office has involved logistics, data, and international student communication. Both ask for attention to the details that help a larger idea work.",
+          "excluded_sentences": []
+        },
+        {
+          "tag": "p",
+          "module": "There is always another frame.",
+          "words": 28,
+          "source_text": "Cinema, photography, design, and tennis give me different ways to observe, practise, and make things. This site brings those interests into conversation with my academic and professional life.",
+          "counted_text": "Cinema, photography, design, and tennis give me different ways to observe, practise, and make things. This site brings those interests into conversation with my academic and professional life.",
+          "excluded_sentences": []
+        }
+      ],
+      "excluded_body_blocks": [
+        {
+          "text": "Zeyi Li / Z.Y. Lee / Leo HKUMed Bachelor ’29",
+          "reason": "UI instruction or explicit placeholder"
+        }
+      ]
+    },
+    {
+      "route": "/projects/",
+      "source_sha256": "07c39703fdd3a658f96a2f6bb68ae45faf4efc5729a4e9768a15c4813c5c0b9a",
+      "words": 92,
+      "body_blocks": 8,
+      "independent_modules": 8,
+      "modules": [
+        {
+          "heading": "Selected work.",
+          "words": 13,
+          "body_blocks": 1
+        },
+        {
+          "heading": "Orbis: making eye health visible",
+          "words": 9,
+          "body_blocks": 1
+        },
+        {
+          "heading": "Healthcare across borders",
+          "words": 10,
+          "body_blocks": 1
+        },
+        {
+          "heading": "Building across markets",
+          "words": 11,
+          "body_blocks": 1
+        },
+        {
+          "heading": "Behind an international programme",
+          "words": 12,
+          "body_blocks": 1
+        },
+        {
+          "heading": "A voice between cultures",
+          "words": 10,
+          "body_blocks": 1
+        },
+        {
+          "heading": "Setting the stage for connection",
+          "words": 15,
+          "body_blocks": 1
+        },
+        {
+          "heading": "An evolving digital identity",
+          "words": 12,
+          "body_blocks": 1
+        }
+      ],
+      "blocks": [
+        {
+          "tag": "p",
+          "module": "Selected work.",
+          "words": 13,
+          "source_text": "Healthcare, communication, business, and technology. A closer look at my roles and contributions.",
+          "counted_text": "Healthcare, communication, business, and technology. A closer look at my roles and contributions.",
+          "excluded_sentences": []
+        },
+        {
+          "tag": "p",
+          "module": "Orbis: making eye health visible",
+          "words": 9,
+          "source_text": "Public-health outreach and a community-facing approach to eye-health communication.",
+          "counted_text": "Public-health outreach and a community-facing approach to eye-health communication.",
+          "excluded_sentences": []
+        },
+        {
+          "tag": "p",
+          "module": "Healthcare across borders",
+          "words": 10,
+          "source_text": "International health-sciences collaboration, from research and discussion to shared recommendations.",
+          "counted_text": "International health-sciences collaboration, from research and discussion to shared recommendations.",
+          "excluded_sentences": []
+        },
+        {
+          "tag": "p",
+          "module": "Building across markets",
+          "words": 11,
+          "source_text": "An independent e-commerce venture connecting brand building, operations, and data-informed decisions.",
+          "counted_text": "An independent e-commerce venture connecting brand building, operations, and data-informed decisions.",
+          "excluded_sentences": []
+        },
+        {
+          "tag": "p",
+          "module": "Behind an international programme",
+          "words": 12,
+          "source_text": "Programme operations for HKU Academy for the Talented, supporting international student journeys.",
+          "counted_text": "Programme operations for HKU Academy for the Talented, supporting international student journeys.",
+          "excluded_sentences": []
+        },
+        {
+          "tag": "p",
+          "module": "A voice between cultures",
+          "words": 10,
+          "source_text": "Public speaking and a conversation about Sino-Latin American literary exchange.",
+          "counted_text": "Public speaking and a conversation about Sino-Latin American literary exchange.",
+          "excluded_sentences": []
+        },
+        {
+          "tag": "p",
+          "module": "Setting the stage for connection",
+          "words": 15,
+          "source_text": "Hosting and on-site support at the Hong Kong International Nursing Forum and an anniversary celebration.",
+          "counted_text": "Hosting and on-site support at the Hong Kong International Nursing Forum and an anniversary celebration.",
+          "excluded_sentences": []
+        },
+        {
+          "tag": "p",
+          "module": "An evolving digital identity",
+          "words": 12,
+          "source_text": "A personal platform for connecting work, ideas, and visual stories across disciplines.",
+          "counted_text": "A personal platform for connecting work, ideas, and visual stories across disciplines.",
+          "excluded_sentences": []
+        }
+      ],
+      "excluded_body_blocks": []
+    },
+    {
+      "route": "/experience/",
+      "source_sha256": "4796df706683fc9539ec312345703cc1b635d5f19dd784702db4a3d65699852b",
+      "words": 255,
+      "body_blocks": 19,
+      "independent_modules": 8,
+      "modules": [
+        {
+          "heading": "Learning by getting involved.",
+          "words": 7,
+          "body_blocks": 1
+        },
+        {
+          "heading": "Cross-border E-commerce",
+          "words": 66,
+          "body_blocks": 4
+        },
+        {
+          "heading": "HKU Admissions Office",
+          "words": 50,
+          "body_blocks": 3
+        },
+        {
+          "heading": "Amazon.com & International Trade Company",
+          "words": 37,
+          "body_blocks": 3
+        },
+        {
+          "heading": "U21 Health Sciences Group International Programme 2026",
+          "words": 41,
+          "body_blocks": 3
+        },
+        {
+          "heading": "Orbis Vision Leader Program 2025/26",
+          "words": 9,
+          "body_blocks": 1
+        },
+        {
+          "heading": "Hong Kong International Nursing Forum & HKU School of Nursing 30th Anniversary",
+          "words": 23,
+          "body_blocks": 2
+        },
+        {
+          "heading": "China-Latin American Literature Roundtable Dialogue",
+          "words": 22,
+          "body_blocks": 2
+        }
+      ],
+      "blocks": [
+        {
+          "tag": "p",
+          "module": "Learning by getting involved.",
+          "words": 7,
+          "source_text": "Education, work, and projects across different settings. Open an entry to see my role and contributions.",
+          "counted_text": "Education, work, and projects across different settings.",
+          "excluded_sentences": [
+            {
+              "text": "Open an entry to see my role and contributions.",
+              "reason": "UI instruction or explicit placeholder"
+            }
+          ]
+        },
+        {
+          "tag": "li",
+          "module": "Cross-border E-commerce",
+          "words": 16,
+          "source_text": "Advanced brand building and completed trademark registration with the United States Patent and Trademark Office (USPTO).",
+          "counted_text": "Advanced brand building and completed trademark registration with the United States Patent and Trademark Office (USPTO).",
+          "excluded_sentences": []
+        },
+        {
+          "tag": "li",
+          "module": "Cross-border E-commerce",
+          "words": 20,
+          "source_text": "Independently planned and launched an Amazon store for the North American market, covering market research, product selection, and platform entry.",
+          "counted_text": "Independently planned and launched an Amazon store for the North American market, covering market research, product selection, and platform entry.",
+          "excluded_sentences": []
+        },
+        {
+          "tag": "li",
+          "module": "Cross-border E-commerce",
+          "words": 11,
+          "source_text": "Monitored sales volume, traffic, and conversion data to inform business strategy.",
+          "counted_text": "Monitored sales volume, traffic, and conversion data to inform business strategy.",
+          "excluded_sentences": []
+        },
+        {
+          "tag": "li",
+          "module": "Cross-border E-commerce",
+          "words": 19,
+          "source_text": "Maintained ACoS below 30% and TACoS up to 21% through promotional content, store-page optimisation, and analysis of feedback data.",
+          "counted_text": "Maintained ACoS below 30% and TACoS up to 21% through promotional content, store-page optimisation, and analysis of feedback data.",
+          "excluded_sentences": []
+        },
+        {
+          "tag": "li",
+          "module": "HKU Admissions Office",
+          "words": 22,
+          "source_text": "Managed programme operations for HKU Academy for the Talented (ACT), including participant administration, application processing, and visa tracking across international academic programmes.",
+          "counted_text": "Managed programme operations for HKU Academy for the Talented (ACT), including participant administration, application processing, and visa tracking across international academic programmes.",
+          "excluded_sentences": []
+        },
+        {
+          "tag": "li",
+          "module": "HKU Admissions Office",
+          "words": 18,
+          "source_text": "Coordinated programme logistics and academic events with cross-functional stakeholders, supporting communication with international students through admissions and onboarding.",
+          "counted_text": "Coordinated programme logistics and academic events with cross-functional stakeholders, supporting communication with international students through admissions and onboarding.",
+          "excluded_sentences": []
+        },
+        {
+          "tag": "li",
+          "module": "HKU Admissions Office",
+          "words": 10,
+          "source_text": "Reconciled admissions datasets, identified operational discrepancies, and streamlined administrative workflows.",
+          "counted_text": "Reconciled admissions datasets, identified operational discrepancies, and streamlined administrative workflows.",
+          "excluded_sentences": []
+        },
+        {
+          "tag": "li",
+          "module": "Amazon.com & International Trade Company",
+          "words": 12,
+          "source_text": "Created A+ advertising content and organised advertising data for an Amazon best-seller.",
+          "counted_text": "Created A+ advertising content and organised advertising data for an Amazon best-seller.",
+          "excluded_sentences": []
+        },
+        {
+          "tag": "li",
+          "module": "Amazon.com & International Trade Company",
+          "words": 11,
+          "source_text": "Analysed Amazon store data to inform advertising strategies and cost optimisation.",
+          "counted_text": "Analysed Amazon store data to inform advertising strategies and cost optimisation.",
+          "excluded_sentences": []
+        },
+        {
+          "tag": "li",
+          "module": "Amazon.com & International Trade Company",
+          "words": 14,
+          "source_text": "Coordinated international shipping and supply-chain workflows, including inventory turnover, order fulfilment, and operational costs.",
+          "counted_text": "Coordinated international shipping and supply-chain workflows, including inventory turnover, order fulfilment, and operational costs.",
+          "excluded_sentences": []
+        },
+        {
+          "tag": "li",
+          "module": "U21 Health Sciences Group International Programme 2026",
+          "words": 15,
+          "source_text": "Selected to represent The University of Hong Kong, collaborating with multidisciplinary teams from global universities.",
+          "counted_text": "Selected to represent The University of Hong Kong, collaborating with multidisciplinary teams from global universities.",
+          "excluded_sentences": []
+        },
+        {
+          "tag": "li",
+          "module": "U21 Health Sciences Group International Programme 2026",
+          "words": 15,
+          "source_text": "Developed evidence-based responses to global healthcare challenges through research, cross-cultural teamwork, stakeholder engagement, and presentations.",
+          "counted_text": "Developed evidence-based responses to global healthcare challenges through research, cross-cultural teamwork, stakeholder engagement, and presentations.",
+          "excluded_sentences": []
+        },
+        {
+          "tag": "li",
+          "module": "U21 Health Sciences Group International Programme 2026",
+          "words": 11,
+          "source_text": "Presented policy recommendations and project outcomes to an international academic audience.",
+          "counted_text": "Presented policy recommendations and project outcomes to an international academic audience.",
+          "excluded_sentences": []
+        },
+        {
+          "tag": "li",
+          "module": "Orbis Vision Leader Program 2025/26",
+          "words": 9,
+          "source_text": "Collaborated with cross-functional teams to develop community outreach plans.",
+          "counted_text": "Collaborated with cross-functional teams to develop community outreach plans.",
+          "excluded_sentences": []
+        },
+        {
+          "tag": "li",
+          "module": "Hong Kong International Nursing Forum & HKU School of Nursing 30th Anniversary",
+          "words": 13,
+          "source_text": "Served as master of ceremony for the opening dinner, coordinating with senior alumni.",
+          "counted_text": "Served as master of ceremony for the opening dinner, coordinating with senior alumni.",
+          "excluded_sentences": []
+        },
+        {
+          "tag": "li",
+          "module": "Hong Kong International Nursing Forum & HKU School of Nursing 30th Anniversary",
+          "words": 10,
+          "source_text": "Provided on-site support and guest reception services at the forum.",
+          "counted_text": "Provided on-site support and guest reception services at the forum.",
+          "excluded_sentences": []
+        },
+        {
+          "tag": "li",
+          "module": "China-Latin American Literature Roundtable Dialogue",
+          "words": 9,
+          "source_text": "Delivered a keynote speech on Sino-Latin American literary exchanges.",
+          "counted_text": "Delivered a keynote speech on Sino-Latin American literary exchanges.",
+          "excluded_sentences": []
+        },
+        {
+          "tag": "li",
+          "module": "China-Latin American Literature Roundtable Dialogue",
+          "words": 13,
+          "source_text": "Joined roundtable discussions with the Colombian Ambassador on international relations and cultural cooperation.",
+          "counted_text": "Joined roundtable discussions with the Colombian Ambassador on international relations and cultural cooperation.",
+          "excluded_sentences": []
+        }
+      ],
+      "excluded_body_blocks": []
+    },
+    {
+      "route": "/photography/",
+      "source_sha256": "ec96137b2ceb0b9a937c8d6559e1968ae535234a1533c54326978f3fbcf66dd7",
+      "words": 23,
+      "body_blocks": 1,
+      "independent_modules": 1,
+      "modules": [
+        {
+          "heading": "A life, in the in-between.",
+          "words": 23,
+          "body_blocks": 1
+        }
+      ],
+      "blocks": [
+        {
+          "tag": "p",
+          "module": "A life, in the in-between.",
+          "words": 23,
+          "source_text": "A small collection of moments around the work: a stage, a conversation, a campus encounter. Event photographs and portraits, gathered along the way.",
+          "counted_text": "A small collection of moments around the work: a stage, a conversation, a campus encounter. Event photographs and portraits, gathered along the way.",
+          "excluded_sentences": []
+        }
+      ],
+      "excluded_body_blocks": []
+    },
+    {
+      "route": "/writing/",
+      "source_sha256": "6609fe141c29f61792c35cf0c42336e357d3cd5bf61522bcd669a894dcedc13f",
+      "words": 23,
+      "body_blocks": 1,
+      "independent_modules": 1,
+      "modules": [
+        {
+          "heading": "Room to think out loud.",
+          "words": 23,
+          "body_blocks": 1
+        }
+      ],
+      "blocks": [
+        {
+          "tag": "p",
+          "module": "Room to think out loud.",
+          "words": 23,
+          "source_text": "Writing is another way to connect perspectives: healthcare and culture, public life and private reflection, an idea and the language that carries it.",
+          "counted_text": "Writing is another way to connect perspectives: healthcare and culture, public life and private reflection, an idea and the language that carries it.",
+          "excluded_sentences": []
+        }
+      ],
+      "excluded_body_blocks": [
+        {
+          "text": "Publication listed in my CV. The original article link will be added once confirmed.",
+          "reason": "UI instruction or explicit placeholder"
+        },
+        {
+          "text": "This space will grow with selected essays, speeches, project reflections, and notes. Original texts will appear here when they are ready to share.",
+          "reason": "UI instruction or explicit placeholder"
+        }
+      ]
+    },
+    {
+      "route": "/projects/digital-system/",
+      "source_sha256": "ded9407ce812cf3c74b9acc6c2b7506765f8e3105ef73d98b8c1e16de86b54a9",
+      "words": 98,
+      "body_blocks": 4,
+      "independent_modules": 3,
+      "modules": [
+        {
+          "heading": "The project",
+          "words": 22,
+          "body_blocks": 1
+        },
+        {
+          "heading": "The approach",
+          "words": 53,
+          "body_blocks": 2
+        },
+        {
+          "heading": "An ongoing practice",
+          "words": 23,
+          "body_blocks": 1
+        }
+      ],
+      "blocks": [
+        {
+          "tag": "p",
+          "module": "The project",
+          "words": 22,
+          "source_text": "This website is an ongoing personal project: a place to bring healthcare, communication, business, technology, and creative work into one coherent view.",
+          "counted_text": "This website is an ongoing personal project: a place to bring healthcare, communication, business, technology, and creative work into one coherent view.",
+          "excluded_sentences": []
+        },
+        {
+          "tag": "p",
+          "module": "The approach",
+          "words": 21,
+          "source_text": "The site uses Jekyll to generate static pages. Shared layouts and structured records keep project information, experience, and the CV maintainable.",
+          "counted_text": "The site uses Jekyll to generate static pages. Shared layouts and structured records keep project information, experience, and the CV maintainable.",
+          "excluded_sentences": []
+        },
+        {
+          "tag": "p",
+          "module": "The approach",
+          "words": 32,
+          "source_text": "The CV page displays the original owner-provided PDF directly, with open and download links to the same unchanged file. Portfolio filters, expandable experience entries, and photography lightboxes support different levels of exploration.",
+          "counted_text": "The CV page displays the original owner-provided PDF directly, with open and download links to the same unchanged file. Portfolio filters, expandable experience entries, and photography lightboxes support different levels of exploration.",
+          "excluded_sentences": []
+        },
+        {
+          "tag": "p",
+          "module": "An ongoing practice",
+          "words": 23,
+          "source_text": "The site will grow through new work, writing, and photographs. It is designed to stay readable, accessible, and useful as those materials evolve.",
+          "counted_text": "The site will grow through new work, writing, and photographs. It is designed to stay readable, accessible, and useful as those materials evolve.",
+          "excluded_sentences": []
+        }
+      ],
+      "excluded_body_blocks": [
+        {
+          "text": "A personal platform for connecting work, ideas, and visual stories across disciplines.",
+          "reason": "Exact repeated body block"
+        }
+      ]
+    },
+    {
+      "route": "/projects/ecommerce-brand/",
+      "source_sha256": "ff79443b22f5dce0277bfb64611219e5fa821d278d53e6adf05009c7dd606ac3",
+      "words": 106,
+      "body_blocks": 5,
+      "independent_modules": 3,
+      "modules": [
+        {
+          "heading": "From brand to operation",
+          "words": 35,
+          "body_blocks": 1
+        },
+        {
+          "heading": "The operating loop",
+          "words": 37,
+          "body_blocks": 2
+        },
+        {
+          "heading": "What connects",
+          "words": 34,
+          "body_blocks": 2
+        }
+      ],
+      "blocks": [
+        {
+          "tag": "p",
+          "module": "From brand to operation",
+          "words": 35,
+          "source_text": "Since January 2025, I have worked on a cross-border e-commerce business serving the North American market. My work covers brand building, USPTO trademark registration, market research, product selection, and the launch of an Amazon store.",
+          "counted_text": "Since January 2025, I have worked on a cross-border e-commerce business serving the North American market. My work covers brand building, USPTO trademark registration, market research, product selection, and the launch of an Amazon store.",
+          "excluded_sentences": []
+        },
+        {
+          "tag": "p",
+          "module": "The operating loop",
+          "words": 25,
+          "source_text": "I monitor sales, traffic, and conversion data to inform business decisions. Promotional content, store-page design, and feedback analysis form part of the same operating process.",
+          "counted_text": "I monitor sales, traffic, and conversion data to inform business decisions. Promotional content, store-page design, and feedback analysis form part of the same operating process.",
+          "excluded_sentences": []
+        },
+        {
+          "tag": "p",
+          "module": "The operating loop",
+          "words": 12,
+          "source_text": "Selected operating metrics include ACoS below 30% and TACoS up to 21% .",
+          "counted_text": "Selected operating metrics include ACoS below 30% and TACoS up to 21% .",
+          "excluded_sentences": []
+        },
+        {
+          "tag": "p",
+          "module": "What connects",
+          "words": 21,
+          "source_text": "The work combines communication with execution: positioning a product, understanding its audience, coordinating operations, and using data to revise the approach.",
+          "counted_text": "The work combines communication with execution: positioning a product, understanding its audience, coordinating operations, and using data to revise the approach.",
+          "excluded_sentences": []
+        },
+        {
+          "tag": "p",
+          "module": "What connects",
+          "words": 13,
+          "source_text": "Product screenshots, brand identifiers, and operational dashboards remain outside this public case study.",
+          "counted_text": "Product screenshots, brand identifiers, and operational dashboards remain outside this public case study.",
+          "excluded_sentences": []
+        }
+      ],
+      "excluded_body_blocks": [
+        {
+          "text": "An independent e-commerce venture connecting brand building, operations, and data-informed decisions.",
+          "reason": "Exact repeated body block"
+        }
+      ]
+    },
+    {
+      "route": "/projects/hku-academy/",
+      "source_sha256": "d671a1c92241bc8aeb01e96abffb885be155c291638e7cebc747b30759784b2e",
+      "words": 102,
+      "body_blocks": 6,
+      "independent_modules": 3,
+      "modules": [
+        {
+          "heading": "The work",
+          "words": 34,
+          "body_blocks": 2
+        },
+        {
+          "heading": "Coordination and clarity",
+          "words": 34,
+          "body_blocks": 2
+        },
+        {
+          "heading": "What connects",
+          "words": 34,
+          "body_blocks": 2
+        }
+      ],
+      "blocks": [
+        {
+          "tag": "p",
+          "module": "The work",
+          "words": 21,
+          "source_text": "During my June–August 2026 internship with HKU Admissions Office , I worked on programme operations for HKU Academy for the Talented (ACT).",
+          "counted_text": "During my June–August 2026 internship with HKU Admissions Office , I worked on programme operations for HKU Academy for the Talented (ACT).",
+          "excluded_sentences": []
+        },
+        {
+          "tag": "p",
+          "module": "The work",
+          "words": 13,
+          "source_text": "Responsibilities included participant administration, application processing, and visa tracking across international academic programmes.",
+          "counted_text": "Responsibilities included participant administration, application processing, and visa tracking across international academic programmes.",
+          "excluded_sentences": []
+        },
+        {
+          "tag": "p",
+          "module": "Coordination and clarity",
+          "words": 20,
+          "source_text": "I worked with cross-functional stakeholders on programme logistics and academic events, supporting communication with international students through admissions and onboarding.",
+          "counted_text": "I worked with cross-functional stakeholders on programme logistics and academic events, supporting communication with international students through admissions and onboarding.",
+          "excluded_sentences": []
+        },
+        {
+          "tag": "p",
+          "module": "Coordination and clarity",
+          "words": 14,
+          "source_text": "The role also involved reconciling admissions datasets, identifying operational discrepancies, and streamlining administrative workflows.",
+          "counted_text": "The role also involved reconciling admissions datasets, identifying operational discrepancies, and streamlining administrative workflows.",
+          "excluded_sentences": []
+        },
+        {
+          "tag": "p",
+          "module": "What connects",
+          "words": 21,
+          "source_text": "This experience links programme delivery, communication, and analytical work. Reliable data and clear communication both contribute to a smoother participant experience.",
+          "counted_text": "This experience links programme delivery, communication, and analytical work. Reliable data and clear communication both contribute to a smoother participant experience.",
+          "excluded_sentences": []
+        },
+        {
+          "tag": "p",
+          "module": "What connects",
+          "words": 13,
+          "source_text": "Student records and internal programme materials are not included in this case study.",
+          "counted_text": "Student records and internal programme materials are not included in this case study.",
+          "excluded_sentences": []
+        }
+      ],
+      "excluded_body_blocks": [
+        {
+          "text": "Programme operations for HKU Academy for the Talented, supporting international student journeys.",
+          "reason": "Exact repeated body block"
+        }
+      ]
+    },
+    {
+      "route": "/projects/nursing-forum/",
+      "source_sha256": "1db5071ae60fa63a794b6435451425a99f55199fd21591fe427df5994a62a48d",
+      "words": 85,
+      "body_blocks": 4,
+      "independent_modules": 4,
+      "modules": [
+        {
+          "heading": "Setting the stage for connection",
+          "words": 9,
+          "body_blocks": 1
+        },
+        {
+          "heading": "The occasion",
+          "words": 19,
+          "body_blocks": 1
+        },
+        {
+          "heading": "My contribution",
+          "words": 33,
+          "body_blocks": 1
+        },
+        {
+          "heading": "What connects",
+          "words": 24,
+          "body_blocks": 1
+        }
+      ],
+      "blocks": [
+        {
+          "tag": "figcaption",
+          "module": "Setting the stage for connection",
+          "words": 9,
+          "source_text": "Group moment at the Hong Kong International Nursing Forum",
+          "counted_text": "Group moment at the Hong Kong International Nursing Forum",
+          "excluded_sentences": []
+        },
+        {
+          "tag": "p",
+          "module": "The occasion",
+          "words": 19,
+          "source_text": "The Hong Kong International Nursing Forum and HKU School of Nursing 30th Anniversary took place on 30–31 October 2025 .",
+          "counted_text": "The Hong Kong International Nursing Forum and HKU School of Nursing 30th Anniversary took place on 30–31 October 2025 .",
+          "excluded_sentences": []
+        },
+        {
+          "tag": "p",
+          "module": "My contribution",
+          "words": 33,
+          "source_text": "As Master of Ceremony and Student Ambassador , I hosted the opening dinner and coordinated with senior alumni to support the event. I also provided on-site support and guest reception services at the forum.",
+          "counted_text": "As Master of Ceremony and Student Ambassador , I hosted the opening dinner and coordinated with senior alumni to support the event. I also provided on-site support and guest reception services at the forum.",
+          "excluded_sentences": []
+        },
+        {
+          "tag": "p",
+          "module": "What connects",
+          "words": 24,
+          "source_text": "The work brought healthcare and communication together in a live setting: introducing people, supporting the flow of an event, and helping guests feel welcomed.",
+          "counted_text": "The work brought healthcare and communication together in a live setting: introducing people, supporting the flow of an event, and helping guests feel welcomed.",
+          "excluded_sentences": []
+        }
+      ],
+      "excluded_body_blocks": [
+        {
+          "text": "Hosting and on-site support at the Hong Kong International Nursing Forum and an anniversary celebration.",
+          "reason": "Exact repeated body block"
+        }
+      ]
+    },
+    {
+      "route": "/projects/orbis-glaucoma/",
+      "source_sha256": "b4ec7a3fb86ff82c8f6443b192f7f235ea94f838b3a548571a26bc004146603b",
+      "words": 146,
+      "body_blocks": 7,
+      "independent_modules": 6,
+      "modules": [
+        {
+          "heading": "Plan the outreach.",
+          "words": 18,
+          "body_blocks": 1
+        },
+        {
+          "heading": "Bring it to the booth.",
+          "words": 17,
+          "body_blocks": 1
+        },
+        {
+          "heading": "Make the information tangible.",
+          "words": 16,
+          "body_blocks": 1
+        },
+        {
+          "heading": "The work",
+          "words": 48,
+          "body_blocks": 2
+        },
+        {
+          "heading": "A closer look",
+          "words": 24,
+          "body_blocks": 1
+        },
+        {
+          "heading": "What connects",
+          "words": 23,
+          "body_blocks": 1
+        }
+      ],
+      "blocks": [
+        {
+          "tag": "p",
+          "module": "Plan the outreach.",
+          "words": 18,
+          "source_text": "As Group Leader, I worked with cross-functional teams on community outreach plans for public-health and international charity projects.",
+          "counted_text": "As Group Leader, I worked with cross-functional teams on community outreach plans for public-health and international charity projects.",
+          "excluded_sentences": []
+        },
+        {
+          "tag": "p",
+          "module": "Bring it to the booth.",
+          "words": 17,
+          "source_text": "The glaucoma awareness booth brought eye-health information into an everyday university setting, with printed materials and conversations.",
+          "counted_text": "The glaucoma awareness booth brought eye-health information into an everyday university setting, with printed materials and conversations.",
+          "excluded_sentences": []
+        },
+        {
+          "tag": "p",
+          "module": "Make the information tangible.",
+          "words": 16,
+          "source_text": "Printed education materials and an interactive demonstration gave visitors different ways to engage with the subject.",
+          "counted_text": "Printed education materials and an interactive demonstration gave visitors different ways to engage with the subject.",
+          "excluded_sentences": []
+        },
+        {
+          "tag": "p",
+          "module": "The work",
+          "words": 22,
+          "source_text": "Public-health communication begins with how people encounter an idea. My Orbis work connects public-health and international charity projects with community outreach planning.",
+          "counted_text": "Public-health communication begins with how people encounter an idea. My Orbis work connects public-health and international charity projects with community outreach planning.",
+          "excluded_sentences": []
+        },
+        {
+          "tag": "p",
+          "module": "The work",
+          "words": 26,
+          "source_text": "As Group Leader , I worked with cross-functional teams to develop outreach plans. The campaign documentation includes a glaucoma-awareness booth, printed education materials, and an interactive demonstration.",
+          "counted_text": "As Group Leader , I worked with cross-functional teams to develop outreach plans. The campaign documentation includes a glaucoma-awareness booth, printed education materials, and an interactive demonstration.",
+          "excluded_sentences": []
+        },
+        {
+          "tag": "p",
+          "module": "A closer look",
+          "words": 24,
+          "source_text": "The booth brings the subject into an everyday university setting. Posters, materials, and conversations create several ways for people to engage with eye-health information.",
+          "counted_text": "The booth brings the subject into an everyday university setting. Posters, materials, and conversations create several ways for people to engage with eye-health information.",
+          "excluded_sentences": []
+        },
+        {
+          "tag": "p",
+          "module": "What connects",
+          "words": 23,
+          "source_text": "This project sits between healthcare and communication: understanding the topic, considering the audience, and helping a team turn information into a public encounter.",
+          "counted_text": "This project sits between healthcare and communication: understanding the topic, considering the audience, and helping a team turn information into a public encounter.",
+          "excluded_sentences": []
+        }
+      ],
+      "excluded_body_blocks": [
+        {
+          "text": "Public-health outreach and a community-facing approach to eye-health communication.",
+          "reason": "Exact repeated body block"
+        }
+      ]
+    },
+    {
+      "route": "/projects/public-speaking/",
+      "source_sha256": "c622cdcc8557494df60ced6bfa10f51cf6d766717b920f13cf555a3185a937f6",
+      "words": 90,
+      "body_blocks": 4,
+      "independent_modules": 3,
+      "modules": [
+        {
+          "heading": "The occasion",
+          "words": 26,
+          "body_blocks": 1
+        },
+        {
+          "heading": "My contribution",
+          "words": 24,
+          "body_blocks": 1
+        },
+        {
+          "heading": "What connects",
+          "words": 40,
+          "body_blocks": 2
+        }
+      ],
+      "blocks": [
+        {
+          "tag": "p",
+          "module": "The occasion",
+          "words": 26,
+          "source_text": "On 26 April 2025 , I joined the China-Latin American Literature Roundtable Dialogue associated with the Consulate of Colombia and Global Times as an invited roundtable speaker.",
+          "counted_text": "On 26 April 2025 , I joined the China-Latin American Literature Roundtable Dialogue associated with the Consulate of Colombia and Global Times as an invited roundtable speaker.",
+          "excluded_sentences": []
+        },
+        {
+          "tag": "p",
+          "module": "My contribution",
+          "words": 24,
+          "source_text": "I delivered a keynote speech on Sino-Latin American literary exchanges and joined roundtable discussions with the Colombian Ambassador on international relations and cultural cooperation.",
+          "counted_text": "I delivered a keynote speech on Sino-Latin American literary exchanges and joined roundtable discussions with the Colombian Ambassador on international relations and cultural cooperation.",
+          "excluded_sentences": []
+        },
+        {
+          "tag": "p",
+          "module": "What connects",
+          "words": 26,
+          "source_text": "Speaking across cultural contexts asks for more than fluency. It asks for attention to audience, references, and the different experiences people bring to the same conversation.",
+          "counted_text": "Speaking across cultural contexts asks for more than fluency. It asks for attention to audience, references, and the different experiences people bring to the same conversation.",
+          "excluded_sentences": []
+        },
+        {
+          "tag": "p",
+          "module": "What connects",
+          "words": 14,
+          "source_text": "This is part of my broader interest in bilingual communication, hosting, and visual storytelling.",
+          "counted_text": "This is part of my broader interest in bilingual communication, hosting, and visual storytelling.",
+          "excluded_sentences": []
+        }
+      ],
+      "excluded_body_blocks": [
+        {
+          "text": "Public speaking and a conversation about Sino-Latin American literary exchange.",
+          "reason": "Exact repeated body block"
+        }
+      ]
+    },
+    {
+      "route": "/projects/u21-ipe/",
+      "source_sha256": "9f2d2faff5506e3631cf9802a3be60c37e1ad05deef18c0c200733e689cb44fc",
+      "words": 108,
+      "body_blocks": 5,
+      "independent_modules": 3,
+      "modules": [
+        {
+          "heading": "The work",
+          "words": 44,
+          "body_blocks": 2
+        },
+        {
+          "heading": "From perspectives to a shared response",
+          "words": 43,
+          "body_blocks": 2
+        },
+        {
+          "heading": "What connects",
+          "words": 21,
+          "body_blocks": 1
+        }
+      ],
+      "blocks": [
+        {
+          "tag": "p",
+          "module": "The work",
+          "words": 25,
+          "source_text": "Selected to represent The University of Hong Kong, I collaborated with multidisciplinary teams from global universities in the U21 Health Sciences Group International Programme 2026.",
+          "counted_text": "Selected to represent The University of Hong Kong, I collaborated with multidisciplinary teams from global universities in the U21 Health Sciences Group International Programme 2026.",
+          "excluded_sentences": []
+        },
+        {
+          "tag": "p",
+          "module": "The work",
+          "words": 19,
+          "source_text": "My CV records my role as Group Leader , with work spanning research, stakeholder engagement, cross-cultural teamwork, and strategic presentations.",
+          "counted_text": "My CV records my role as Group Leader , with work spanning research, stakeholder engagement, cross-cultural teamwork, and strategic presentations.",
+          "excluded_sentences": []
+        },
+        {
+          "tag": "p",
+          "module": "From perspectives to a shared response",
+          "words": 22,
+          "source_text": "The work involved developing evidence-based responses to global healthcare challenges and presenting policy recommendations and project outcomes to an international academic audience.",
+          "counted_text": "The work involved developing evidence-based responses to global healthcare challenges and presenting policy recommendations and project outcomes to an international academic audience.",
+          "excluded_sentences": []
+        },
+        {
+          "tag": "p",
+          "module": "From perspectives to a shared response",
+          "words": 21,
+          "source_text": "Working across disciplines makes communication part of the substance of the project: different approaches need to become a clear, shared argument.",
+          "counted_text": "Working across disciplines makes communication part of the substance of the project: different approaches need to become a clear, shared argument.",
+          "excluded_sentences": []
+        },
+        {
+          "tag": "p",
+          "module": "What connects",
+          "words": 21,
+          "source_text": "Healthcare, research, and international communication meet here. The experience brings together evidence, collaboration, and the challenge of presenting a recommendation clearly.",
+          "counted_text": "Healthcare, research, and international communication meet here. The experience brings together evidence, collaboration, and the challenge of presenting a recommendation clearly.",
+          "excluded_sentences": []
+        }
+      ],
+      "excluded_body_blocks": [
+        {
+          "text": "International health-sciences collaboration, from research and discussion to shared recommendations.",
+          "reason": "Exact repeated body block"
+        }
+      ]
+    }
+  ],
+  "snapshot_directory": "output/product-iteration/baseline"
+}

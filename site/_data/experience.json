@@ -1,0 +1,137 @@
+{
+  "name": "Zeyi Li",
+  "aliases": "Z.Y. Lee / Leo",
+  "title": "HKUMed Bachelor ’29",
+  "summary": "I connect healthcare, communication, business, technology, and creative work. My experience spans programme operations, cross-border e-commerce, international health-sciences collaboration, and public speaking.",
+  "contacts": [
+    {
+      "label": "Website",
+      "value": "zeyileo.github.io",
+      "url": "https://zeyileo.github.io/"
+    },
+    {
+      "label": "Email",
+      "value": "zeyileo@connect.hku.hk",
+      "url": "mailto:zeyileo@connect.hku.hk"
+    },
+    {
+      "label": "GitHub",
+      "value": "ZeyiLeo",
+      "url": "https://github.com/ZeyiLeo"
+    }
+  ],
+  "sections": [
+    {
+      "id": "education",
+      "title": "Education",
+      "entries": [
+        {
+          "title": "The University of Hong Kong",
+          "role": "Li Ka Shing Faculty of Medicine",
+          "period": "Sep 2025 - Jul 2029 (expected)",
+          "bullets": []
+        }
+      ]
+    },
+    {
+      "id": "work",
+      "title": "Work experience",
+      "entries": [
+        {
+          "title": "Cross-border E-commerce",
+          "role": "Founder",
+          "period": "Jan 2025 - Present",
+          "bullets": [
+            "Advanced brand building and completed trademark registration with the United States Patent and Trademark Office (USPTO).",
+            "Independently planned and launched an Amazon store for the North American market, covering market research, product selection, and platform entry.",
+            "Monitored sales volume, traffic, and conversion data to inform business strategy.",
+            "Maintained ACoS below 30% and TACoS up to 21% through promotional content, store-page optimisation, and analysis of feedback data."
+          ]
+        },
+        {
+          "title": "HKU Admissions Office",
+          "role": "Intern",
+          "period": "Jun 2026 - Aug 2026",
+          "bullets": [
+            "Managed programme operations for HKU Academy for the Talented (ACT), including participant administration, application processing, and visa tracking across international academic programmes.",
+            "Coordinated programme logistics and academic events with cross-functional stakeholders, supporting communication with international students through admissions and onboarding.",
+            "Reconciled admissions datasets, identified operational discrepancies, and streamlined administrative workflows."
+          ]
+        },
+        {
+          "title": "Amazon.com & International Trade Company",
+          "role": "Marketing Assistant and Shipping Assistant",
+          "period": "Mar 2024 - Sep 2025",
+          "bullets": [
+            "Created A+ advertising content and organised advertising data for an Amazon best-seller.",
+            "Analysed Amazon store data to inform advertising strategies and cost optimisation.",
+            "Coordinated international shipping and supply-chain workflows, including inventory turnover, order fulfilment, and operational costs."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "projects",
+      "title": "Events & projects",
+      "entries": [
+        {
+          "title": "U21 Health Sciences Group International Programme 2026",
+          "role": "Group Leader",
+          "period": "Sep 2025 - Present",
+          "bullets": [
+            "Selected to represent The University of Hong Kong, collaborating with multidisciplinary teams from global universities.",
+            "Developed evidence-based responses to global healthcare challenges through research, cross-cultural teamwork, stakeholder engagement, and presentations.",
+            "Presented policy recommendations and project outcomes to an international academic audience."
+          ]
+        },
+        {
+          "title": "Orbis Vision Leader Program 2025/26",
+          "role": "Group Leader",
+          "period": "Sep 2025 - Present",
+          "bullets": [
+            "Participated in public-health and international charity projects.",
+            "Collaborated with cross-functional teams to develop community outreach plans."
+          ]
+        },
+        {
+          "title": "Hong Kong International Nursing Forum & HKU School of Nursing 30th Anniversary",
+          "role": "Master of Ceremony and Student Ambassador",
+          "period": "30-31 Oct 2025",
+          "bullets": [
+            "Served as master of ceremony for the opening dinner, coordinating with senior alumni.",
+            "Provided on-site support and guest reception services at the forum."
+          ]
+        },
+        {
+          "title": "China-Latin American Literature Roundtable Dialogue",
+          "role": "Invited Roundtable Speaker · Consulate of Colombia & Global Times",
+          "period": "26 Apr 2025",
+          "bullets": [
+            "Delivered a keynote speech on Sino-Latin American literary exchanges.",
+            "Joined roundtable discussions with the Colombian Ambassador on international relations and cultural cooperation."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "publications",
+      "title": "Publication",
+      "entries": [
+        {
+          "title": "Pros and cons of social media",
+          "role": "Global Times",
+          "period": "21 Nov 2024",
+          "bullets": []
+        }
+      ]
+    }
+  ],
+  "interests": [
+    "Global health and health communication",
+    "AI applications and clinical AI",
+    "Business analysis and entrepreneurship",
+    "Cinema, photography, design, and tennis"
+  ],
+  "updated": "November 2026",
+  "source_note": "Existing owner-confirmed website experience records. These records do not generate or replace the original CV PDF."
+}

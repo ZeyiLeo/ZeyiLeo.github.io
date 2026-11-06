@@ -1,0 +1,100 @@
+[
+  {
+    "key": "The University of Hong Kong",
+    "id": "hku-study",
+    "topics": "healthcare",
+    "notes": [
+      "The university entry establishes my current educational setting: Li Ka Shing Faculty of Medicine, with expected completion in 2029. It is the background against which the programme, outreach and communication activities elsewhere in the timeline can be read.",
+      "The title HKUMed Bachelor ’29 is used consistently across this site. Interests in global health and AI appear as interests to explore alongside that education, rather than as additional qualifications or a separate research appointment."
+    ],
+    "url": "/about/#current-background",
+    "link": "Read the current background"
+  },
+  {
+    "key": "Cross-border E-commerce",
+    "id": "independent-commerce",
+    "topics": "business technology",
+    "notes": [
+      "This role combines a completed launch with continuing operational work. Brand and trademark work, product selection and store entry are milestones. Sales, traffic, conversion and feedback analysis describe the ongoing attention an operating store requires.",
+      "The founder role began in January 2025, while the marketing and shipping assistant role continued until September 2025. Their dates overlap; they should not be read as consecutive positions in a single company. The case treats independent venture responsibilities separately from the support role below."
+    ],
+    "url": "/projects/ecommerce-brand/",
+    "link": "Open the venture case"
+  },
+  {
+    "key": "HKU Admissions Office",
+    "id": "act-internship",
+    "topics": "communication business",
+    "notes": [
+      "The internship was situated within ACT programme operations. Its working objects included participant information, applications, visa status and admissions datasets. Its people-facing side involved international student communication and coordination with programme stakeholders.",
+      "Data reconciliation and identifying discrepancies add a particular kind of analytical responsibility to the entry. They concern whether the information used for programme work is consistent and actionable. The case explains these task types without exposing student records or internal administrative material."
+    ],
+    "url": "/projects/hku-academy/",
+    "link": "See the programme responsibilities"
+  },
+  {
+    "key": "Amazon.com & International Trade Company",
+    "id": "marketing-shipping",
+    "topics": "business technology",
+    "notes": [
+      "The two assistant responsibilities sit at different points in an e-commerce operation. Marketing work included A+ advertising content and organising advertising data. Shipping work involved inventory turnover, order fulfilment and operational costs in an international supply-chain setting.",
+      "Store-data analysis connects the visible advertising work with decisions about strategy and cost. International shipping coordination connects an order with the practical workflows around fulfilment. This entry provides the supporting-role context for the independent venture, while preserving the distinct dates and role descriptions."
+    ],
+    "url": "/writing/execution-and-commerce/",
+    "link": "Read the execution draft"
+  },
+  {
+    "key": "U21 Health Sciences Group International Programme 2026",
+    "id": "u21-programme",
+    "topics": "healthcare communication",
+    "notes": [
+      "The programme context was multidisciplinary and international. Research, stakeholder engagement and cross-cultural teamwork formed part of the documented contribution, followed by presentations to an academic audience.",
+      "The Group Leader role is shown alongside those activities so that the title remains connected to actual work. The case distinguishes the development of a shared response from the later presentation of recommendations, giving visitors a clearer route through a project that has no public photo set on this site."
+    ],
+    "url": "/projects/u21-ipe/",
+    "link": "Explore the collaboration case"
+  },
+  {
+    "key": "Orbis Vision Leader Program 2025/26",
+    "id": "orbis-programme",
+    "topics": "healthcare communication",
+    "notes": [
+      "The outreach setting involved public-health and charity work. Community outreach planning is the recorded responsibility; the portfolio adds visual context through the booth, printed materials and demonstration associated with the project.",
+      "Those materials create three useful views of an activity: the setting in which people encounter the subject, the information they can inspect and an activity that can support explanation. The visual story lets visitors compare the formats without treating them as identical evidence."
+    ],
+    "url": "/projects/orbis-glaucoma/",
+    "link": "Explore the outreach material"
+  },
+  {
+    "key": "Hong Kong International Nursing Forum & HKU School of Nursing 30th Anniversary",
+    "id": "nursing-forum",
+    "topics": "healthcare communication",
+    "notes": [
+      "Hosting the opening dinner and supporting the forum are related contributions with different tasks. The master-of-ceremony responsibility concerned the public occasion; reception and on-site support concerned the arrangements around participation.",
+      "Coordination with senior alumni belongs to the supplied role description. The group photograph in the journal adds a view of the gathering, while the case keeps the speaking role and event-support work separately understandable."
+    ],
+    "url": "/projects/nursing-forum/",
+    "link": "Read the event case"
+  },
+  {
+    "key": "China-Latin American Literature Roundtable Dialogue",
+    "id": "literature-roundtable",
+    "topics": "communication creative",
+    "notes": [
+      "The keynote and roundtable discussion are two forms of participation at the same occasion. One presents a developed contribution; the other places it in a conversation with fellow participants. The subject connected literary exchange with international relations and cultural cooperation.",
+      "This event is also a useful point of contact with the earlier creative interests described in About. The timeline records the invited role and date, while the new essay considers a broader question about language and context."
+    ],
+    "url": "/projects/public-speaking/",
+    "link": "Explore the speaking contribution"
+  },
+  {
+    "key": "Pros and cons of social media",
+    "id": "publication-record",
+    "topics": "communication creative",
+    "notes": [
+      "The title and date are retained exactly as requested from the original CV. This entry remains a bibliographic record. It is not combined with the new drafts or given a newly inferred article link."
+    ],
+    "url": "/writing/",
+    "link": "See the separate writing records"
+  }
+]

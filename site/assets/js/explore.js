@@ -1,0 +1,18 @@
+(() => {
+ 'use strict';
+ const timeline=document.querySelector('.experience-list'), controls=document.querySelector('.experience-controls');
+ if(timeline&&controls){controls.hidden=false;const rows=[...timeline.querySelectorAll('[data-experience-topics]')],status=document.querySelector('.experience-status');
+  function filter(topic){let count=0;rows.forEach(row=>{row.hidden=topic!=='all'&&!row.dataset.experienceTopics.split(' ').includes(topic);if(!row.hidden)count++;});timeline.querySelectorAll('[data-experience-group]').forEach(group=>group.hidden=![...group.querySelectorAll('[data-experience-topics]')].some(x=>!x.hidden));controls.querySelectorAll('button').forEach(button=>button.setAttribute('aria-pressed',String(button.dataset.experienceFilter===topic)));const label=controls.querySelector(`[data-experience-filter="${topic}"]`)?.textContent||'All experience';status.textContent=`${count} ${count===1?'entry':'entries'} · ${label}`;}
+  controls.addEventListener('click',e=>{const button=e.target.closest('[data-experience-filter]');if(button)filter(button.dataset.experienceFilter);});filter('all');
+ }
+ const journal=document.querySelector('.journal-stories');
+ if(journal){const stories=[...journal.querySelectorAll('[data-journal-story]')],filterControls=journal.querySelector('.journal-controls'),stepControls=journal.querySelector('.journal-step-controls'),prev=journal.querySelector('[data-journal-prev]'),next=journal.querySelector('[data-journal-next]'),status=journal.querySelector('[data-journal-status]');let filtered=stories,index=0;
+  filterControls.hidden=false;stepControls.hidden=false;
+  function show(n){index=Math.max(0,Math.min(filtered.length-1,n));stories.forEach(story=>{story.hidden=story!==filtered[index];story.classList.remove('is-changing');});const active=filtered[index];active.classList.add('is-changing');prev.disabled=index===0;next.disabled=index===filtered.length-1;status.textContent=`${index+1} of ${filtered.length} · ${active.querySelector('h3').textContent}`;journal.dataset.activeStory=active.id;}
+  filterControls.addEventListener('click',e=>{const button=e.target.closest('[data-journal-filter]');if(!button)return;filterControls.querySelectorAll('button').forEach(x=>x.setAttribute('aria-pressed',String(x===button)));filtered=stories.filter(x=>button.dataset.journalFilter==='all'||x.dataset.storyTopic===button.dataset.journalFilter);show(0);});
+  prev.addEventListener('click',()=>show(index-1));next.addEventListener('click',()=>show(index+1));journal.addEventListener('keydown',e=>{if(e.target!==journal)return;if(e.key==='ArrowRight'){e.preventDefault();show(index+1);}if(e.key==='ArrowLeft'){e.preventDefault();show(index-1);}});show(0);
+ }
+ document.querySelectorAll('[data-reading-toc]').forEach(toc=>{const body=toc.nextElementSibling;if(!body)return;const headings=[...body.querySelectorAll('h2')];if(headings.length<2)return;toc.hidden=false;const label=document.createElement('p');label.textContent='On this page';toc.append(label);headings.forEach((heading,i)=>{if(!heading.id)heading.id=`section-${i+1}`;const link=document.createElement('a');link.href=`#${heading.id}`;link.textContent=heading.textContent;toc.append(link);});});
+ const caseBody=document.querySelector('.case-body .prose');
+ if(caseBody){const headings=[...caseBody.querySelectorAll('h2')];if(headings.length>3){const nav=document.createElement('nav');nav.className='case-toc';nav.setAttribute('aria-label','In this case');headings.forEach((h,i)=>{if(!h.id)h.id=`case-section-${i+1}`;const link=document.createElement('a');link.href=`#${h.id}`;link.textContent=h.textContent;nav.append(link);});caseBody.prepend(nav);}}
+})();

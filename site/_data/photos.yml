@@ -1,0 +1,30 @@
+- image: speaking
+  width: 640
+  height: 427
+  title: A conversation in progress
+  caption: A speaking moment at a literary event.
+- image: orbis
+  width: 640
+  height: 1138
+  title: Where ideas meet people
+  caption: An Orbis glaucoma awareness booth at HKU.
+- image: outreach
+  width: 640
+  height: 1137
+  title: A shared starting point
+  caption: Student outreach at HKU.
+- image: portrait
+  width: 640
+  height: 962
+  title: Between conversations
+  caption: A portrait at the China–Latin America Literature Salon.
+- image: forum
+  width: 640
+  height: 360
+  title: In good company
+  caption: A group moment at the Hong Kong International Nursing Forum.
+- image: stage
+  width: 640
+  height: 1138
+  title: Finding a voice
+  caption: A moment on stage.

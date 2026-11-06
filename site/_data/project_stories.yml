@@ -1,0 +1,19 @@
+orbis:
+  - label: My role
+    title: Plan the outreach.
+    text: As Group Leader, I worked with cross-functional teams on community outreach plans for public-health and international charity projects.
+    image: campaign
+    alt: Orbis campaign poster from the documented HKU project
+    caption: Campaign materials
+  - label: In the community
+    title: Bring it to the booth.
+    text: The glaucoma awareness booth brought eye-health information into an everyday university setting, with printed materials and conversations.
+    image: orbis
+    alt: Glaucoma awareness booth at HKU
+    caption: The HKU awareness booth
+  - label: Documented output
+    title: Make the information tangible.
+    text: Printed education materials and an interactive demonstration gave visitors different ways to engage with the subject.
+    image: simulation
+    alt: Interactive demonstration and eye-health materials at the Orbis booth
+    caption: Interactive demonstration and materials

@@ -1,0 +1,20 @@
+[
+  {
+    "title": "A message someone can use",
+    "topic": "Healthcare & communication",
+    "url": "/writing/health-information/",
+    "summary": "What changes when a health message is organised around a reader’s question, rather than the amount of information available? A draft on audience, materials and a clear next step."
+  },
+  {
+    "title": "What travels between languages",
+    "topic": "Literature & public expression",
+    "url": "/writing/languages-and-context/",
+    "summary": "An idea can cross a language boundary while losing the context that made it meaningful. This draft considers how a speaker might make room for both clarity and cultural detail."
+  },
+  {
+    "title": "After the store goes live",
+    "topic": "Business & execution",
+    "url": "/writing/execution-and-commerce/",
+    "summary": "A store launch creates a new set of questions. This draft separates observations, interpretations and decisions, using a hypothetical operating example."
+  }
+]

@@ -1,0 +1,16 @@
+- name: GitHub
+  handle: ZeyiLeo
+  url: https://github.com/ZeyiLeo
+  description: Code, digital experiments, and this website.
+- name: LinkedIn
+  handle: Zeyi Li
+  url: https://www.linkedin.com/in/zeyi-li-1324b83a0/
+  description: Professional context and conversations.
+- name: Instagram
+  handle: "@macleoos"
+  url: https://instagram.com/macleoos
+  description: A more personal visual perspective.
+- name: Email
+  handle: zeyileo@connect.hku.hk
+  url: mailto:zeyileo@connect.hku.hk
+  description: Projects, speaking, and thoughtful collaboration.
