@@ -9,7 +9,7 @@ The owner accepted the reviewed local version and explicitly authorized all norm
 
 Preflight passes: Ruby 3.3.6 production build, 27 pages/seven cases, internal links/anchors/assets, original PDF hash/size/page integrity, five application script syntax checks and content target. Staged whitespace findings are upstream vendor/license formatting and an existing blank line; no functional change is needed. Confirmed remote master is unchanged at `3d65738`; local committed base is one commit ahead without divergence. Runtime sources contain no local preview dependencies. PDF.js runtime resources and licenses are included; ignored recordings, screenshots, caches and generated build output remain excluded.
 
-Publication: preparing the accepted-source commit; pushes, merge, deployment and production verification are pending.
+Publication: accepted source committed locally as `ed9cff85f85ac1f69b8d9887184bd7a2244c56f3`; all 281 accepted source files remain hash-identical and tracked. GitHub CLI and browser are not signed in, so push, merge, deployment and new-version live checks await account authentication. Actual production-domain visit still shows the old homepage. Official device login is open; no repeated release consent is required.
 
 ## 2026-11-06 — Three product interactions and measured content expansion
 
