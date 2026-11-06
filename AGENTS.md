@@ -10,6 +10,7 @@ Treat it as a continuously evolving digital identity platform. Work as a creativ
 - Use https://github.com/ZeyiLeo/ZeyiLeo.github.io as the source of truth for website code. Verify the current source before implementing changes; a local template or backup is not automatically current.
 - Check the source readiness recorded in `_project/STATUS.md` before treating this folder as a deployable checkout.
 - Follow the latest user instructions when they update this brief, and record lasting decisions in the project notes.
+- For website prompt-writing requests, read `_project/PROMPT_GUIDELINES.md` and deliver the requested prompt using the owner's product-manager framing and acceptance standards.
 
 ## Identity and editorial standards
 
@@ -24,20 +25,20 @@ Treat it as a continuously evolving digital identity platform. Work as a creativ
 
 ## Design and implementation
 
-- Visual direction: premium, cinematic, editorial, sophisticated, minimalist, interactive.
+- Visual direction: the actually inspected Apple homepage and product pages are the current structure, typography and interaction references. The former serif/terracotta editorial direction is retired. The old website supplies content and photo provenance only.
 - Inspect and preserve established typography, colors, spacing, image treatment, components, and interaction patterns before extending them.
 - Record major design changes and their reasons. Do not present proposed design choices as already established.
 - Prefer reusable components and structured content over duplicated layouts or independently maintained facts.
 - Extend the existing stack where practical. Keep technical maintenance proportionate to the site.
 - Preserve responsive layouts, keyboard access, visible focus, readable contrast, and reduced-motion behavior when changing the UI.
-- Use one approved factual source for the online CV and downloadable PDF. Update and compare both whenever CV facts change.
+- CV: display and download the original owner-provided PDF unchanged. Verify its hash; do not typeset, rewrite, redact, or regenerate it. Website experience summaries remain separate and must not cause edits to the original CV.
 - Keep the project notes excluded from generated website output. Exclusion from the website does not make files private in a public Git repository; never put secrets or private evidence in these notes.
 
 ## Complete each update
 
 1. Identify the requested change and affected files using the current source.
 2. Implement the complete change within the user's authorized scope.
-3. Run checks appropriate to the change. Website changes require a production build when available; UI changes also need desktop/mobile and relevant interaction checks. CV changes require online/PDF content comparison and PDF layout review.
+3. Run checks appropriate to the change. Website changes require a production build when available; UI changes also need desktop/mobile and relevant interaction checks. CV updates require original-file hash/size/page verification and desktop display plus mobile open/download checks.
 4. Report checks that could not run and why. Never describe an unchecked build or deployment as successful.
 5. Update `_project/STATUS.md` and add a concise entry to `_project/CHANGELOG.md` describing what changed, why, validation, and publication status.
 6. Report the result and a concise changelog. Distinguish local changes, commits, pushes, and verified deployments.

@@ -1,0 +1,114 @@
+[
+  {
+    "id": "outreach-setting",
+    "topic": "healthcare",
+    "topic_label": "Healthcare",
+    "image": "orbis",
+    "title": "An outreach setting on campus",
+    "alt": "The Orbis glaucoma-awareness booth at HKU",
+    "body": [
+      "The booth photograph places an eye-health campaign in a university setting. Displays identify the subject while the table provides a working surface for materials and activities. The surrounding buildings are part of the image's context: this is public-facing outreach situated within everyday campus space.",
+      "My Orbis contribution was community outreach planning as a Group Leader. This frame is useful as an overview before looking at the smaller materials. The case then separates the display, printed information and demonstration so that each can be considered on its own terms."
+    ],
+    "url": "/projects/orbis-glaucoma/",
+    "link": "Open the Orbis case"
+  },
+  {
+    "id": "printed-material",
+    "topic": "healthcare",
+    "topic_label": "Healthcare",
+    "image": "materials",
+    "title": "Information at a smaller scale",
+    "alt": "Printed eye-health education items arranged on a table",
+    "body": [
+      "Here the focus moves from the overall stand to the printed pieces on a table. Their scale and arrangement offer a closer view of one part of the outreach material. The photograph invites attention to an information object, rather than the whole event setting.",
+      "A printed piece can be inspected differently from a large display or a live activity. That difference is the subject of the new health-information draft: how might several formats share a purpose while doing different jobs? The image supplies the concrete starting point for that question."
+    ],
+    "url": "/writing/health-information/",
+    "link": "Read the health-information draft"
+  },
+  {
+    "id": "interactive-material",
+    "topic": "healthcare",
+    "topic_label": "Healthcare",
+    "image": "simulation",
+    "title": "A demonstration as an opening",
+    "alt": "An interactive element from the Orbis eye-health campaign",
+    "body": [
+      "This image documents the demonstration element associated with the campaign. It introduces a third format beside the stand and printed information: an activity can unfold through participation and accompanying explanation, rather than presenting all its information at once.",
+      "The page treats it as an outreach demonstration. Its value for this story is the relationship between an activity and the explanation around it. It is not presented as a clinical test or a record of an individual's health. The related case considers how different materials form one public encounter."
+    ],
+    "url": "/projects/orbis-glaucoma/",
+    "link": "Compare the three campaign formats"
+  },
+  {
+    "id": "literary-address",
+    "topic": "communication",
+    "topic_label": "Communication",
+    "image": "speaking",
+    "title": "A contribution in a literary setting",
+    "alt": "Zeyi Li speaking at a literary event",
+    "body": [
+      "The speaking photograph adds a visible setting to the China–Latin American literary exchange recorded in the CV. The contribution included a keynote and participation in a roundtable. The image shows a moment of expression, while the written case identifies the role and subject more precisely.",
+      "A single frame cannot preserve the sequence of an argument. For that reason, the new essay approaches the wider question of language and context through a marked hypothetical exercise. It gives that question room without reconstructing unrecorded wording from the occasion."
+    ],
+    "url": "/projects/public-speaking/",
+    "link": "Read the speaking case"
+  },
+  {
+    "id": "salon-portrait",
+    "topic": "communication",
+    "topic_label": "Communication",
+    "image": "portrait",
+    "title": "Around the conversation",
+    "alt": "Zeyi Li at the China–Latin America Literature Salon",
+    "body": [
+      "The portrait from the literature salon offers a different view from the speaking frame. The person and occasion remain connected, but the moment around a conversation becomes the focus. Keeping both frames lets the journal offer more than repeated images of the same kind of activity.",
+      "The title, role and date of the literature event belong in its case and timeline. Here the portrait provides visual context. It also connects with the older interests in literature and languages described in About, without turning a personal interest into a formal professional credential."
+    ],
+    "url": "/about/#creative-roots",
+    "link": "Read about the creative background"
+  },
+  {
+    "id": "stage-frame",
+    "topic": "communication",
+    "topic_label": "Communication",
+    "image": "stage",
+    "title": "Gesture, microphone, audience",
+    "alt": "Zeyi Li holding a microphone on stage",
+    "body": [
+      "A microphone, a raised hand and the surrounding stage make the physical side of speaking visible. This separate image from the public-speaking collection gives the sequence a different visual scale from the literary-event photographs.",
+      "As a visual frame, it directs attention to delivery: a voice is supported by gesture, position and the relation to an audience. That is a useful contrast with the programme-operations case, where communication happens through administration and student information rather than a visible stage."
+    ],
+    "url": "/projects/hku-academy/",
+    "link": "Explore communication behind a programme"
+  },
+  {
+    "id": "forum-gathering",
+    "topic": "healthcare",
+    "topic_label": "Healthcare",
+    "image": "forum",
+    "title": "The collective setting of a forum",
+    "alt": "Group photograph at the Hong Kong International Nursing Forum",
+    "body": [
+      "The group photograph gives a wider view of the nursing-forum occasion. Many people share the frame, which makes the gathering itself the subject. The supplied CV places the Hong Kong International Nursing Forum and HKU School of Nursing anniversary on 30–31 October 2025.",
+      "My responsibilities included hosting the opening dinner, coordinating with senior alumni, guest reception and on-site support. Those tasks are explained in the event case. The image is the collective context around them, rather than an attempt to illustrate every responsibility in a single frame."
+    ],
+    "url": "/projects/nursing-forum/",
+    "link": "Explore hosting and event support"
+  },
+  {
+    "id": "campus-outreach",
+    "topic": "campus",
+    "topic_label": "Campus",
+    "image": "outreach",
+    "title": "An HKU outreach moment",
+    "alt": "Students with HKU Medicine outreach signs",
+    "body": [
+      "The campus outreach photograph shows people gathered with HKU Medicine signage. The university banner and handheld signs provide the visual context around the group. Their presence gives the frame a clear connection to the campus environment around my current studies.",
+      "Here the relationship is between a university setting and a personal introduction. The image brings that setting into view, while the linked About section explains the current background in words."
+    ],
+    "url": "/about/#current-background",
+    "link": "Return to the current background"
+  }
+]

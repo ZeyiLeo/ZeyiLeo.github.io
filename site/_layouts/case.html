@@ -1,11 +1,12 @@
 ---
 layout: default
 ---
-<article class="case-study">
-  <a class="text-link back-link" href="{{ '/projects/' | relative_url }}">← All work</a>
-  <header class="page-intro"><p class="eyebrow">{{ page.category }}</p><h1>{{ page.title }}</h1><p class="intro-text">{{ page.description }}</p></header>
-  {% if page.image %}<figure class="case-cover"><img src="{{ '/assets/img/' | append: page.image | append: '-1280.webp' | relative_url }}" alt="{{ page.image_alt | escape }}" width="1280" height="960" fetchpriority="high"><figcaption>{{ page.image_alt }}</figcaption></figure>{% endif %}
-  <div class="case-body"><aside><p class="eyebrow">Perspective</p><p>{{ page.perspective }}</p><p class="eyebrow">Connections</p><p>{{ page.connections }}</p></aside><div class="prose">{{ content }}</div></div>
+<nav class="project-nav" aria-label="Project navigation"><a href="{{ '/projects/' | relative_url }}">Selected work</a><div><a href="#overview">Overview</a><a href="#contribution">My contribution</a><a class="button button-small" href="{{ '/contact/' | relative_url }}">Connect</a></div></nav>
+<article class="case-study" id="overview">
+  <header class="page-intro case-intro"><p class="eyebrow intro-item">{{ page.category }}</p><h1 class="intro-item">{{ page.title }}</h1><p class="intro-text intro-item">{{ page.description }}</p><p class="case-role intro-item">{{ page.perspective }}</p></header>
+  {% if page.image %}<figure class="case-cover intro-item" data-scroll-image><img src="{{ '/assets/img/' | append: page.image | append: '-1280.webp' | relative_url }}" alt="{{ page.image_alt | escape }}" width="1280" height="960" fetchpriority="high"><figcaption>{{ page.image_alt }}</figcaption></figure>{% endif %}
+  {% if page.story %}{% include project-story.html %}{% endif %}
+  <div class="case-body" id="contribution"><aside><p class="eyebrow">My role</p><p>{{ page.perspective }}</p><p class="eyebrow">Focus</p><p>{{ page.connections }}</p></aside><div class="prose">{{ content }}</div></div>
   {% assign next_order = page.order | plus: 1 %}{% assign next_project = site.projects | where: 'order', next_order | first %}
-  {% if next_project %}<a class="next-project" href="{{ next_project.url | relative_url }}"><span class="eyebrow">Next project</span><strong>{{ next_project.title }}</strong><span aria-hidden="true">↗</span></a>{% endif %}
+  {% if next_project %}<a class="next-project" href="{{ next_project.url | relative_url }}"><span>Next project</span><strong>{{ next_project.title }}</strong><span aria-hidden="true">›</span></a>{% endif %}
 </article>

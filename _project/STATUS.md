@@ -1,46 +1,54 @@
 # Project status
 
-Updated: 2026-11-05 (Asia/Hong_Kong).
-Scope: first complete local redesign, based on the canonical repository and the owner's supplied finished CV.
+Updated 2026-11-06 (Asia/Hong_Kong). Latest scope: three distinct product interactions and a substantial, measured content expansion. Apple remains the shell/proportion reference. Original portrait and finished CV remain unchanged. Owner accepted this version and authorized public release on 2026-11-06; publication is in progress.
 
-## Source readiness
+## Repository and source readiness
 
-This permanent workspace now has valid canonical Git history and remote `origin` at `https://github.com/ZeyiLeo/ZeyiLeo.github.io.git`. The current branch is `codex/digital-identity`, based on `master` at `3d65738ad1dbab8a597f8d87b32ddcd9323d968e`, verified through a live fetch. The independent canonical download in the sibling `web/zeyileo-source-20261105` folder provides an unchanged reference.
+Canonical checkout: `https://github.com/ZeyiLeo/ZeyiLeo.github.io.git`. Branch `codex/digital-identity`, committed HEAD `854b458`. The preceding implementation and the owner's prompt-guideline documentation were already uncommitted at the start; that work is preserved. Remote HEAD/master rechecked before editing and at handoff: `3d65738ad1dbab8a597f8d87b32ddcd9323d968e`. No commit, push, merge or deployment was performed.
 
-The original starter had no valid HEAD or remote. Its project records were preserved. Starter material is retained in sibling `web/archives/zeyileo-starter-20261105`, `zeyileo-starter-extras-20261105`, and `zeyileo-unused-starter-20261105`. Existing Git metadata was retained, then connected to remote history; no history was force-replaced. An initial broad move was rejected by automatic approval review; files were restored and the reconciliation was completed without deleting metadata or backups.
+Active Jekyll source remains `site/`; project notes and historical root theme files remain excluded from output. Preview: http://127.0.0.1:4173/ . Existing core routes, seven cases and legacy continuation routes remain. The three draft essays bring the generated HTML count to 27.
 
-The active Jekyll source is exclusively `site/`. Root-level al-folio pages, sample posts, theme assets, plugins, and the unrelated Valentine pages remain historical files outside the source directory and are not emitted. Starter-only extra files and retired theme workflows have been moved to the external archive without deletion. The only active workflow is the revised GitHub Pages build/validation/deployment workflow.
+## Product state
 
-## Implemented locally
+- **A / global navigation:** About, Work and Explore disclosures open a grouped directory of real pages. A 460ms overlay reveal, staggered groups and a dimmed/blurred backdrop follow the supplied MOV's observed opening pattern. Click, keyboard/ArrowDown, hover, Escape, close and outside actions work. Mobile uses a root menu and child panel with Back. Covered/closed links are inert; focus returns appropriately. Menu changes do not change page width. Build-versioned assets prevent stale scripts during local review.
+- **B / homepage connections:** four factual themes connect a material/workflow to its background and contribution. Desktop at least 1100×680 uses a short 505px progress range; two compact leaves expand into photo/workflow and text. It reverses with native scrolling. Explicit opening/selection remains readable while scrolling forward; reverse movement resumes scroll progress. Tablet/short windows show both sides with theme tabs; phones use a compact/open control and no long pin.
+- **C / homepage selected work:** real Orbis, Speaking and Commerce layers change position, angle, scale and z-order over 680ms. One project remains in focus with synchronised title, role, contribution and link. Previous/next, tabs, Left/Right/Home/End and touch swipe work. Inactive layers are inert and excluded from accessibility focus. No autoplay or continuous movement.
+- **Further exploration:** a five-theme experience filter plus All with nine expandable records and related links; eight contextual visual stories with topic/previous/next controls and photograph enlargement; generated article/case contents links. Existing project filters remain.
+- **Fallbacks:** reduced motion shows all four connections and all three works in ordinary flow; navigation and controls remain usable without transitions. With script execution disabled, all connections/works and three direct navigation fallbacks remain visible. Scrolling is native. CSS/native JavaScript only; no animation dependency added. Hero keeps the approved original portrait and existing sequenced introduction.
 
-- Home with exact HKUMed Bachelor ’29 branding, existing public portrait, selected work, interdisciplinary narrative and visual journal preview.
-- About, filterable Work, Experience, Visual Journal, Writing, CV, Connect, and 404.
-- Seven case studies: Orbis, U21, e-commerce, HKU ACT programme operations, public speaking, nursing forum, and this website.
-- Seven legacy URL continuation pages, including the previous research and impact routes; unsupported claims are not carried forward.
-- Dark/paper themes, responsive menu, native expandable experience entries, project filters, native dialog lightboxes, keyboard close/focus return, and reduced-motion support.
-- Six journal photographs plus case-study media, using only imagery from the existing public repository, with metadata-free WebP derivatives.
-- Shared `site/_data/cv.json` for CV, Experience, and two-page PDF. Exact degree is not inferred. No original private phone or personal email is included.
-- Publication remains “Pros and cons of social media”, 21 Nov 2024 at the owner's explicit request. The differing embedded article URL is omitted. The mismatch is documented in the content inventory.
-- README, design system, content inventory, roadmap, root changelog and session notes.
+## Content and editorial state
 
-## Validation completed
+Fixed baseline: 1,611 globally deduplicated body words, 56 structural body modules, 13 existing core pages. Final: 9,058 words, 128 modules, 16 content pages. Added 7,447 words; final/baseline 5.623× against required 4× (6,444 words). Original 13 pages alone contain 6,938 effective words (4.31× baseline), so growth is not concentrated in the three essays. Exact method, paragraph/sentence decisions and before/after headings are in `_project/CONTENT_BASELINE.json/.md` and `CONTENT_GROWTH.json/.md`.
 
-- Production Jekyll build passes using Ruby 3.3.6 and Bundler 4.0.13. The broken system Node/Ruby paths were avoided using existing working runtimes; no system installation was altered.
-- Linux/platform dependency records added to the committed lockfile. GitHub Actions itself has not run on this branch.
-- Content checks pass for 23 generated HTML pages, local links/anchors, all seven case studies, one h1 per page, image alt attributes, and exclusion of internal/template content.
-- 56 CV facts match between the online page and PDF; PDF source fingerprint agrees with JSON. All two PDF pages rendered with PDFium and visually reviewed. Poppler's generated-PDF rendering encountered a local font-cache problem, so PDFium supplied the verified renders.
-- Actual browser PDF download succeeded; its bytes match the generated PDF. Original supplied CV is intact and unmodified.
-- Browser checks: 40 route/viewport combinations across 375, 768, 1024 and 1440px. Main pages and all seven case studies checked at phone and desktop widths. No horizontal overflow or failed loaded images in final checks.
-- Filters, timeline expansion, mobile navigation, theme persistence, lightbox close/Escape/focus restoration verified.
-- Emulated reduced motion produces `scroll-behavior: auto` and zero transition duration; emulation reset afterwards.
-- No page JavaScript warnings/errors observed. JavaScript syntax check passes.
-- Main, muted and accent text all exceed WCAG AA 4.5:1 against both theme backgrounds; lowest measured pair is 5.02:1.
-- Browser screenshots and layout-check JSON are in ignored `output/qa/`. This is a focused browser/accessibility review, not a full automated accessibility audit or formal performance benchmark.
+Counts exclude CV, navigation/footer/buttons, pure-link directions, TOCs, duplicate prose and identified review/UI instructions. Near-copy sentences are excluded with the same rule before and after. Module counts describe structure, not an independent guarantee of information quality. Editorial review removed repetitive source-boundary language and corrected the overlapping 2025 assistant/founder periods.
 
-## Publication status and remaining review
+Current biographical/task facts come from confirmed records, the supplied CV and approved material. Creative roots use owner-provided historical clues and archived content. New explanatory case prose, About organisation, visual-story text and three essays are local editorial drafts for owner review; no new qualifications, results, audiences or personal incidents are asserted. The essays are visibly labelled new drafts, with hypothetical examples identified. Original Global Times title/date remain unchanged.
 
-Local review version only. No push, merge, GitHub Actions run, or public deployment by this redesign session. The original public website remains unchanged. A local review commit has been saved on `codex/digital-identity`; inspect Git for its exact revision. Publication requires owner authorization under the supplied brief.
+## Immutable assets
 
-Before release, review the visual direction and public CV. The writing page awaits a matching original article URL. Additional private photographs, business screenshots, and research claims require appropriate evidence and publication approval. Existing LinkedIn and Instagram URLs are retained verbatim from the canonical site, with current ownership not independently reconfirmed.
+Original CV: one page, 235520 bytes, SHA-256 `156c588fa40dacefd97129154c3ef4adac1519d1665682bf844159fa0ea4b1b4`. Original/source/build plus two actual downloads this round match. Desktop PDF.js display, phone open/zoom and both downloads verified. The original has existing parser index warnings; it renders and downloads, and is intentionally not repaired. CV generator remains removed.
 
-See `README.md` for build/preview commands and `CONTENT_INVENTORY.md` for sources and publication decisions.
+Headshot: original `assets/img/02.jpg`, 2098×2937, copied unchanged to `site/assets/img/headshot-original.jpg`; SHA-256 `69c2aec2237ebfbb489f333552b6f90f0c561ef4568c2a3d8d3d574dbf9efb3d`. No new documentary imagery or retouching.
+
+## Completed validation
+
+- Production build; 27-page/seven-case internal links, content exclusions, assets and original-PDF checks; five JavaScript syntax checks; content target check; git whitespace check pass.
+- 38 actual browser page/viewport checks (19 routes at 1440×900 and 390×844), plus five homepage widths 320/375/768/1024/1280: no page horizontal overflow or failed loaded photographs.
+- Desktop clicks, keyboard, native Chrome hover bridge/leave, rapid close/reopen, phone hierarchical menu, touch return/close and focus isolation tested. Touch menu completion was checked after transition completion, rather than inferred from an intermediate sample.
+- B compact/middle/open, forward/backward progress, manual interruption/readability, resize, refresh at y=1793/p=.501, and fast skip/return tested. C button/tab/keyboard/reverse selection, inactive focus isolation and two-way Chrome touch swipe tested. Vertical touch changes page position without changing the selected work.
+- Timeline filtering returns four Healthcare entries and resets to all nine; expansion, story filtering/next, lightbox Escape/focus return and article TOC tested.
+- Desktop/mobile reduced motion and native Chrome script-disabled fallback tested. Page logs show no application warnings/errors in inspected routes. Temporary viewport/media/cache/device/script overrides cleared; disposable native Chrome test tabs closed.
+- Three actual-browser MP4 recordings and key desktop/mobile screenshots are in ignored `output/product-iteration/`. MP4s use real screencast frames with recorded timing; no staged screenshots stand in for motion verification.
+
+## Limits, review and publication
+
+No observed local functional blocker remains. Native browser mobile/touch emulation was used; physical iOS/Android devices, formal accessibility certification and a performance benchmark were not tested. MOV timing is a camera-recording estimate, not extracted CSS. Static Duo/Upgrade screenshots establish composition only; B/C motion is this iteration's requested interpretation. Source MOV did not show independent close/Escape/phone states; these were implemented and tested locally.
+
+The owner accepted the current essays and expanded editorial explanations for this release; existing draft labels remain. More specific case evidence would require approved ACT/U21 outputs, a speech transcript or publishable store materials; none was fabricated. Earlier local-only restrictions are superseded by the owner's explicit 2026-11-06 release authorization. The publication record below tracks actual progress. See the local review package and `CONTENT_INVENTORY.md` for sources and remaining evidence gaps.
+
+## Authorized release — 2026-11-06 (in progress)
+
+- Owner explicitly accepted the local version and authorized commit, push, normal merge, Pages deployment and production verification. Historical local-review-only records are retained.
+- Remote default/source branch: `master`, at `3d65738ad1dbab8a597f8d87b32ddcd9323d968e`; local `854b458` is one commit ahead with no divergence. Existing delivery path: build `site/` on master, push `_site/` to `gh-pages`, then GitHub Pages. The latest existing Pages run used `gh-pages`. Authenticated Pages settings verification is pending.
+- Release preflight: Ruby 3.3.6 production build passes; existing 27-page/seven-case links, anchors, asset and original-CV checks pass; content target passes (9,058 words / 5.623× baseline); all five application scripts parse. Staged whitespace inspection finds only upstream PDF.js/license formatting and an existing blank line in home.js; these accepted/vendor files remain unchanged. Source has no local-only runtime URL or application debug logging. Original CV remains one page, 235,520 bytes, SHA-256 `156c588fa40dacefd97129154c3ef4adac1519d1665682bf844159fa0ea4b1b4`.
+- Source commit/push, production merge, new deployment and live verification: pending. No new live release is claimed at this stage.

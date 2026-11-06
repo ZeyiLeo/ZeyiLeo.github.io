@@ -5,6 +5,6 @@ _site/
 .jekyll-metadata
 .DS_Store
 node_modules/
-vendor/
+/vendor/
 output/
 __pycache__/

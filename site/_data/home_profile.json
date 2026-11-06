@@ -1,0 +1,85 @@
+{
+  "portrait": {
+    "source": "assets/img/02.jpg",
+    "website_asset": "/assets/img/headshot-original.jpg",
+    "width": 2098,
+    "height": 2937,
+    "sha256": "69c2aec2237ebfbb489f333552b6f90f0c561ef4568c2a3d8d3d574dbf9efb3d",
+    "approval": "Owner confirmed white-background, black-shirt front-facing portrait in this conversation.",
+    "history": "5bef79b:_pages/about.md uses profile.image: 02.jpg; historical image blob and both known checkouts match the same SHA-256."
+  },
+  "chapters": [
+    {
+      "tab": "At HKU",
+      "label": "Current background",
+      "title": "Healthcare is my starting point.",
+      "body": "I’m studying at The University of Hong Kong’s Li Ka Shing Faculty of Medicine, with expected graduation in 2029. My interests include global health, health communication, and practical uses of AI. Alongside my studies, I take part in public-facing projects and international health-sciences collaboration.",
+      "detail": "In the U21 Health Sciences Group International Programme 2026, I served as a Group Leader, bringing research, cross-cultural teamwork, and presentations into the same project.",
+      "image": "outreach",
+      "alt": "Zeyi Li at an HKU Medicine outreach activity",
+      "caption": "HKU Medicine outreach",
+      "source": "Current owner brief, original CV, confirmed website experience records."
+    },
+    {
+      "tab": "In practice",
+      "label": "Work and contribution",
+      "title": "The work happens in the details.",
+      "body": "During my June–August 2026 internship with HKU Admissions Office, I supported HKU Academy for the Talented: programme administration, student communication, logistics, and admissions data. In Orbis projects, I worked as Group Leader on community outreach planning.",
+      "detail": "Outside the university, I founded a cross-border e-commerce venture, registered a brand, launched an Amazon store for North America, and used sales, traffic, and advertising data to inform decisions.",
+      "image": "materials",
+      "alt": "Printed Orbis eye-health education materials",
+      "caption": "Orbis eye-health education materials",
+      "source": "Original owner-provided CV; existing case pages. Photograph documents Orbis only, not the admissions internship."
+    },
+    {
+      "tab": "Creative roots",
+      "label": "Before university, and still part of my life",
+      "title": "Film, language, and the way a story is told.",
+      "body": "My interest in cinema, visual art, literature, and traditional theatre began before university. Early explorations of comparative literature and different languages gave me ways to think about stories, images, and cultural context. My earlier personal website was a place to start recording those interests.",
+      "detail": "I continue to explore these interests alongside my studies and project work. Bilingual speaking and the China–Latin American literature roundtable have given me opportunities to discuss ideas across languages and cultures.",
+      "image": "stage",
+      "alt": "Zeyi Li speaking on stage",
+      "caption": "A public-speaking moment",
+      "source": "Owner-provided historical content clues in this request; archived biography mentions cinema; current CV supports bilingual communication and literature roundtable. No historical qualification or unverified event dates asserted."
+    }
+  ],
+  "featured": [
+    {
+      "tab": "Orbis",
+      "title": "Eye health, out in the community.",
+      "name": "Orbis Vision Leader Program 2025/26",
+      "role": "Group Leader",
+      "contribution": "Worked with cross-functional teams on community outreach plans. The project documentation includes a glaucoma awareness booth, printed education materials, and an interactive demonstration.",
+      "image": "orbis",
+      "alt": "Orbis glaucoma awareness booth at HKU",
+      "caption": "Glaucoma awareness at HKU",
+      "url": "/projects/orbis-glaucoma/"
+    },
+    {
+      "tab": "Speaking",
+      "title": "A literature conversation across cultures.",
+      "name": "China–Latin American Literature Roundtable",
+      "role": "Invited Roundtable Speaker · April 2025",
+      "contribution": "Delivered a keynote speech on Sino-Latin American literary exchange and joined roundtable discussions with the Colombian Ambassador.",
+      "image": "portrait",
+      "alt": "Zeyi Li at the China–Latin America Literature Salon",
+      "caption": "At the literature salon",
+      "url": "/projects/public-speaking/"
+    },
+    {
+      "tab": "Commerce",
+      "title": "From a brand to an Amazon store.",
+      "name": "Cross-border E-commerce",
+      "role": "Founder · January 2025–Present",
+      "contribution": "Completed USPTO trademark registration and independently planned and launched an Amazon store for North America, covering market research, product selection, content, and operational analysis.",
+      "image": null,
+      "steps": [
+        "Market research",
+        "Brand registration",
+        "Amazon store launch",
+        "Marketing analytics"
+      ],
+      "url": "/projects/ecommerce-brand/"
+    }
+  ]
+}

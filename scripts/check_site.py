@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
-"""Check generated links, content safety, and online/PDF CV consistency."""
+"""Check generated links, content exclusions, and original PDF integrity."""
 import json
+import hashlib
+import logging
 import re
 from html.parser import HTMLParser
 from pathlib import Path
@@ -49,24 +51,46 @@ for path, page in pages.items():
 for unwanted in ('_project', 'AGENTS.md', 'README.md', 'Gemfile', 'assets/json/resume.json', 'assets/pdf/example_pdf.pdf'):
     if (SITE / unwanted).exists(): errors.append(f'Internal/template material shipped: {unwanted}')
 
-cv = json.loads((ROOT / 'site/_data/cv.json').read_text())
-pdf = PdfReader(SITE / 'assets/pdf/Zeyi_Li_CV.pdf')
-assert len(pdf.pages) == 2, f'Expected 2 PDF pages, got {len(pdf.pages)}'
-def norm(s): return re.sub(r'\s+', ' ', s).strip()
-pdf_text = norm(' '.join(p.extract_text() for p in pdf.pages))
-online_text = norm(' '.join(pages[SITE / 'cv/index.html'].text))
-facts = [cv['name'], cv['title'], cv['summary']]
-for section in cv['sections']:
-    for entry in section['entries']:
-        facts += [entry['title'], entry['role'], entry['period'], *entry['bullets']]
-facts += cv['interests'] + [c['value'] for c in cv['contacts']]
-for fact in facts:
-    for label, text in (('PDF', pdf_text), ('online', online_text)):
-        if norm(fact) not in text: errors.append(f'{label} missing CV fact: {fact}')
-if 'CV source SHA256' not in str(pdf.metadata.subject): errors.append('PDF source fingerprint missing')
-import hashlib
-if hashlib.sha256((ROOT / 'site/_data/cv.json').read_bytes()).hexdigest() not in str(pdf.metadata.subject): errors.append('PDF is stale relative to CV JSON')
+asset = json.loads((ROOT / 'site/_data/cv_asset.json').read_text())
+pdf_path = SITE / asset['url'].lstrip('/')
+if hashlib.sha256(pdf_path.read_bytes()).hexdigest() != asset['sha256']:
+    errors.append('CV PDF differs from the owner-provided original')
+if pdf_path.stat().st_size != asset['bytes']:
+    errors.append('Original PDF byte count changed')
+logging.getLogger('pypdf').setLevel(logging.ERROR)
+pdf = PdfReader(pdf_path)
+if len(pdf.pages) != asset['pages']:
+    errors.append('Original PDF page count changed')
+cv_html = (SITE / 'cv/index.html').read_text()
+if 'data-pdf-reader' not in cv_html or 'data-pdf-url="' + asset['url'] + '"' not in cv_html:
+    errors.append('CV does not embed the original PDF')
+if 'data-original-cv' not in cv_html or 'data-cv-download' not in cv_html:
+    errors.append('CV open/download actions missing')
+reader_html = (SITE / 'cv/original/index.html').read_text()
+if 'data-fullscreen' not in reader_html or asset['url'] not in reader_html:
+    errors.append('Full-window original CV reader missing')
+for required in ('assets/js/pdf-reader.js', 'assets/vendor/pdfjs/build/pdf.mjs', 'assets/vendor/pdfjs/build/pdf.worker.mjs'):
+    if not (SITE / required).is_file(): errors.append(f'Missing original-PDF reader resource: {required}')
+if (ROOT / 'scripts/generate_cv.py').exists():
+    errors.append('Retired PDF generator still exists')
+if (ROOT / 'site/_data/cv.json').exists():
+    errors.append('Retired generated-CV data is still active')
+
+home = (SITE / 'index.html').read_text()
+for marker in ('data-profile-hero', 'data-unfold', 'data-stack-deck', 'data-work-showcase', 'headshot-original.jpg'):
+    if marker not in home: errors.append(f'Homepage experience missing: {marker}')
+if '/assets/img/speaking-1280.webp' in home:
+    errors.append('Rejected activity photograph is still on the homepage')
+profile = json.loads((ROOT / 'site/_data/home_profile.json').read_text())
+portrait = SITE / profile['portrait']['website_asset'].lstrip('/')
+if hashlib.sha256(portrait.read_bytes()).hexdigest() != profile['portrait']['sha256']:
+    errors.append('Approved portrait differs from its original')
+for page_id in ['connection-0','connection-1','connection-2','connection-3','featured-0','featured-1','featured-2']:
+    if page_id not in pages[SITE / 'index.html'].ids: errors.append(f'Missing homepage panel {page_id}')
+
+for required in ('assets/js/navigation.js', 'assets/js/explore.js', 'assets/css/product.css', 'writing/health-information/index.html', 'writing/languages-and-context/index.html', 'writing/execution-and-commerce/index.html'):
+    if not (SITE / required).is_file(): errors.append(f'Missing product iteration resource: {required}')
 
 if errors:
     raise SystemExit('\n'.join(errors))
-print(f'PASS: {len(pages)} pages, internal links and anchors, content exclusions, {len(facts)} shared CV facts, 2-page PDF.')
+print(f"PASS: {len(pages)} pages, seven cases, local links/anchors, content exclusions; original {asset['pages']}-page PDF, SHA-256 {asset['sha256']}.")

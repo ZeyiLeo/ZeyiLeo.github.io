@@ -1,0 +1,70 @@
+[
+  {
+    "id": "health",
+    "tab": "Health & communication",
+    "label": "Learning meets public life",
+    "title": "A subject becomes a public encounter.",
+    "image": "materials",
+    "alt": "Printed eye-health education materials from the Orbis project",
+    "caption": "Orbis outreach materials",
+    "body": [
+      "My healthcare education and Orbis work meet at the point where information becomes something another person can approach. The project brings together a campus booth, printed eye-health materials and an interactive demonstration. Each offers a different way into the same subject: seeing it from a distance, reading a short explanation, or engaging with a demonstration.",
+      "The connection is practical. Community outreach planning needs both attention to the subject and attention to how people encounter it. The case follows those three materials rather than treating a photograph of an event as proof of a health outcome."
+    ],
+    "url": "/projects/orbis-glaucoma/",
+    "link": "Explore the Orbis materials"
+  },
+  {
+    "id": "operations",
+    "tab": "Programmes & people",
+    "label": "Organisation meets participation",
+    "title": "The experience has an operational side.",
+    "image": null,
+    "steps": [
+      "Participant administration",
+      "Applications and visa tracking",
+      "Programme logistics",
+      "Admissions data reconciliation"
+    ],
+    "body": [
+      "A programme is visible through the activities students attend, but it also depends on applications, records, schedules and clear communication. My June–August 2026 ACT internship placed me on that operational side. Participant administration, international student communication, logistics and admissions data were connected responsibilities within the same programme setting.",
+      "This is a useful counterpart to public speaking. A stage makes communication visible; programme administration often works through messages and records that remain outside the public view. Exploring both gives a fuller account of the work behind an organised encounter."
+    ],
+    "url": "/projects/hku-academy/",
+    "link": "See programme operations"
+  },
+  {
+    "id": "language",
+    "tab": "Language & expression",
+    "label": "Early interests meet a public role",
+    "title": "A literary interest enters a conversation.",
+    "image": "portrait",
+    "alt": "Zeyi Li at the China–Latin America Literature Salon",
+    "caption": "At the literature salon",
+    "body": [
+      "Film, visual art, literature, traditional theatre and languages were interests before university. The April 2025 China–Latin American Literature Roundtable is a separate, documented experience: I joined as an invited speaker, delivered a keynote and took part in a discussion with the Colombian Ambassador. The interest and the role are related, while remaining different kinds of information.",
+      "A literature event provides a concrete setting in which language, cultural references and an audience come together. The related case considers the difference between preparing an address and participating in a roundtable, and the visual journal gives the occasion a photographic context."
+    ],
+    "url": "/projects/public-speaking/",
+    "link": "Read about the roundtable"
+  },
+  {
+    "id": "commerce",
+    "tab": "Business & analysis",
+    "label": "An independent operating practice",
+    "title": "A launch is the start of an operating loop.",
+    "image": null,
+    "steps": [
+      "Research and product selection",
+      "Brand and trademark work",
+      "North American store launch",
+      "Sales, traffic and feedback"
+    ],
+    "body": [
+      "My e-commerce venture links several tasks that are easy to describe separately: researching a market, building a brand, registering a trademark, choosing products and launching an Amazon store. The continuing work adds sales, traffic, conversion and advertising data. A listing is therefore one part of an operation rather than the entire project.",
+      "The case distinguishes completed milestones from ongoing analysis. A new draft essay follows a further question: how should a small operation decide which observation deserves attention next? It develops that question through an explicitly hypothetical example."
+    ],
+    "url": "/projects/ecommerce-brand/",
+    "link": "Explore the business case"
+  }
+]

@@ -1,33 +1,29 @@
 # ZEYILEO roadmap
 
-## Ready for owner review
+Latest direction: Apple.com structure and interactions; original CV displayed unchanged. Supersedes the previous editorial redesign direction. This round is local-only.
 
-- Editorial homepage, shared navigation, light/dark themes.
-- About, filterable Work, seven case studies, Experience, Visual Journal, Writing, CV, Connect.
-- One factual CV source and matching professional PDF.
-- GitHub Pages build and content validation workflow.
+## Implemented for this review
 
-## Before public release
+- Compact global navigation, full-height phone menu and compact directory footer.
+- Homepage with centered identity, wide photo bands, paired light/dark modules and concrete project copy.
+- Work archive with reusable paired modules and underlined category filters.
+- Product-style case overviews and sticky local navigation, with three visual process stages for Orbis.
+- Sequenced introduction, moderate scroll-linked image composition, and distinct pinned storytelling. Phone/reduced-motion layouts retain the complete content in normal flow.
+- Original one-page CV, unchanged, with direct open/download actions and a self-hosted desktop PDF reader.
+- Retired PDF-generation process, corrected content/build checks and updated project documentation.
 
-- Owner approval of visual direction, copy, and the public CV.
-- Publication text remains unchanged at the owner’s request; a matching public article URL is still needed for a linked writing entry.
-- Confirm the existing LinkedIn and Instagram profiles are still preferred.
-- Commit the reviewed files, push only after authorization, verify the GitHub Actions result and deployed pages.
+## Future content, only when authorized
 
-## Next content priorities
+- More approved high-resolution portraits and project photographs; photographer credits when known.
+- Exact project deliverables, contribution evidence and measured outcomes where supported.
+- More full original writing and the matching publication URL; preserve the supplied CV article entry unless the owner requests a change.
+- Research positions only after exact role/institution/dates are supplied.
+- Additional product-style storytelling only where the project has enough real media to justify it.
 
-- Approved original portraits, travel/creative photography, and photographer credits.
-- Full original essays and the correct publisher link for each publication.
-- Project deliverables and contributions that can be shown publicly, with dates and outcomes where supported.
-- Research involvement only when exact role, institution, dates, and public wording are supplied.
-- Optional compact one-page CV or audience-specific variants, all generated from the same source.
+## Later technical work
 
-## Later improvements
+- A separate reviewed cleanup of retired root-level al-folio files.
+- PDF reader dependency updates when needed; validate unchanged PDF identity and rendering after any reader update.
+- Real-device iOS/Android PDF opening/downloading checks if the owner wants broader device certification.
 
-- Self-hosted licensed brand fonts if cross-platform consistency becomes a priority.
-- A richer project gallery when approved deliverables are available.
-- Additional evidence-backed graphics only when real data adds value.
-- Optional GitHub API integration with accessible static fallback if a meaningful technical project portfolio emerges.
-- Remove retired al-folio source from the repository in a separate reviewed cleanup; all current output already comes exclusively from `site/`.
-
-Avoid adding infrastructure, dependencies, or live integrations without a concrete visitor need.
+Do not add another generated CV, assume publication authorization, copy Apple branding or assets, or introduce an unrelated framework/project.
