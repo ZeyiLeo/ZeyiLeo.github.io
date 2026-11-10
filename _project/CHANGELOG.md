@@ -3,6 +3,16 @@
 Record substantive updates newest first. Use dates in Asia/Hong_Kong.
 For each update, include the reason, affected files, validation results, and publication status.
 
+## 2026-11-10 — Add private course planner entry
+
+Reason: the owner requested a visible link on the existing personal website to the independent online “拾课” planner, with password access before course information is shown.
+
+Changes: added the “拾课” link to the shared global navigation and updated project status. The link points to the separate Cloudflare Worker; no task data, password or credential was added to this public repository.
+
+Validation: local production Jekyll build and whitespace check passed. Chrome desktop navigation and 390px mobile menu showed the link without horizontal overflow. Local site checker was unavailable because `pypdf` is not installed on this machine; the deployment workflow runs it with its pinned dependency. The planner's login, 20-task import, cloud save, refresh persistence and unauthenticated data/asset denial were verified separately.
+
+Publication: source pushed to `master`; production GitHub Actions and live-domain navigation checked after push. The planner remains on its own private repository and cloud database, separate from the old Sites and local copies.
+
 ## 2026-11-06 — Production release completed and verified
 
 Reason: fulfill the owner's explicit authorization to publish the accepted local version. Accepted source `ed9cff8` was pushed, normally merged to master as `7818a1a`, and published after the runner-only repair (`f1f38f1`, merged as `7481a9e`). No PR required by repository rules; no force push. The accepted 281 website source files remain hash-identical, with original portrait, complete original CV, draft labels, copy and interactions preserved.

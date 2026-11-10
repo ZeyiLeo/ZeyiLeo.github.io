@@ -1,5 +1,13 @@
 # Project status
 
+Updated 2026-11-10 (Asia/Hong_Kong). The global navigation now includes a visible “拾课” link to the owner's separate password-protected course planner at `https://hku-course-planner.leo070310.workers.dev/`. The personal website publishes only the link; course tasks and passwords are not stored in this repository. The planner uses a private GitHub source repository, a Cloudflare Worker and D1 storage. Its 20 imported tasks were checked after refresh; this is a separate copy from the old Sites and local data.
+
+Local validation for this navigation update: production Jekyll build and whitespace check passed; actual Chrome desktop and 390px mobile menu exposed the link, with no horizontal overflow. The local site checker could not run because this machine lacks `pypdf`; the GitHub workflow installs that dependency and runs the checker on publication. Publication and production-domain verification for this update are recorded in the newest changelog entry.
+
+## 2026-11-10 — Planner navigation update
+
+Affected source: `site/_includes/global-navigation.html`. The existing homepage, portfolio, CV and design system remain in place. The link appears in the desktop header and mobile menu. The separate course planner asks for its access password before showing pages, scripts or task data. The password is configured as a Cloudflare secret and is absent from both repositories.
+
 Updated 2026-11-06 (Asia/Hong_Kong). Latest scope: three distinct product interactions and a substantial, measured content expansion. Apple remains the shell/proportion reference. Original portrait and finished CV remain unchanged. Owner accepted this version and authorized public release on 2026-11-06; publication and production-domain verification completed at 11:32 HKT.
 
 ## Repository and source readiness
