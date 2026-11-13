@@ -13,6 +13,8 @@ Validation: Chromium desktop and 390px touch emulation showed the centered hold,
 
 Publication: the owner reviewed and authorized the release through the existing `master` → `gh-pages` workflow. Enabled `?intro=replay` on the production hostname for the requested live verification. The animation itself uses the reviewed assets and timing.
 
+Production verification: [source build](https://github.com/ZeyiLeo/ZeyiLeo.github.io/actions/runs/43357305744) succeeded for `0027007`, and [Pages deployment](https://github.com/ZeyiLeo/ZeyiLeo.github.io/actions/runs/43357341652) succeeded for `91f8b04`. Compared all 264 public files to the release build. Both live URLs passed intro playback and browser checks, including skip, repeat navigation, reduced motion, and the mobile handoff. Existing homepage controls, a case route, experience filter, gallery lightbox and CV reader worked. The older desktop Visual Story Browser image layout issue is recorded in status.
+
 ## 2026-11-13 — Add the animated LEO header identity
 
 Reason: give the portfolio an animated home mark that fits the existing navigation. Verified GitHub `master` and the starting checkout at `ca09914`.
