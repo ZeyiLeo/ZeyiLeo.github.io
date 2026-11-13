@@ -3,6 +3,28 @@
 Record substantive updates newest first. Use dates in Asia/Hong_Kong.
 For each update, include the reason, affected files, validation results, and publication status.
 
+## 2026-11-13 — Move the opening wordmark into the live header
+
+Reason: extend the local LEO motion study into a short opening that physically becomes the navigation logo. Compared a separated letter assembly with a compact symbol unfolding into LEO. Chose the symbol because its existing geometry can assemble, expand and dock as a single object. Rechecked the Anthropic roadshow header in Chrome. Its scroll transition informed the shared letter geometry and easing, while the opening sequence is original to the portfolio.
+
+Changes: added homepage-only `brand-intro.js` and `brand-intro.css`, wired them into the shared layout, and gave the existing SVG stem an animation hook. The Web Animations API moves the actual navigation SVG from the center to its measured resting position. The existing portrait and copy reveal start during the flight. Session rules, a keyboard-accessible skip and bounded failure cleanup return control to the page. Retired the former standalone desktop wordmark entrance.
+
+Validation: Chromium desktop and 390px touch emulation showed the centered hold, continuous flight, existing hero reveal and exact resting geometry. Checked first entry, repeat refresh, direct and internal navigation, pointer and keyboard skip, Escape, reduced motion, and the JavaScript-disabled homepage. The production Jekyll build, 27-page site checker, all application script syntax checks and whitespace checks passed. The added CSS and JavaScript total about 2.3 KB gzipped, and the intro requests no fonts or media. Review frames are in ignored `output/brand-intro-review/`.
+
+Publication: the owner reviewed and authorized the release through the existing `master` → `gh-pages` workflow. Enabled `?intro=replay` on the production hostname for the requested live verification. The animation itself uses the reviewed assets and timing.
+
+## 2026-11-13 — Add the animated LEO header identity
+
+Reason: give the portfolio an animated home mark that fits the existing navigation. Verified GitHub `master` and the starting checkout at `ca09914`.
+
+Reference: inspected the [Anthropic roadshow page](https://www.anthropic.com/news/roadshow-launch) in Chrome, including a 390px viewport. The [header playback code](https://www.anthropic.com/_next/static/chunks/0x79jairvdy42.js) initializes directly at the relevant Lottie frame and reverses direction as the header state changes. The [state logic](https://www.anthropic.com/_next/static/chunks/387qbv7yhyi21.js) uses 15px of scroll and keeps the mark compact at widths of 870px or below. Desktop hover and mouseout left the logo still. Observed collapse and reversal keep the same link width while individual letter groups converge or separate. The [animation asset](https://www.anthropic.com/_next/static/chunks/0-c74pgbjyzf4.js) uses a 30 fps timeline and reaches the compact state at frame 18, with a position easing segment of `cubic-bezier(.77, 0, .175, 1)`.
+
+Changes: added `site/_includes/wordmark.html` and wired it into `site/_includes/global-navigation.html`. In `site/assets/css/identity.css`, reused the reference’s roughly 600ms travel and measured easing for the custom L and O. Added a clipped, staggered E, a desktop homepage entrance, and desktop hover and focus expansion. Followed the portfolio’s existing 8px scroll trigger and 767px mobile breakpoint. The inline artwork uses the header ink color and the link occupies 56×44px on desktop and 56×48px on mobile.
+
+Validation: Chrome verified 1440px and 390px layouts, initial transition, settled and reversed states, rapid hover re-entry, mouseout, focus, deep-scroll reload, menu and home navigation, reduced motion, and desktop script-disabled links. Production Jekyll build, five JavaScript syntax checks, whitespace, and the 27-page site checker passed. Browser screenshots are in ignored `output/wordmark-review/`. Mobile testing used Chrome touch emulation.
+
+Publication: uncommitted local review on `master`. No commit, push, merge or deployment.
+
 ## 2026-11-10 — Add private course planner entry
 
 Reason: the owner requested a visible link on the existing personal website to the independent online “拾课” planner, with password access before course information is shown.

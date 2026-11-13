@@ -1,5 +1,17 @@
 # Project status
 
+## 2026-11-13 — Cinematic homepage intro
+
+The homepage now opens with a 3.04-second assembly of the L/O monogram into LEO. The same SVG moves and scales into its home-link position while the existing hero animation starts. At the end, desktop shows LEO and phones show the existing compact monogram. The intro plays on the first eligible homepage entry in a tab session. Internal navigation, repeat loads, deep links and reduced motion go directly to the page. The Skip intro button, Escape, or interacting with the page releases it immediately.
+
+The owner reviewed and authorized the release to https://zeyileo.github.io/. The `?intro=replay` link is available on that hostname and on loopback for deliberate replay. The normal homepage retains its session and reduced-motion rules. The loopback Jekyll preview is available at http://127.0.0.1:4173/.
+
+## 2026-11-13 — Animated LEO wordmark (local review)
+
+The shared header now uses an original inline SVG wordmark. On desktop, the homepage opens from a compact L/O monogram into LEO. The existing scrolled header state draws the O back into the L and slides the E out of view behind a clip. Hover and keyboard focus expand the scrolled mark. The link keeps the same footprint and accessible name, “Zeyi Li home.” Phones use the compact mark. Reduced-motion users get static LEO on desktop and the static monogram on phones. The project uses CSS transitions and the existing header scroll state.
+
+Chrome checks at 1440×900 and 390×844 covered the initial reveal, fixed header geometry, repeated hover and mouseout, keyboard focus, scroll and reversal, scrolled reload, menu navigation, home navigation, reduced motion and desktop script-disabled fallback. The production Jekyll build and the 27-page link, asset, and original CV check passed. Local changes are uncommitted and await owner review. Start a preview with `RBENV_VERSION=3.3.6 JEKYLL_ENV=production bundle exec jekyll serve --host 127.0.0.1 --port 4173`.
+
 Updated 2026-11-10 (Asia/Hong_Kong). The global navigation now includes a visible “拾课” link to the owner's separate password-protected course planner at `https://hku-course-planner.leo070310.workers.dev/`. The personal website publishes only the link; course tasks and passwords are not stored in this repository. The planner uses a private GitHub source repository, a Cloudflare Worker and D1 storage. Its 20 imported tasks were checked after refresh; this is a separate copy from the old Sites and local data.
 
 Local validation for this navigation update: production Jekyll build and whitespace check passed; actual Chrome desktop and 390px mobile menu exposed the link, with no horizontal overflow. The local site checker could not run because this machine lacks `pypdf`; the GitHub workflow installs that dependency and runs the checker on publication. Publication and production-domain verification for this update are recorded in the newest changelog entry.
