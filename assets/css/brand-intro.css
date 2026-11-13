@@ -1,0 +1,44 @@
+.brand-intro-veil { display: none; }
+
+.brand-intro-skip {
+  position: fixed;
+  right: max(24px, env(safe-area-inset-right));
+  bottom: max(22px, env(safe-area-inset-bottom));
+  z-index: 201;
+  min-height: 44px;
+  padding: 0 16px;
+  border: 1px solid var(--line);
+  border-radius: 24px;
+  background: var(--bg);
+  color: var(--ink);
+  font-size: 13px;
+  letter-spacing: 0;
+}
+.brand-intro-skip:hover { background: var(--surface); }
+
+:is(.brand-intro-pending, .brand-intro-active) .brand-intro-veil {
+  display: block;
+  position: fixed;
+  inset: 0;
+  z-index: 4;
+  background: var(--bg);
+  pointer-events: none;
+}
+.brand-intro-active .wordmark { position: relative; z-index: 5; }
+.brand-intro-active .wordmark-art {
+  transform-origin: center;
+  pointer-events: none;
+}
+.brand-intro-active .wordmark-stem {
+  transform-box: fill-box;
+  transform-origin: bottom;
+}
+:is(.brand-intro-pending, .brand-intro-active) :is(.wordmark-foot, .wordmark-e, .wordmark-o) {
+  transition: none;
+}
+.brand-intro-pending .wordmark-art { visibility: hidden; }
+:is(.brand-intro-pending, .brand-intro-active:not(.brand-intro-revealing)) .profile-enter {
+  animation-name: none;
+  opacity: 0;
+}
+.brand-intro-skipped .profile-enter { animation: none; }

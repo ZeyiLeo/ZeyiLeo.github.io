@@ -34,3 +34,45 @@
 .pdf-section .pdf-scroll{max-height:none}
 .case-page .project-nav{top:8px;min-height:56px;width:min(1024px,100%);margin-inline:auto;border:1px solid #00000012;border-radius:18px;background:rgba(250,250,252,.86)}
 @media(max-width:767px){.case-page .project-nav{width:calc(100% + 24px);margin-inline:-12px;padding-inline:14px}}
+
+/* Keep the home link the same size as the O docks into the L. */
+.wordmark {
+  flex: 0 0 56px;
+  --wordmark-compact: 0;
+  --wordmark-travel: cubic-bezier(.77, 0, .175, 1);
+}
+.wordmark-art { display: block; }
+.wordmark:focus-visible {
+  outline-offset: -2px;
+  border-radius: 4px;
+}
+.wordmark-foot {
+  transform-box: fill-box;
+  transform-origin: left;
+  transform: scaleX(calc(1 + .43 * var(--wordmark-compact)));
+}
+.wordmark-e {
+  transform: translateX(calc(-14px * var(--wordmark-compact)));
+}
+.wordmark-o {
+  transform-box: fill-box;
+  transform-origin: center;
+  transform: translate(calc(-30.9px * var(--wordmark-compact)), calc(-2.05px * var(--wordmark-compact)))
+    scale(calc(1 - .31 * var(--wordmark-compact)));
+}
+
+@media (max-width: 767px) {
+  .wordmark { --wordmark-compact: 1; }
+}
+
+@media (min-width: 768px) and (prefers-reduced-motion: no-preference) {
+  .wordmark-foot, .wordmark-o { transition: transform 600ms var(--wordmark-travel); }
+  .wordmark-e { transition: transform 300ms ease-in-out 235ms; }
+  .is-scrolled .wordmark:not(:focus-visible) { --wordmark-compact: 1; }
+  .is-scrolled .wordmark:not(:focus-visible) .wordmark-e { transition-delay: 0ms; }
+}
+
+@media (min-width: 768px) and (prefers-reduced-motion: no-preference) and (hover: hover) and (pointer: fine) {
+  .is-scrolled .wordmark:hover { --wordmark-compact: 0; }
+  .is-scrolled .wordmark:hover .wordmark-e { transition-delay: 235ms; }
+}
